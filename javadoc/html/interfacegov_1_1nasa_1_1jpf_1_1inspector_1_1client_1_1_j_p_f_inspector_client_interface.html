@@ -113,11 +113,11 @@ Inheritance diagram for gov.nasa.jpf.inspector.client.JPFInspectorClientInterfac
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a311b9271afa61a535f0dbccd80fdf4f5"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a311b9271afa61a535f0dbccd80fdf4f5">executeCommand</a> (String cmd)</td></tr>
-<tr class="memdesc:a311b9271afa61a535f0dbccd80fdf4f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse and execute a command given by the user.  <a href="#a311b9271afa61a535f0dbccd80fdf4f5">More...</a><br /></td></tr>
-<tr class="separator:a311b9271afa61a535f0dbccd80fdf4f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a89886c27b008026d67e6b743d36df377"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a89886c27b008026d67e6b743d36df377">executeCommand</a> (String cmd, <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_execution_context.html">ExecutionContext</a> context)</td></tr>
+<tr class="memdesc:a89886c27b008026d67e6b743d36df377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and executes a command given by the user.  <a href="#a89886c27b008026d67e6b743d36df377">More...</a><br /></td></tr>
+<tr class="separator:a89886c27b008026d67e6b743d36df377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a687ef63d8a21d78f5d0e7b265e9863ea">connect2JPF</a> (JPF jpf)  throws JPFInspectorGenericErrorException</td></tr>
-<tr class="memdesc:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connect client to specific instance of Java PathFinder.  <a href="#a687ef63d8a21d78f5d0e7b265e9863ea">More...</a><br /></td></tr>
+<tr class="memdesc:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects the client to a specific instance of Java PathFinder.  <a href="#a687ef63d8a21d78f5d0e7b265e9863ea">More...</a><br /></td></tr>
 <tr class="separator:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -140,7 +140,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Connect client to specific instance of Java PathFinder. </p>
+<p>Connects the client to a specific instance of Java PathFinder. </p>
 <p>Note: Should be called before JPF.run method is called. Note: Modifies JPF Configuration.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
@@ -159,7 +159,7 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a311b9271afa61a535f0dbccd80fdf4f5"></a>
+<a class="anchor" id="a89886c27b008026d67e6b743d36df377"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
@@ -167,13 +167,23 @@ Public Member Functions</h2></td></tr>
           <td class="memname">void gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.executeCommand </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>cmd</em></td><td>)</td>
+          <td class="paramname"><em>cmd</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_execution_context.html">ExecutionContext</a>&#160;</td>
+          <td class="paramname"><em>context</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parse and execute a command given by the user. </p>
+<p>Parses and executes a command given by the user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">cmd</td><td>The command to execute. </td></tr>
@@ -181,7 +191,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client.html#a31eb8d1e4bc45b2394fe204fc0b9e535">gov.nasa.jpf.inspector.client.JPFInspectorClient</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client.html#a536a609da78d215f2ebcc9a81ae44225">gov.nasa.jpf.inspector.client.JPFInspectorClient</a>.</p>
 
 </div>
 </div>

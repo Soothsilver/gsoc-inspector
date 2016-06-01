@@ -107,10 +107,10 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.expression.expressions.Exp
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_state_advanced.png" usemap="#gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointStateAdvanced_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointStateAdvanced_map" name="gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointStateAdvanced_map">
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf" shape="rect" coords="0,168,572,192"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBoolean" shape="rect" coords="0,112,572,136"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface" shape="rect" coords="0,56,572,80"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface&lt; ExpressionBooleanInterface &gt;" shape="rect" coords="0,0,572,24"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf" shape="rect" coords="0,168,527,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBoolean" shape="rect" coords="0,112,527,136"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface" shape="rect" coords="0,56,527,80"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html" title="Represents a node in the expression abstract syntax tree. " alt="gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface" shape="rect" coords="0,0,527,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -125,11 +125,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a5b513dee2798b2958872f8408a15c10d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details related to expression.  <a href="#a5b513dee2798b2958872f8408a15c10d">More...</a><br /></td></tr>
 <tr class="separator:a5b513dee2798b2958872f8408a15c10d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a5c66e9b86948c0b0ff6d591c448e230e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_state_advanced.html#a5c66e9b86948c0b0ff6d591c448e230e">getNormalizedExpression</a> ()</td></tr>
+<tr class="memdesc:a5c66e9b86948c0b0ff6d591c448e230e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string which represents the normalized version of the represented expression.  <a href="#a5c66e9b86948c0b0ff6d591c448e230e">More...</a><br /></td></tr>
 <tr class="separator:a5c66e9b86948c0b0ff6d591c448e230e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99bf3cf13bd8cc1d6c33208bc83b185"><td class="memItemLeft" align="right" valign="top">List&lt;?extends <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html">ExpressionBooleanInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html#aa99bf3cf13bd8cc1d6c33208bc83b185">getChilds</a> ()</td></tr>
-<tr class="separator:aa99bf3cf13bd8cc1d6c33208bc83b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed010ff8683eb1e8621e226703133457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_types.html">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html#aed010ff8683eb1e8621e226703133457">getType</a> ()</td></tr>
-<tr class="separator:aed010ff8683eb1e8621e226703133457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Hits when new new transition is started. </p>
@@ -180,31 +177,6 @@ Public Member Functions</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                      {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> BreakPointModes.BP_MODE_STATE_ADVANCED;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aa99bf3cf13bd8cc1d6c33208bc83b185"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;? extends <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html">ExpressionBooleanInterface</a>&gt; gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf.getChilds </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_expression_boolean_leaf_8java_source.html#l00027">27</a> of file <a class="el" href="_expression_boolean_leaf_8java_source.html">ExpressionBooleanLeaf.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                 {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
 <a class="anchor" id="a5b513dee2798b2958872f8408a15c10d"></a>
 <div class="memitem">
 <div class="memproto">
@@ -226,7 +198,7 @@ Public Member Functions</h2></td></tr>
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html#a6e5af96b023d71fcda296c10f5d7c555">gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface</a>.</p>
 
 <p>Definition at line <a class="el" href="_expression_breakpoint_state_advanced_8java_source.html#l00048">48</a> of file <a class="el" href="_expression_breakpoint_state_advanced_8java_source.html">ExpressionBreakpointStateAdvanced.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (state == null) {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Instruction instr = state.getJVM().getCurrentTransition().getLastStep().getInstruction();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;New transition started (vm.transition=&quot;</span> + state.getJVM().getCurrentTransition() + <span class="stringliteral">&quot;, vm.stateID=&quot;</span> + state.getSearch().getStateId()</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        + <span class="stringliteral">&quot;, vm.currentThread= &quot;</span> + state.getJVM().getCurrentThread().getId() + <span class="stringliteral">&quot; lastInstr=&quot;</span> + instr + <span class="stringliteral">&quot;, position=&quot;</span> + instr.getFilePos() + <span class="stringliteral">&quot; )&quot;</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                  {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <span class="keywordflow">if</span> (state == null) {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    }</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    Instruction instr = state.getJVM().getCurrentTransition().getLastStep().getInstruction();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;New transition started (vm.transition=&quot;</span> + state.getJVM().getCurrentTransition() + <span class="stringliteral">&quot;, vm.stateID=&quot;</span> + state.getSearch().getStateId()</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;        + <span class="stringliteral">&quot;, vm.currentThread= &quot;</span> + state.getJVM().getCurrentThread().getId() + <span class="stringliteral">&quot; lastInstr=&quot;</span> + instr + <span class="stringliteral">&quot;, position=&quot;</span> + instr.getFilePos() + <span class="stringliteral">&quot;)&quot;</span>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5c66e9b86948c0b0ff6d591c448e230e"></a>
@@ -242,33 +214,14 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets string which represents the normalized version of the represented expression. </p>
+<p>Note: Long versions of all keywords should be used. Note: The returned has to be parsable by the expression parser.</p>
+<dl class="section return"><dt>Returns</dt><dd>Normalized parsable version of the represented expression. </dd></dl>
+
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html#a8d221a2deac3ab85f409b4a28c9a0b96">gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface</a>.</p>
+
 <p>Definition at line <a class="el" href="_expression_breakpoint_state_advanced_8java_source.html#l00058">58</a> of file <a class="el" href="_expression_breakpoint_state_advanced_8java_source.html">ExpressionBreakpointStateAdvanced.java</a>.</p>
 <div class="fragment"><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;                                           {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;state_advanced&quot;</span>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aed010ff8683eb1e8621e226703133457"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_types.html">Types</a> gov.nasa.jpf.inspector.server.expression.ExpressionBoolean.getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_expression_boolean_8java_source.html#l00025">25</a> of file <a class="el" href="_expression_boolean_8java_source.html">ExpressionBoolean.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> Types.ET_BOOLEAN;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

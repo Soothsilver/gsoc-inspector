@@ -110,10 +110,10 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.expression.expressions.Exp
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.png" usemap="#gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition_map" name="gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition_map">
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf" shape="rect" coords="0,168,572,192"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBoolean" shape="rect" coords="0,112,572,136"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface" shape="rect" coords="0,56,572,80"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface&lt; ExpressionBooleanInterface &gt;" shape="rect" coords="0,0,572,24"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf" shape="rect" coords="0,168,485,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBoolean" shape="rect" coords="0,112,485,136"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html" alt="gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface" shape="rect" coords="0,56,485,80"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html" title="Represents a node in the expression abstract syntax tree. " alt="gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface" shape="rect" coords="0,0,485,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -132,11 +132,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:adbc1aa323bbfab6011e9557c85734456"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get details related to expression.  <a href="#adbc1aa323bbfab6011e9557c85734456">More...</a><br /></td></tr>
 <tr class="separator:adbc1aa323bbfab6011e9557c85734456"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad8a4cb715f4790b1c347ec48de5d6a2e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#ad8a4cb715f4790b1c347ec48de5d6a2e">getNormalizedExpression</a> ()</td></tr>
+<tr class="memdesc:ad8a4cb715f4790b1c347ec48de5d6a2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string which represents the normalized version of the represented expression.  <a href="#ad8a4cb715f4790b1c347ec48de5d6a2e">More...</a><br /></td></tr>
 <tr class="separator:ad8a4cb715f4790b1c347ec48de5d6a2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa99bf3cf13bd8cc1d6c33208bc83b185"><td class="memItemLeft" align="right" valign="top">List&lt;?extends <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html">ExpressionBooleanInterface</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_leaf.html#aa99bf3cf13bd8cc1d6c33208bc83b185">getChilds</a> ()</td></tr>
-<tr class="separator:aa99bf3cf13bd8cc1d6c33208bc83b185"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aed010ff8683eb1e8621e226703133457"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_types.html">Types</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean.html#aed010ff8683eb1e8621e226703133457">getType</a> ()</td></tr>
-<tr class="separator:aed010ff8683eb1e8621e226703133457"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
@@ -256,31 +253,6 @@ Static Private Attributes</h2></td></tr>
 <div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                      {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="keywordflow">return</span> BreakPointModes.BP_MODE_POSITION_ONLY;</div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="aa99bf3cf13bd8cc1d6c33208bc83b185"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">List&lt;? extends <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html">ExpressionBooleanInterface</a>&gt; gov.nasa.jpf.inspector.server.expression.ExpressionBooleanLeaf.getChilds </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_expression_boolean_leaf_8java_source.html#l00027">27</a> of file <a class="el" href="_expression_boolean_leaf_8java_source.html">ExpressionBooleanLeaf.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;                                                                 {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
 <a class="anchor" id="adbc1aa323bbfab6011e9557c85734456"></a>
 <div class="memitem">
 <div class="memproto">
@@ -302,7 +274,7 @@ Static Private Attributes</h2></td></tr>
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html#a6e5af96b023d71fcda296c10f5d7c555">gov.nasa.jpf.inspector.server.expression.ExpressionBooleanInterface</a>.</p>
 
 <p>Definition at line <a class="el" href="_expression_breakpoint_position_8java_source.html#l00119">119</a> of file <a class="el" href="_expression_breakpoint_position_8java_source.html">ExpressionBreakpointPosition.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                  {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (state != null &amp;&amp; <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a79a13d6555f1168da4468a1fada1e04c">evaluateExpression</a>(state)) {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;SuT will now enter the position &quot;</span> + <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">instPos</a>.toString(); <span class="comment">// TODO is it really &quot;will now enter&quot; or is it &quot;had already evaluated at least part of it&quot;?</span></div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position_html_a8f9bc711f79a45ff712cbfb1253e677b"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition.instPos</a></div><div class="ttdeci">final InstructionPosition instPos</div><div class="ttdef"><b>Definition:</b> <a href="_expression_breakpoint_position_8java_source.html#l00048">ExpressionBreakpointPosition.java:48</a></div></div>
+<div class="fragment"><div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;                                                  {</div><div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;    <span class="keywordflow">if</span> (state != null &amp;&amp; <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a79a13d6555f1168da4468a1fada1e04c">evaluateExpression</a>(state)) {</div><div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;      <span class="keywordflow">return</span> <span class="stringliteral">&quot;SuT will now enter the position &quot;</span> + <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">instPos</a>.toString();</div><div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;    }</div><div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;    <span class="keywordflow">return</span> <span class="stringliteral">&quot;&quot;</span>;</div><div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position_html_a8f9bc711f79a45ff712cbfb1253e677b"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition.instPos</a></div><div class="ttdeci">final InstructionPosition instPos</div><div class="ttdef"><b>Definition:</b> <a href="_expression_breakpoint_position_8java_source.html#l00048">ExpressionBreakpointPosition.java:48</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position_html_a79a13d6555f1168da4468a1fada1e04c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a79a13d6555f1168da4468a1fada1e04c">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition.evaluateExpression</a></div><div class="ttdeci">boolean evaluateExpression(InspectorState state)</div><div class="ttdoc">Evaluate condition and get boolean result. </div><div class="ttdef"><b>Definition:</b> <a href="_expression_breakpoint_position_8java_source.html#l00075">ExpressionBreakpointPosition.java:75</a></div></div>
 </div><!-- fragment -->
 </div>
@@ -398,6 +370,12 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets string which represents the normalized version of the represented expression. </p>
+<p>Note: Long versions of all keywords should be used. Note: The returned has to be parsable by the expression parser.</p>
+<dl class="section return"><dt>Returns</dt><dd>Normalized parsable version of the represented expression. </dd></dl>
+
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html#a8d221a2deac3ab85f409b4a28c9a0b96">gov.nasa.jpf.inspector.server.expression.ExpressionNodeInterface</a>.</p>
+
 <p>Definition at line <a class="el" href="_expression_breakpoint_position_8java_source.html#l00203">203</a> of file <a class="el" href="_expression_breakpoint_position_8java_source.html">ExpressionBreakpointPosition.java</a>.</p>
 <div class="fragment"><div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;                                           {</div><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    String <span class="keywordtype">string</span> = <span class="stringliteral">&quot;position=&quot;</span> +</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;            <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">instPos</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac1fb787ee623734fb5be1266d14727ce">getFileName</a>() +</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;            <span class="charliteral">&#39;:&#39;</span> +</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;            <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">instPos</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac5cae68ff61d71dbf7b90e30b8291784">getLineNumber</a>();</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <span class="keywordflow">return</span> string;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position_html_a8f9bc711f79a45ff712cbfb1253e677b"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_breakpoint_position.html#a8f9bc711f79a45ff712cbfb1253e677b">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionBreakpointPosition.instPos</a></div><div class="ttdeci">final InstructionPosition instPos</div><div class="ttdef"><b>Definition:</b> <a href="_expression_breakpoint_position_8java_source.html#l00048">ExpressionBreakpointPosition.java:48</a></div></div>
 <div class="ttc" id="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position_html_ac1fb787ee623734fb5be1266d14727ce"><div class="ttname"><a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac1fb787ee623734fb5be1266d14727ce">gov.nasa.jpf.inspector.interfaces.InstructionPosition.getFileName</a></div><div class="ttdeci">String getFileName()</div><div class="ttdoc">File name where the class is defined. </div></div>
@@ -447,31 +425,6 @@ Static Private Attributes</h2></td></tr>
 
 <p>Definition at line <a class="el" href="_expression_breakpoint_position_8java_source.html#l00178">178</a> of file <a class="el" href="_expression_breakpoint_position_8java_source.html">ExpressionBreakpointPosition.java</a>.</p>
 <div class="fragment"><div class="line"><a name="l00178"></a><span class="lineno">  178</span>&#160;                                                                                                          {</div><div class="line"><a name="l00179"></a><span class="lineno">  179</span>&#160;    <span class="comment">// Handle special cases Calls and JSR</span></div><div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <span class="keywordflow">if</span> (prevInstr instanceof ReturnInstruction) {</div><div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;      <span class="comment">// We should ignore instructions in called method, we focus on previous instruction in current method</span></div><div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160;      prevInstr = lastInstr.getPrev();</div><div class="line"><a name="l00183"></a><span class="lineno">  183</span>&#160;      <span class="comment">// TODO ... problem with direct calls !!!</span></div><div class="line"><a name="l00184"></a><span class="lineno">  184</span>&#160;      <span class="comment">// assert prevInstr instanceof InvokeInstruction;</span></div><div class="line"><a name="l00185"></a><span class="lineno">  185</span>&#160;    }</div><div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;</div><div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <span class="keywordflow">if</span> (prevInstr instanceof RET) {</div><div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160;      <span class="comment">// We should ignore instructions in called subrutine, we focus on previous instruction in current method</span></div><div class="line"><a name="l00189"></a><span class="lineno">  189</span>&#160;      prevInstr = lastInstr.getPrev();</div><div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;      assert (prevInstr instanceof JSR) || (prevInstr instanceof JSR_W);</div><div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    }</div><div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160;    <span class="keywordflow">return</span> prevInstr;</div><div class="line"><a name="l00193"></a><span class="lineno">  193</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aed010ff8683eb1e8621e226703133457"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_types.html">Types</a> gov.nasa.jpf.inspector.server.expression.ExpressionBoolean.getType </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_expression_boolean_8java_source.html#l00025">25</a> of file <a class="el" href="_expression_boolean_8java_source.html">ExpressionBoolean.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                          {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <span class="keywordflow">return</span> Types.ET_BOOLEAN;</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aaecf51faa762d76b4f39c74f5b8b4e55"></a>

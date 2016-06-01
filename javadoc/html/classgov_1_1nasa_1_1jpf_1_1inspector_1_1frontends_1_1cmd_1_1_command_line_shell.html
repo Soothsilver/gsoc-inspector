@@ -114,14 +114,100 @@ Inheritance diagram for gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell:</
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a62b9d190fc4ff76cd0a1d13968674874"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a62b9d190fc4ff76cd0a1d13968674874">start</a> (String[] args)</td></tr>
 <tr class="separator:a62b9d190fc4ff76cd0a1d13968674874"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a071c34c56df029b0116cdb8042ff7991"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a071c34c56df029b0116cdb8042ff7991">CommandLineShell</a> (Config config)</td></tr>
+<tr class="separator:a071c34c56df029b0116cdb8042ff7991"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a40284754900437a3b3e8352515043374"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a40284754900437a3b3e8352515043374">installCommand</a> (ShellCommand command)</td></tr>
+<tr class="separator:a40284754900437a3b3e8352515043374"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a09bcd40ab88a95193cb6316ac18d9974"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a09bcd40ab88a95193cb6316ac18d9974">uninstallCommand</a> (ShellCommand command)</td></tr>
+<tr class="separator:a09bcd40ab88a95193cb6316ac18d9974"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a872924cb50794c9194d9f87eddcde8ac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a872924cb50794c9194d9f87eddcde8ac">updateShellCommand</a> (ShellCommand command)</td></tr>
+<tr class="separator:a872924cb50794c9194d9f87eddcde8ac"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a76ecf98ce8f6645002d8041ea22c1799"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a76ecf98ce8f6645002d8041ea22c1799">updateShellPanel</a> (ShellPanel panel)</td></tr>
+<tr class="separator:a76ecf98ce8f6645002d8041ea22c1799"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35b3a7d6c062bb0d41659a0974909efc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#a35b3a7d6c062bb0d41659a0974909efc">requestFocus</a> (ShellPanel panel)</td></tr>
+<tr class="separator:a35b3a7d6c062bb0d41659a0974909efc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afef7d64352951553acfe1e639af6d3b1"><td class="memItemLeft" align="right" valign="top">Shell&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html#afef7d64352951553acfe1e639af6d3b1">createChildShell</a> ()</td></tr>
+<tr class="separator:afef7d64352951553acfe1e639af6d3b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This shell is used when launching the Inspector from the command-line. </p>
 <p>If you want the Inspector in a GUI, use .shell.basicshell.BasicShell instead. Only set this as your shell if you want the Inspector in the default system command line.</p>
 <p>Represents a shell that is wholly separate from the Swing-based shell in jpf-shell. Because that abstract Shell must be based on JPanel and because the ShellManager handles only Shells and not any implementations of JPFShell, we must redo most of the Shell's work from scratch here. </p>
 
-<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00016">16</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
-</div><h2 class="groupheader">Member Function Documentation</h2>
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00026">26</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+</div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a class="anchor" id="a071c34c56df029b0116cdb8042ff7991"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.CommandLineShell </td>
+          <td>(</td>
+          <td class="paramtype">Config&#160;</td>
+          <td class="paramname"><em>config</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00050">50</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                         {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    ShellManager.createShellManager(config);</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <span class="keywordflow">if</span> (!ShellManager.getManager().hasShell(<span class="keyword">this</span>)) {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;      ShellManager.getManager().addShell(<span class="keyword">this</span>);</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;      <span class="comment">// We will handle when to exit the VM in ShellManager</span></div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    }</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="afef7d64352951553acfe1e639af6d3b1"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Shell gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.createChildShell </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00084">84</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                  {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a40284754900437a3b3e8352515043374"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.installCommand </td>
+          <td>(</td>
+          <td class="paramtype">ShellCommand&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00059">59</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;                                                   {</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a35b3a7d6c062bb0d41659a0974909efc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.requestFocus </td>
+          <td>(</td>
+          <td class="paramtype">ShellPanel&#160;</td>
+          <td class="paramname"><em>panel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00079">79</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;                                             {</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="a62b9d190fc4ff76cd0a1d13968674874"></a>
 <div class="memitem">
 <div class="memproto">
@@ -136,8 +222,62 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00018">18</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                   {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00028">28</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;                                   {</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    ShellManager.getManager().setStartingArgs(args);</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    Config config = ShellManager.getManager().getConfig();</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    Scanner scanner = <span class="keyword">new</span> Scanner(System.in);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    JPFInspectorClientInterface inspector = JPFInspectorFacade.getInspectorClient(config.getTarget(), System.out);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    System.out.println(<span class="stringliteral">&quot;This is the JPF Inspector console for debugging the target \&quot;&quot;</span> + config.getTarget() + <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    System.out.println(<span class="stringliteral">&quot;Type \&quot;hello\&quot; to test if the Inspector is working or \&quot;help\&quot; to get a list of commands.&quot;</span>);</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="comment">//noinspection InfiniteLoopStatement</span></div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;      System.out.print(Constants.PROMPT);</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;      String s = scanner.nextLine();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      String sTrimmed = s.trim();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">if</span> (sTrimmed.length() &gt; 0) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        inspector.executeCommand(s, ExecutionContext.FROM_COMMAND_LINE_TERMINAL);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    } <span class="comment">// end of while</span></div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a09bcd40ab88a95193cb6316ac18d9974"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.uninstallCommand </td>
+          <td>(</td>
+          <td class="paramtype">ShellCommand&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00064">64</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;                                                     {</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a872924cb50794c9194d9f87eddcde8ac"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.updateShellCommand </td>
+          <td>(</td>
+          <td class="paramtype">ShellCommand&#160;</td>
+          <td class="paramname"><em>command</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00069">69</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                       {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a76ecf98ce8f6645002d8041ea22c1799"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.frontends.cmd.CommandLineShell.updateShellPanel </td>
+          <td>(</td>
+          <td class="paramtype">ShellPanel&#160;</td>
+          <td class="paramname"><em>panel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_command_line_shell_8java_source.html#l00074">74</a> of file <a class="el" href="_command_line_shell_8java_source.html">CommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                                                 {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>
