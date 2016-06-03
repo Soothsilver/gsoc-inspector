@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -108,11 +107,11 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInt
  <div class="center">
   <img src="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.png" usemap="#gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface_map" name="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html" alt="gov.nasa.jpf.inspector.interfaces.CommandsInterface" shape="rect" coords="0,0,377,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html" title="The server must implement this interface and the client uses it to start or stop execution and to do ..." alt="gov.nasa.jpf.inspector.interfaces.CommandsInterface" shape="rect" coords="0,0,377,24"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html" title="Server-side component that handles breakpoint management. " alt="gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface" shape="rect" coords="387,0,764,24"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html" title="Is intended for inspection of state of the SuT. " alt="gov.nasa.jpf.inspector.interfaces.ProgramStateInterface" shape="rect" coords="774,0,1151,24"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html" title="Interfaces related to choice generators and managing behavior of CG. " alt="gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface" shape="rect" coords="1161,0,1538,24"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Core server class. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="580,112,957,136"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="580,112,957,136"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="580,168,957,192"/>
 </map>
  </div></div>
@@ -128,7 +127,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a940cf004fed68f888d56c14dfab136e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a JPF instance has started but its execution is currently stopped.  <a href="#a940cf004fed68f888d56c14dfab136e1">More...</a><br /></td></tr>
 <tr class="separator:a940cf004fed68f888d56c14dfab136e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4dc6ea27e2df05a4f16dfd357dec0acf">stop</a> ()  throws JPFInspectorException</td></tr>
-<tr class="memdesc:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops an execution (like on breakpoint)  <a href="#a4dc6ea27e2df05a4f16dfd357dec0acf">More...</a><br /></td></tr>
+<tr class="memdesc:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops an execution (like on breakpoint).  <a href="#a4dc6ea27e2df05a4f16dfd357dec0acf">More...</a><br /></td></tr>
 <tr class="separator:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7644c0aa203769bba68374c0cb07ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4c7644c0aa203769bba68374c0cb07ea">start</a> ()  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a4c7644c0aa203769bba68374c0cb07ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes stopped execution.  <a href="#a4c7644c0aa203769bba68374c0cb07ea">More...</a><br /></td></tr>
@@ -142,9 +141,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a9a11e594662011fd492b60b6cbb8ffbf"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html">BreakPointStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a9a11e594662011fd492b60b6cbb8ffbf">createBreakPoint</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html">BreakPointCreationInformation</a> newBP)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:a9a11e594662011fd492b60b6cbb8ffbf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint.  <a href="#a9a11e594662011fd492b60b6cbb8ffbf">More...</a><br /></td></tr>
 <tr class="separator:a9a11e594662011fd492b60b6cbb8ffbf"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a835295e3e429bd405ba3acec21f5193e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a835295e3e429bd405ba3acec21f5193e">createAssert</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_create.html">AssertCreate</a> newAssert)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
-<tr class="memdesc:a835295e3e429bd405ba3acec21f5193e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID)  <a href="#a835295e3e429bd405ba3acec21f5193e">More...</a><br /></td></tr>
-<tr class="separator:a835295e3e429bd405ba3acec21f5193e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a72a13897af9c71756fb9081d6d75a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a6a72a13897af9c71756fb9081d6d75a2">createAssert</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html">AssertCreationInformation</a> newAssert)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
+<tr class="memdesc:a6a72a13897af9c71756fb9081d6d75a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID)  <a href="#a6a72a13897af9c71756fb9081d6d75a2">More...</a><br /></td></tr>
+<tr class="separator:a6a72a13897af9c71756fb9081d6d75a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a1b117659c4230581c31e5c5448675bcd"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a1b117659c4230581c31e5c5448675bcd">deleteBreakPoint</a> (int bpID)</td></tr>
 <tr class="memdesc:a1b117659c4230581c31e5c5448675bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the breakpoint with specified ID.  <a href="#a1b117659c4230581c31e5c5448675bcd">More...</a><br /></td></tr>
 <tr class="separator:a1b117659c4230581c31e5c5448675bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -248,7 +247,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a835295e3e429bd405ba3acec21f5193e"></a>
+<a class="anchor" id="a6a72a13897af9c71756fb9081d6d75a2"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -258,7 +257,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a> gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.createAssert </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_create.html">AssertCreate</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html">AssertCreationInformation</a>&#160;</td>
           <td class="paramname"><em>newAssert</em></td><td>)</td>
           <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_parsing_error_exception.html">JPFInspectorParsingErrorException</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
         </tr>
@@ -279,7 +278,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Get informations about state of the created/modified assertion or null if error takes place. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_handler.html#a770f440dad54f670230ad73196da657d">gov.nasa.jpf.inspector.server.breakpoints.BreakPointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a43b16f4b3ec72aa49bde661e3dcaa411">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_handler.html#a003c8277b6f066ae2df5567be406e060">gov.nasa.jpf.inspector.server.breakpoints.BreakPointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a232a9da61bfa52a26eec525003900380">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -845,7 +844,7 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 </table>
 </div><div class="memdoc">
 
-<p>Stops an execution (like on breakpoint) </p>
+<p>Stops an execution (like on breakpoint). </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ad3de2e0a6d30af40d0167bb7ec11f305">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a463604600d1f706e87ace1aeb2c4ef39">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 

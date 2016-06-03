@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -108,7 +107,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.programstate.relop.RelOpNo
   <map id="gov.nasa.jpf.inspector.server.programstate.relop.RelOpNotEqual_map" name="gov.nasa.jpf.inspector.server.programstate.relop.RelOpNotEqual_map">
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base.html" title="Base class for == and !=. " alt="gov.nasa.jpf.inspector.server.programstate.relop.RelOpEqualBase" shape="rect" coords="0,112,424,136"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base.html" title="Base class for &lt;, &lt;=, &gt;, &gt;= operators. " alt="gov.nasa.jpf.inspector.server.programstate.relop.RelOpComparableBase" shape="rect" coords="0,56,424,80"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_relation_operator.html" alt="gov.nasa.jpf.inspector.server.programstate.relop.RelationOperator" shape="rect" coords="0,0,424,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_relation_operator.html" title="An operator, such as &quot;==&quot; or &quot;!=&quot;. " alt="gov.nasa.jpf.inspector.server.programstate.relop.RelationOperator" shape="rect" coords="0,0,424,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -129,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a435cfe760e518010dfe8d12ffc960223"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_not_equal.html#a435cfe760e518010dfe8d12ffc960223">compare</a> (long left, long right)</td></tr>
 <tr class="separator:a435cfe760e518010dfe8d12ffc960223"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a89a8988e7ff80fd175542cf45f5f18d3"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base.html#a89a8988e7ff80fd175542cf45f5f18d3">compare</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_readable_value_interface.html">StateReadableValueInterface</a> left, <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_readable_value_interface.html">StateReadableValueInterface</a> right)  throws JPFInspectorIncompatibleTypesException </td></tr>
-<tr class="memdesc:a89a8988e7ff80fd175542cf45f5f18d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets true if given left and right values are of the suitable(comparable type) type.  <a href="#a89a8988e7ff80fd175542cf45f5f18d3">More...</a><br /></td></tr>
+<tr class="memdesc:a89a8988e7ff80fd175542cf45f5f18d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compares the two operands and returns the result.  <a href="#a89a8988e7ff80fd175542cf45f5f18d3">More...</a><br /></td></tr>
 <tr class="separator:a89a8988e7ff80fd175542cf45f5f18d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-methods"></a>
@@ -189,16 +188,22 @@ Static Protected Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Gets true if given left and right values are of the suitable(comparable type) type. </p>
-<p>Does not comparing "&lt;=" on references or reference with double.</p>
+<p>Compares the two operands and returns the result. </p>
+<p>TODO what does this mean: Does not comparing "&lt;=" on references or reference with double.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">left</td><td>left operand </td></tr>
-    <tr><td class="paramname">right</td><td>right operand </td></tr>
+    <tr><td class="paramname">left</td><td>The left operand. </td></tr>
+    <tr><td class="paramname">right</td><td>The right operand. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if relation holds, false if types are incompatible of relation does not hold. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if relation holds, false otherwise. </dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">JPFInspectorIncompatibleTypesException</td><td>If the two operands cannot be compared. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_relation_operator.html#ad35e4918d8de2de096c7d8035352a3ec">gov.nasa.jpf.inspector.server.programstate.relop.RelationOperator</a>.</p>
 
@@ -208,7 +213,7 @@ Static Protected Attributes</h2></td></tr>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base_html_afb31d12a03d2e24581d168c765368a4b"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base.html#afb31d12a03d2e24581d168c765368a4b">gov.nasa.jpf.inspector.server.programstate.relop.RelOpComparableBase.tryConvertToDouble</a></div><div class="ttdeci">static Double tryConvertToDouble(StateReadableValueInterface value)</div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_comparable_base_8java_source.html#l00147">RelOpComparableBase.java:147</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base_html_a1e3bca3adb8c3a790eaad60d9adf5c47"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base.html#a1e3bca3adb8c3a790eaad60d9adf5c47">gov.nasa.jpf.inspector.server.programstate.relop.RelOpComparableBase.tryConvertToChar</a></div><div class="ttdeci">static Character tryConvertToChar(StateReadableValueInterface value)</div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_comparable_base_8java_source.html#l00232">RelOpComparableBase.java:232</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_class_info_cache_html_ae730b1780420d1f2632fd9a3ffa360c1"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_class_info_cache.html#ae730b1780420d1f2632fd9a3ffa360c1">gov.nasa.jpf.inspector.utils.ClassInfoCache.ci_String</a></div><div class="ttdeci">final ClassInfo ci_String</div><div class="ttdef"><b>Definition:</b> <a href="_class_info_cache_8java_source.html#l00067">ClassInfoCache.java:67</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base_html_a89a8988e7ff80fd175542cf45f5f18d3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base.html#a89a8988e7ff80fd175542cf45f5f18d3">gov.nasa.jpf.inspector.server.programstate.relop.RelOpEqualBase.compare</a></div><div class="ttdeci">boolean compare(StateReadableValueInterface left, StateReadableValueInterface right)</div><div class="ttdoc">Gets true if given left and right values are of the suitable(comparable type) type. </div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_equal_base_8java_source.html#l00036">RelOpEqualBase.java:36</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base_html_a89a8988e7ff80fd175542cf45f5f18d3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_equal_base.html#a89a8988e7ff80fd175542cf45f5f18d3">gov.nasa.jpf.inspector.server.programstate.relop.RelOpEqualBase.compare</a></div><div class="ttdeci">boolean compare(StateReadableValueInterface left, StateReadableValueInterface right)</div><div class="ttdoc">Compares the two operands and returns the result. </div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_equal_base_8java_source.html#l00036">RelOpEqualBase.java:36</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base_html_aa1b564784dad5abf5565f080fe1a3a9f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base.html#aa1b564784dad5abf5565f080fe1a3a9f">gov.nasa.jpf.inspector.server.programstate.relop.RelOpComparableBase.tryConvertToString</a></div><div class="ttdeci">static String tryConvertToString(StateReadableValueInterface value)</div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_comparable_base_8java_source.html#l00215">RelOpComparableBase.java:215</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base_html_a42b354e4aa57e673f728b1c2c036c69b"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop_1_1_rel_op_comparable_base.html#a42b354e4aa57e673f728b1c2c036c69b">gov.nasa.jpf.inspector.server.programstate.relop.RelOpComparableBase.tryConvertToLong</a></div><div class="ttdeci">static Long tryConvertToLong(StateReadableValueInterface value)</div><div class="ttdef"><b>Definition:</b> <a href="_rel_op_comparable_base_8java_source.html#l00173">RelOpComparableBase.java:173</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_class_info_cache_html_acfc346af97145709152a5d64eacb2828"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_class_info_cache.html#acfc346af97145709152a5d64eacb2828">gov.nasa.jpf.inspector.utils.ClassInfoCache.isBoxedPrimitiveType</a></div><div class="ttdeci">boolean isBoxedPrimitiveType(ClassInfo ci)</div><div class="ttdef"><b>Definition:</b> <a href="_class_info_cache_8java_source.html#l00135">ClassInfoCache.java:135</a></div></div>

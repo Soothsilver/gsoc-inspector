@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -108,7 +107,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.jpf.DFSearchInspector:</di
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.png" usemap="#gov.nasa.jpf.inspector.server.jpf.DFSearchInspector_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.jpf.DFSearchInspector_map" name="gov.nasa.jpf.inspector.server.jpf.DFSearchInspector_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html" title="The search class has to implement this interface to be able to use in the as a search class in the in..." alt="gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension" shape="rect" coords="358,0,706,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html" title="When using JPF Inspector, your search class MUST implement this interface. " alt="gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension" shape="rect" coords="358,0,706,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -117,8 +116,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae6284f8ae3e033ab7582010664743897"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ae6284f8ae3e033ab7582010664743897">DFSearchInspector</a> (Config config, VM vm)</td></tr>
 <tr class="separator:ae6284f8ae3e033ab7582010664743897"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc5b589303dc4727f535e01562c6e041"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#adc5b589303dc4727f535e01562c6e041">setInspector</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html">JPFInspector</a> <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a>)</td></tr>
+<tr class="memdesc:adc5b589303dc4727f535e01562c6e041"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementor should use this method to remember the reference to JPF Inspector.  <a href="#adc5b589303dc4727f535e01562c6e041">More...</a><br /></td></tr>
 <tr class="separator:adc5b589303dc4727f535e01562c6e041"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a38333f3c6158ad2b2b6dbc8688b2d6bb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#a38333f3c6158ad2b2b6dbc8688b2d6bb">terminate</a> ()</td></tr>
+<tr class="memdesc:a38333f3c6158ad2b2b6dbc8688b2d6bb"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code:  <a href="#a38333f3c6158ad2b2b6dbc8688b2d6bb">More...</a><br /></td></tr>
 <tr class="separator:a38333f3c6158ad2b2b6dbc8688b2d6bb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -174,6 +175,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Implementor should use this method to remember the reference to JPF Inspector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inspector</td><td>The running JPF Inspector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#ac3766f057f695b446441f048415d07a6">gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension</a>.</p>
 
 <p>Definition at line <a class="el" href="_d_f_search_inspector_8java_source.html#l00038">38</a> of file <a class="el" href="_d_f_search_inspector_8java_source.html">DFSearchInspector.java</a>.</p>
@@ -194,10 +203,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code: </p>
+<pre>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a> != null) {</div><div class="line">  <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a>.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">getStopHolder</a>().<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">terminating</a>();</div><div class="line">}</div></div><!-- fragment --> 
+</pre> 
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#a681234426cc73a32683716de6aa68490">gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension</a>.</p>
 
 <p>Definition at line <a class="el" href="_d_f_search_inspector_8java_source.html#l00043">43</a> of file <a class="el" href="_d_f_search_inspector_8java_source.html">DFSearchInspector.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                           {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    super.terminate();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a> != null) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a>.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">getStopHolder</a>().<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">terminating</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_html_ae952010e74e90389ddb3cef055a0d592"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">gov.nasa.jpf.inspector.server.jpf.JPFInspector.getStopHolder</a></div><div class="ttdeci">StopHolder getStopHolder()</div><div class="ttdef"><b>Definition:</b> <a href="_j_p_f_inspector_8java_source.html#l00110">JPFInspector.java:110</a></div></div>
+<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                           {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    super.terminate();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a> != null) {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">inspector</a>.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">getStopHolder</a>().<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">terminating</a>();</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    }</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_html_ae952010e74e90389ddb3cef055a0d592"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">gov.nasa.jpf.inspector.server.jpf.JPFInspector.getStopHolder</a></div><div class="ttdeci">StopHolder getStopHolder()</div><div class="ttdef"><b>Definition:</b> <a href="_j_p_f_inspector_8java_source.html#l00113">JPFInspector.java:113</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector_html_ad69f2b0807d745d900c8e341351d8469"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#ad69f2b0807d745d900c8e341351d8469">gov.nasa.jpf.inspector.server.jpf.DFSearchInspector.inspector</a></div><div class="ttdeci">JPFInspector inspector</div><div class="ttdef"><b>Definition:</b> <a href="_d_f_search_inspector_8java_source.html#l00030">DFSearchInspector.java:30</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder_html_aa7cffa6127510e49385ce5dce81b1878"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">gov.nasa.jpf.inspector.server.jpf.StopHolder.terminating</a></div><div class="ttdeci">boolean terminating</div><div class="ttdef"><b>Definition:</b> <a href="_stop_holder_8java_source.html#l00049">StopHolder.java:49</a></div></div>
 </div><!-- fragment -->

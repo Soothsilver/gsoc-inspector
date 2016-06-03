@@ -9,7 +9,7 @@ var searchData=
   ['inspectorstateimpl_2ejava',['InspectorStateImpl.java',['../_inspector_state_impl_8java.html',1,'']]],
   ['instructionposition_2ejava',['InstructionPosition.java',['../_instruction_position_8java.html',1,'']]],
   ['instructionpositionimpl_2ejava',['InstructionPositionImpl.java',['../_instruction_position_impl_8java.html',1,'']]],
-  ['instructiontypes_2ejava',['InstructionTypes.java',['../_instruction_types_8java.html',1,'']]],
+  ['instructiontype_2ejava',['InstructionType.java',['../_instruction_type_8java.html',1,'']]],
   ['instructionwrapper_2ejava',['InstructionWrapper.java',['../_instruction_wrapper_8java.html',1,'']]],
   ['internalassertholder_2ejava',['InternalAssertHolder.java',['../_internal_assert_holder_8java.html',1,'']]],
   ['internalbreakpointholder_2ejava',['InternalBreakpointHolder.java',['../_internal_breakpoint_holder_8java.html',1,'']]]

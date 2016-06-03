@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -105,7 +104,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.AssertStatus:</div>
  <div class="center">
   <img src="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.png" usemap="#gov.nasa.jpf.inspector.interfaces.AssertStatus_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.interfaces.AssertStatus_map" name="gov.nasa.jpf.inspector.interfaces.AssertStatus_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_create.html" alt="gov.nasa.jpf.inspector.interfaces.AssertCreate" shape="rect" coords="0,112,373,136"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html" alt="gov.nasa.jpf.inspector.interfaces.AssertCreationInformation" shape="rect" coords="0,112,373,136"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html" title="All information about a specific breakpoint. " alt="gov.nasa.jpf.inspector.interfaces.BreakPointStatus" shape="rect" coords="383,112,756,136"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html" title="All information typed by the user who executed the &quot;create breakpoint&quot; command. " alt="gov.nasa.jpf.inspector.interfaces.BreakPointCreationInformation" shape="rect" coords="0,56,373,80"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html" title="All information typed by the user who executed the &quot;create breakpoint&quot; command. " alt="gov.nasa.jpf.inspector.interfaces.BreakPointCreationInformation" shape="rect" coords="383,56,756,80"/>
@@ -121,21 +120,23 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3d4b293750a5334ea0249eae08d1365"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html#ae3d4b293750a5334ea0249eae08d1365">getNormalizedCondition</a> ()</td></tr>
 <tr class="memdesc:ae3d4b293750a5334ea0249eae08d1365"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets normalized assertion expression.  <a href="#ae3d4b293750a5334ea0249eae08d1365">More...</a><br /></td></tr>
 <tr class="separator:ae3d4b293750a5334ea0249eae08d1365"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a61a47b677f13657fc7d6b81d605c8133"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_create.html#a61a47b677f13657fc7d6b81d605c8133">getPosition</a> ()</td></tr>
-<tr class="memdesc:a61a47b677f13657fc7d6b81d605c8133"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string which specification of the position where assertion should hit.  <a href="#a61a47b677f13657fc7d6b81d605c8133">More...</a><br /></td></tr>
-<tr class="separator:a61a47b677f13657fc7d6b81d605c8133"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a69127890ec21b8d0e8ca77c146196211"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_create.html#a69127890ec21b8d0e8ca77c146196211">getCondition</a> ()</td></tr>
-<tr class="memdesc:a69127890ec21b8d0e8ca77c146196211"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets expression which should not hold to break the expression.  <a href="#a69127890ec21b8d0e8ca77c146196211">More...</a><br /></td></tr>
-<tr class="separator:a69127890ec21b8d0e8ca77c146196211"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6f9f3071c32374d4d55fba9c68ac813b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html#a6f9f3071c32374d4d55fba9c68ac813b">getPosition</a> ()</td></tr>
+<tr class="memdesc:a6f9f3071c32374d4d55fba9c68ac813b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets string which specification of the position where assertion should hit.  <a href="#a6f9f3071c32374d4d55fba9c68ac813b">More...</a><br /></td></tr>
+<tr class="separator:a6f9f3071c32374d4d55fba9c68ac813b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afe7699e7d0df042709d728b5a9e870bc"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html#afe7699e7d0df042709d728b5a9e870bc">getCondition</a> ()</td></tr>
+<tr class="memdesc:afe7699e7d0df042709d728b5a9e870bc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets expression which should not hold to break the expression.  <a href="#afe7699e7d0df042709d728b5a9e870bc">More...</a><br /></td></tr>
+<tr class="separator:afe7699e7d0df042709d728b5a9e870bc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a261d8c7de48f0776fbe0b4222c568070"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a261d8c7de48f0776fbe0b4222c568070">getBPID</a> ()</td></tr>
 <tr class="memdesc:a261d8c7de48f0776fbe0b4222c568070"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get unique BP identifier.  <a href="#a261d8c7de48f0776fbe0b4222c568070">More...</a><br /></td></tr>
 <tr class="separator:a261d8c7de48f0776fbe0b4222c568070"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa7da9b019da9ee304abd59759f73d14e"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#aa7da9b019da9ee304abd59759f73d14e">getBPExpression</a> ()</td></tr>
 <tr class="separator:aa7da9b019da9ee304abd59759f73d14e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3417b55955320c81f68b2f2dc5eef7d9"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a3417b55955320c81f68b2f2dc5eef7d9">getName</a> ()</td></tr>
+<tr class="memdesc:a3417b55955320c81f68b2f2dc5eef7d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the breakpoint, if any.  <a href="#a3417b55955320c81f68b2f2dc5eef7d9">More...</a><br /></td></tr>
 <tr class="separator:a3417b55955320c81f68b2f2dc5eef7d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:af471d172e5a442597709b20afe3d28e4"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_states.html">BreakPointStates</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#af471d172e5a442597709b20afe3d28e4">getState</a> ()</td></tr>
-<tr class="separator:af471d172e5a442597709b20afe3d28e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ba6c684fa3b49ad838a9c775b33c786"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html">BreakpointState</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a5ba6c684fa3b49ad838a9c775b33c786">getState</a> ()</td></tr>
+<tr class="memdesc:a5ba6c684fa3b49ad838a9c775b33c786"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the action that should occur when the breakpoint is hit.  <a href="#a5ba6c684fa3b49ad838a9c775b33c786">More...</a><br /></td></tr>
+<tr class="separator:a5ba6c684fa3b49ad838a9c775b33c786"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0732dfa7c7e94e3e28e7348a0594702b"><td class="memItemLeft" align="right" valign="top">Integer&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a0732dfa7c7e94e3e28e7348a0594702b">bpHitCountLowerBound</a> ()</td></tr>
 <tr class="memdesc:a0732dfa7c7e94e3e28e7348a0594702b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specify lower bound for breakpoint's hitCounter.  <a href="#a0732dfa7c7e94e3e28e7348a0594702b">More...</a><br /></td></tr>
 <tr class="separator:a0732dfa7c7e94e3e28e7348a0594702b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -341,7 +342,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 
 </div>
 </div>
-<a class="anchor" id="a69127890ec21b8d0e8ca77c146196211"></a>
+<a class="anchor" id="afe7699e7d0df042709d728b5a9e870bc"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -349,7 +350,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String gov.nasa.jpf.inspector.interfaces.AssertCreate.getCondition </td>
+          <td class="memname">String gov.nasa.jpf.inspector.interfaces.AssertCreationInformation.getCondition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -472,6 +473,9 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 </table>
 </div><div class="memdoc">
 
+<p>Gets the name of the breakpoint, if any. </p>
+<p>If no name was specified, returns null. </p>
+
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1commands_1_1_cmd_breakpoint_create_1_1_console_breakpoint_creation_expression.html#aea9526b3c8cdf0d785f137401ab8c4fb">gov.nasa.jpf.inspector.client.commands.CmdBreakpointCreate.ConsoleBreakpointCreationExpression</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a7d69cad483a1ac9dc02e4f4459ec2a6d">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>.</p>
 
 </div>
@@ -539,7 +543,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 
 </div>
 </div>
-<a class="anchor" id="a61a47b677f13657fc7d6b81d605c8133"></a>
+<a class="anchor" id="a6f9f3071c32374d4d55fba9c68ac813b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -547,7 +551,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">String gov.nasa.jpf.inspector.interfaces.AssertCreate.getPosition </td>
+          <td class="memname">String gov.nasa.jpf.inspector.interfaces.AssertCreationInformation.getPosition </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -567,7 +571,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 
 </div>
 </div>
-<a class="anchor" id="af471d172e5a442597709b20afe3d28e4"></a>
+<a class="anchor" id="a5ba6c684fa3b49ad838a9c775b33c786"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -575,7 +579,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_states.html">BreakPointStates</a> gov.nasa.jpf.inspector.interfaces.BreakPointCreationInformation.getState </td>
+          <td class="memname"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html">BreakpointState</a> gov.nasa.jpf.inspector.interfaces.BreakPointCreationInformation.getState </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -588,7 +592,9 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1commands_1_1_cmd_breakpoint_create_1_1_console_breakpoint_creation_expression.html#a1dba274145a2220c1f5d4a45848376b7">gov.nasa.jpf.inspector.client.commands.CmdBreakpointCreate.ConsoleBreakpointCreationExpression</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a7c48557c379be25a094fac839a9128b4">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>.</p>
+<p>Gets the action that should occur when the breakpoint is hit. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1commands_1_1_cmd_breakpoint_create_1_1_console_breakpoint_creation_expression.html#af5e46eb0c226fafc97c304961d71e53a">gov.nasa.jpf.inspector.client.commands.CmdBreakpointCreate.ConsoleBreakpointCreationExpression</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a5de404d1357344c5e0b969d6850105c6">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>.</p>
 
 </div>
 </div>

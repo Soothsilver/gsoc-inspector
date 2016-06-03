@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -99,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">gov.nasa.jpf.inspector.interfaces.CommandsInterface Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>The server must implement this interface and the client uses it to start or stop execution and to do stepping.  
+ <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.interfaces.CommandsInterface:</div>
 <div class="dyncontent">
@@ -107,7 +109,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.CommandsInterface:</di
   <map id="gov.nasa.jpf.inspector.interfaces.CommandsInterface_map" name="gov.nasa.jpf.inspector.interfaces.CommandsInterface_map">
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html" title="Interface provided by JPFInspector back-end (&quot;server&quot;) part. " alt="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface" shape="rect" coords="0,56,377,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html" title="Handles start and stop commands. " alt="gov.nasa.jpf.inspector.server.breakpoints.CommandsManager" shape="rect" coords="387,56,764,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Core server class. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="0,112,377,136"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="0,112,377,136"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,377,192"/>
 </map>
  </div></div>
@@ -115,6 +117,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.CommandsInterface:</di
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html">InspectorStates</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO this enum is used EVERYWHERE, and should be documented more throughly, also maybe renamed.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -125,7 +128,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a940cf004fed68f888d56c14dfab136e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a JPF instance has started but its execution is currently stopped.  <a href="#a940cf004fed68f888d56c14dfab136e1">More...</a><br /></td></tr>
 <tr class="separator:a940cf004fed68f888d56c14dfab136e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4dc6ea27e2df05a4f16dfd357dec0acf">stop</a> ()  throws JPFInspectorException</td></tr>
-<tr class="memdesc:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops an execution (like on breakpoint)  <a href="#a4dc6ea27e2df05a4f16dfd357dec0acf">More...</a><br /></td></tr>
+<tr class="memdesc:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops an execution (like on breakpoint).  <a href="#a4dc6ea27e2df05a4f16dfd357dec0acf">More...</a><br /></td></tr>
 <tr class="separator:a4dc6ea27e2df05a4f16dfd357dec0acf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a4c7644c0aa203769bba68374c0cb07ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4c7644c0aa203769bba68374c0cb07ea">start</a> ()  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a4c7644c0aa203769bba68374c0cb07ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes stopped execution.  <a href="#a4c7644c0aa203769bba68374c0cb07ea">More...</a><br /></td></tr>
@@ -136,8 +139,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a6a6a733100d8162d5f18063519a88257"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00025">25</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<div class="textblock"><p>The server must implement this interface and the client uses it to start or stop execution and to do stepping. </p>
+
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a6a733100d8162d5f18063519a88257"></a>
 <div class="memitem">
@@ -227,7 +231,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Stops an execution (like on breakpoint) </p>
+<p>Stops an execution (like on breakpoint). </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ad3de2e0a6d30af40d0167bb7ec11f305">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a463604600d1f706e87ace1aeb2c4ef39">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 

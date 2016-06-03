@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -98,6 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">gov.nasa.jpf.inspector.client.parser.CommandParserInterface Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>An ANTLR parser that takes a string and returns a <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command.html">ClientCommand</a>.  
+ <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_interface.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.client.parser.CommandParserInterface:</div>
 <div class="dyncontent">
@@ -112,21 +114,21 @@ Inheritance diagram for gov.nasa.jpf.inspector.client.parser.CommandParserInterf
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a14ea3eaa90add073b3248a9792a26ca9"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command_interface.html">ClientCommandInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_interface.html#a14ea3eaa90add073b3248a9792a26ca9">parseCommands</a> (String cmd)  throws JPFInspectorParsingErrorException</td></tr>
-<tr class="memdesc:a14ea3eaa90add073b3248a9792a26ca9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parse commands from user.  <a href="#a14ea3eaa90add073b3248a9792a26ca9">More...</a><br /></td></tr>
-<tr class="separator:a14ea3eaa90add073b3248a9792a26ca9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0b4c3e76059fc53662dc05ce422e302b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command_interface.html">ClientCommandInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_interface.html#a0b4c3e76059fc53662dc05ce422e302b">parseCommand</a> (String cmd)  throws JPFInspectorParsingErrorException</td></tr>
+<tr class="memdesc:a0b4c3e76059fc53662dc05ce422e302b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses a command and returns its representation.  <a href="#a0b4c3e76059fc53662dc05ce422e302b">More...</a><br /></td></tr>
+<tr class="separator:a0b4c3e76059fc53662dc05ce422e302b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><dl class="section author"><dt>Author</dt><dd>Alf </dd></dl>
+<div class="textblock"><p>An ANTLR parser that takes a string and returns a <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command.html">ClientCommand</a>. </p>
 
-<p>Definition at line <a class="el" href="_command_parser_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_command_parser_interface_8java_source.html">CommandParserInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_command_parser_interface_8java_source.html#l00029">29</a> of file <a class="el" href="_command_parser_interface_8java_source.html">CommandParserInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a14ea3eaa90add073b3248a9792a26ca9"></a>
+<a class="anchor" id="a0b4c3e76059fc53662dc05ce422e302b"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command_interface.html">ClientCommandInterface</a> gov.nasa.jpf.inspector.client.parser.CommandParserInterface.parseCommands </td>
+          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_client_command_interface.html">ClientCommandInterface</a> gov.nasa.jpf.inspector.client.parser.CommandParserInterface.parseCommand </td>
           <td>(</td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>cmd</em></td><td>)</td>
@@ -135,16 +137,16 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Parse commands from user. </p>
+<p>Parses a command and returns its representation. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">cmd</td><td>String with command to parse. </td></tr>
+    <tr><td class="paramname">cmd</td><td>String with the command to parse. </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Representation of the parsed command. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_recorded_commands.html#a1c3baa353573d0ba99b2e402b7da5505">gov.nasa.jpf.inspector.client.parser.CommandParserRecordedCommands</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_user_commands.html#a0d5ab51ec113bbfc539c1ded50eccafa">gov.nasa.jpf.inspector.client.parser.CommandParserUserCommands</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_recorded_commands.html#ac530c362857cf5282fdf66a036585b8f">gov.nasa.jpf.inspector.client.parser.CommandParserRecordedCommands</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1_command_parser_user_commands.html#af1d43112f959a8e6e59b8e38e25b484d">gov.nasa.jpf.inspector.client.parser.CommandParserUserCommands</a>.</p>
 
 </div>
 </div>

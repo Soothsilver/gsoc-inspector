@@ -13,7 +13,7 @@ var searchData=
   ['inspectorstates',['InspectorStates',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html',1,'gov::nasa::jpf::inspector::interfaces::CommandsInterface']]],
   ['instructionposition',['InstructionPosition',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html',1,'gov::nasa::jpf::inspector::interfaces']]],
   ['instructionpositionimpl',['InstructionPositionImpl',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]],
-  ['instructiontypes',['InstructionTypes',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_types.html',1,'gov::nasa::jpf::inspector::interfaces']]],
+  ['instructiontype',['InstructionType',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_type.html',1,'gov::nasa::jpf::inspector::interfaces']]],
   ['instructionwrapper',['InstructionWrapper',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_instruction_wrapper.html',1,'gov::nasa::jpf::inspector::utils']]],
   ['internalassertholder',['InternalAssertHolder',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_internal_assert_holder.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]],
   ['internalbreakpointholder',['InternalBreakpointHolder',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_internal_breakpoint_holder.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]],

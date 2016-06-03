@@ -9,7 +9,7 @@ var searchData=
   ['breakpointmodes',['BreakPointModes',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_modes.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]],
   ['breakpointpartialmemento',['BreakPointPartialMemento',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_handler_1_1_break_point_partial_memento.html',1,'gov::nasa::jpf::inspector::server::breakpoints::BreakPointHandler']]],
   ['breakpointsmemento',['BreakPointsMemento',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_handler_1_1_break_points_memento.html',1,'gov::nasa::jpf::inspector::server::breakpoints::BreakPointHandler']]],
-  ['breakpointstates',['BreakPointStates',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_states.html',1,'gov::nasa::jpf::inspector::interfaces']]],
+  ['breakpointstate',['BreakpointState',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html',1,'gov::nasa::jpf::inspector::interfaces']]],
   ['breakpointstatus',['BreakPointStatus',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html',1,'gov::nasa::jpf::inspector::interfaces']]],
   ['breakpointstatusimpl',['BreakPointStatusImpl',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]]
 ];

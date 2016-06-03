@@ -41,7 +41,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div id="navrow1" class="tabs">
     <ul class="tablist">
       <li><a href="index.html"><span>Main&#160;Page</span></a></li>
-      <li><a href="pages.html"><span>Related&#160;Pages</span></a></li>
       <li><a href="namespaces.html"><span>Packages</span></a></li>
       <li class="current"><a href="annotated.html"><span>Classes</span></a></li>
       <li><a href="files.html"><span>Files</span></a></li>
@@ -111,7 +110,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.jpf.SearchWrapper:</div>
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.png" usemap="#gov.nasa.jpf.inspector.server.jpf.SearchWrapper_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.jpf.SearchWrapper_map" name="gov.nasa.jpf.inspector.server.jpf.SearchWrapper_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html" title="The search class has to implement this interface to be able to use in the as a search class in the in..." alt="gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension" shape="rect" coords="358,0,706,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html" title="When using JPF Inspector, your search class MUST implement this interface. " alt="gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension" shape="rect" coords="358,0,706,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -119,11 +118,13 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.jpf.SearchWrapper:</div>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:abf460a9b5ace43a996e484bf96f51673"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#abf460a9b5ace43a996e484bf96f51673">SearchWrapper</a> (Config config, VM vm)</td></tr>
 <tr class="separator:abf460a9b5ace43a996e484bf96f51673"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aabc1c678ea8c24dd60788589f1825502"><td class="memItemLeft" align="right" valign="top">Search&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#aabc1c678ea8c24dd60788589f1825502">getWrapSearch</a> ()</td></tr>
-<tr class="separator:aabc1c678ea8c24dd60788589f1825502"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afaf8f1a18dca5f340882ffde8db5ee30"><td class="memItemLeft" align="right" valign="top">Search&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#afaf8f1a18dca5f340882ffde8db5ee30">getWrappedSearch</a> ()</td></tr>
+<tr class="separator:afaf8f1a18dca5f340882ffde8db5ee30"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ab93e60e4c198bbe63806995580d3ea67"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab93e60e4c198bbe63806995580d3ea67">setInspector</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html">JPFInspector</a> <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">inspector</a>)</td></tr>
+<tr class="memdesc:ab93e60e4c198bbe63806995580d3ea67"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementor should use this method to remember the reference to JPF Inspector.  <a href="#ab93e60e4c198bbe63806995580d3ea67">More...</a><br /></td></tr>
 <tr class="separator:ab93e60e4c198bbe63806995580d3ea67"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a2368d7c9f74aa0574e64e0fd3e7a4bf1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#a2368d7c9f74aa0574e64e0fd3e7a4bf1">terminate</a> ()</td></tr>
+<tr class="memdesc:a2368d7c9f74aa0574e64e0fd3e7a4bf1"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code:  <a href="#a2368d7c9f74aa0574e64e0fd3e7a4bf1">More...</a><br /></td></tr>
 <tr class="separator:a2368d7c9f74aa0574e64e0fd3e7a4bf1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14f83e0fd1c8a05d44f784c353e05261"><td class="memItemLeft" align="right" valign="top">Config&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#a14f83e0fd1c8a05d44f784c353e05261">getConfig</a> ()</td></tr>
 <tr class="separator:a14f83e0fd1c8a05d44f784c353e05261"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -210,6 +211,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
 Package Functions</h2></td></tr>
 <tr class="memitem:ad0bf507c1c3e9478a91051c12179e3d3"><td class="memItemLeft" align="right" valign="top">public&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ad0bf507c1c3e9478a91051c12179e3d3">getWrappedSearch</a> (Class&lt; T &gt; type)</td></tr>
+<tr class="memdesc:ad0bf507c1c3e9478a91051c12179e3d3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets wrapped object with type checks.  <a href="#ad0bf507c1c3e9478a91051c12179e3d3">More...</a><br /></td></tr>
 <tr class="separator:ad0bf507c1c3e9478a91051c12179e3d3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-static-methods"></a>
@@ -595,6 +597,25 @@ Private Attributes</h2></td></tr>
 </div><!-- fragment -->
 </div>
 </div>
+<a class="anchor" id="afaf8f1a18dca5f340882ffde8db5ee30"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Search gov.nasa.jpf.inspector.server.jpf.SearchWrapper.getWrappedSearch </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section return"><dt>Returns</dt><dd>Gets wrapped object </dd></dl>
+
+<p>Definition at line <a class="el" href="_search_wrapper_8java_source.html#l00077">77</a> of file <a class="el" href="_search_wrapper_8java_source.html">SearchWrapper.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                    {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#afaf8f1a18dca5f340882ffde8db5ee30">getWrappedSearch</a>(Search.class);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper_html_afaf8f1a18dca5f340882ffde8db5ee30"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#afaf8f1a18dca5f340882ffde8db5ee30">gov.nasa.jpf.inspector.server.jpf.SearchWrapper.getWrappedSearch</a></div><div class="ttdeci">Search getWrappedSearch()</div><div class="ttdef"><b>Definition:</b> <a href="_search_wrapper_8java_source.html#l00077">SearchWrapper.java:77</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="ad0bf507c1c3e9478a91051c12179e3d3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -616,29 +637,12 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Gets wrapped object with type checks. If provided type is incompatible null is returned. </dd></dl>
+
+<p>Gets wrapped object with type checks. </p>
+<p>If provided type is incompatible ,null is returned. </p>
 
 <p>Definition at line <a class="el" href="_search_wrapper_8java_source.html#l00084">84</a> of file <a class="el" href="_search_wrapper_8java_source.html">SearchWrapper.java</a>.</p>
 <div class="fragment"><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;                                                {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <span class="keywordflow">if</span> (type.isInstance(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ae46e0c0a356fe88167f587b651343b42">search</a>)) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">return</span> type.cast(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ae46e0c0a356fe88167f587b651343b42">search</a>);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper_html_ae46e0c0a356fe88167f587b651343b42"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ae46e0c0a356fe88167f587b651343b42">gov.nasa.jpf.inspector.server.jpf.SearchWrapper.search</a></div><div class="ttdeci">void search()</div><div class="ttdef"><b>Definition:</b> <a href="_search_wrapper_8java_source.html#l00110">SearchWrapper.java:110</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aabc1c678ea8c24dd60788589f1825502"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Search gov.nasa.jpf.inspector.server.jpf.SearchWrapper.getWrapSearch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Gets wrapped object </dd></dl>
-
-<p>Definition at line <a class="el" href="_search_wrapper_8java_source.html#l00077">77</a> of file <a class="el" href="_search_wrapper_8java_source.html">SearchWrapper.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                 {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ad0bf507c1c3e9478a91051c12179e3d3">getWrappedSearch</a>(Search.class);</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper_html_ad0bf507c1c3e9478a91051c12179e3d3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ad0bf507c1c3e9478a91051c12179e3d3">gov.nasa.jpf.inspector.server.jpf.SearchWrapper.getWrappedSearch</a></div><div class="ttdeci">public&lt; T &gt; T getWrappedSearch(Class&lt; T &gt; type)</div><div class="ttdef"><b>Definition:</b> <a href="_search_wrapper_8java_source.html#l00084">SearchWrapper.java:84</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -994,6 +998,14 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Implementor should use this method to remember the reference to JPF Inspector. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">inspector</td><td>The running JPF Inspector. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#ac3766f057f695b446441f048415d07a6">gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension</a>.</p>
 
 <p>Definition at line <a class="el" href="_search_wrapper_8java_source.html#l00092">92</a> of file <a class="el" href="_search_wrapper_8java_source.html">SearchWrapper.java</a>.</p>
@@ -1069,12 +1081,16 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code: </p>
+<pre>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">inspector</a> != null) {</div><div class="line">  <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">inspector</a>.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">getStopHolder</a>().<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">terminating</a>();</div><div class="line">}</div></div><!-- fragment --> 
+</pre> 
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#a681234426cc73a32683716de6aa68490">gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension</a>.</p>
 
 <p>Definition at line <a class="el" href="_search_wrapper_8java_source.html#l00097">97</a> of file <a class="el" href="_search_wrapper_8java_source.html">SearchWrapper.java</a>.</p>
 <div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                           {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ae46e0c0a356fe88167f587b651343b42">search</a>.terminate();</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">inspector</a> != null) {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">inspector</a>.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">getStopHolder</a>().<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">terminating</a>();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    }</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper_html_ae46e0c0a356fe88167f587b651343b42"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ae46e0c0a356fe88167f587b651343b42">gov.nasa.jpf.inspector.server.jpf.SearchWrapper.search</a></div><div class="ttdeci">void search()</div><div class="ttdef"><b>Definition:</b> <a href="_search_wrapper_8java_source.html#l00110">SearchWrapper.java:110</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper_html_ab36c021b698a215395d5ea85b8036b3c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab36c021b698a215395d5ea85b8036b3c">gov.nasa.jpf.inspector.server.jpf.SearchWrapper.inspector</a></div><div class="ttdeci">JPFInspector inspector</div><div class="ttdef"><b>Definition:</b> <a href="_search_wrapper_8java_source.html#l00047">SearchWrapper.java:47</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_html_ae952010e74e90389ddb3cef055a0d592"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">gov.nasa.jpf.inspector.server.jpf.JPFInspector.getStopHolder</a></div><div class="ttdeci">StopHolder getStopHolder()</div><div class="ttdef"><b>Definition:</b> <a href="_j_p_f_inspector_8java_source.html#l00110">JPFInspector.java:110</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_html_ae952010e74e90389ddb3cef055a0d592"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#ae952010e74e90389ddb3cef055a0d592">gov.nasa.jpf.inspector.server.jpf.JPFInspector.getStopHolder</a></div><div class="ttdeci">StopHolder getStopHolder()</div><div class="ttdef"><b>Definition:</b> <a href="_j_p_f_inspector_8java_source.html#l00113">JPFInspector.java:113</a></div></div>
 <div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder_html_aa7cffa6127510e49385ce5dce81b1878"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aa7cffa6127510e49385ce5dce81b1878">gov.nasa.jpf.inspector.server.jpf.StopHolder.terminating</a></div><div class="ttdeci">boolean terminating</div><div class="ttdef"><b>Definition:</b> <a href="_stop_holder_8java_source.html#l00049">StopHolder.java:49</a></div></div>
 </div><!-- fragment -->
 </div>
