@@ -92,7 +92,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gov.nasa.jpf.inspector.migration.MigrationUtilities Class Reference</div>  </div>
@@ -104,151 +103,24 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
-<tr class="memitem:ab67c2959e094b3c63c4a247ba876e091"><td class="memItemLeft" align="right" valign="top">static Instruction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#ab67c2959e094b3c63c4a247ba876e091">getLastInstruction</a> (VM vm)</td></tr>
-<tr class="separator:ab67c2959e094b3c63c4a247ba876e091"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a59b01084fb64116caedf3fb068af3ae4"><td class="memItemLeft" align="right" valign="top">static ChoiceGenerator&lt;?&gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a59b01084fb64116caedf3fb068af3ae4">getLastChoiceGenerator</a> (VM vm)</td></tr>
-<tr class="separator:a59b01084fb64116caedf3fb068af3ae4"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a391b83af6df7665cda87709b6a8fcc05"><td class="memItemLeft" align="right" valign="top">static ThreadInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a391b83af6df7665cda87709b6a8fcc05">getLastThreadInfo</a> (VM vm)</td></tr>
-<tr class="separator:a391b83af6df7665cda87709b6a8fcc05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6ee047cf88e4d11e9cd152dcf679d268"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a6ee047cf88e4d11e9cd152dcf679d268">getThreadNumber</a> (VM vm)</td></tr>
-<tr class="separator:a6ee047cf88e4d11e9cd152dcf679d268"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a39f88c90978607eee2a5773557848035"><td class="memItemLeft" align="right" valign="top">static ClassInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a39f88c90978607eee2a5773557848035">getResolvedClassInfo</a> (String className)</td></tr>
 <tr class="separator:a39f88c90978607eee2a5773557848035"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a758f3ec518fcb042f6ed46c36b2c342c"><td class="memItemLeft" align="right" valign="top">static ClassInfo[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a758f3ec518fcb042f6ed46c36b2c342c">getLoadedClasses</a> ()</td></tr>
 <tr class="memdesc:a758f3ec518fcb042f6ed46c36b2c342c"><td class="mdescLeft">&#160;</td><td class="mdescRight">Replaces ClassInfo.getLoadedClass().  <a href="#a758f3ec518fcb042f6ed46c36b2c342c">More...</a><br /></td></tr>
 <tr class="separator:a758f3ec518fcb042f6ed46c36b2c342c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a97cf532b164e74cbdc4e0583f0e1b4e7"><td class="memItemLeft" align="right" valign="top">static ElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a97cf532b164e74cbdc4e0583f0e1b4e7">getLastElementInfo</a> (VM vm)</td></tr>
-<tr class="memdesc:a97cf532b164e74cbdc4e0583f0e1b4e7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last ElementInfo manipulated via specific functions of the InspectorListener.  <a href="#a97cf532b164e74cbdc4e0583f0e1b4e7">More...</a><br /></td></tr>
-<tr class="separator:a97cf532b164e74cbdc4e0583f0e1b4e7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a66361412e707c57651b239672c9ae40b"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a66361412e707c57651b239672c9ae40b">setLastElementInfo</a> (ElementInfo <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">lastElementInfo</a>)</td></tr>
-<tr class="memdesc:a66361412e707c57651b239672c9ae40b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remembers the last manipulated ElementInfo as a global variable.  <a href="#a66361412e707c57651b239672c9ae40b">More...</a><br /></td></tr>
-<tr class="separator:a66361412e707c57651b239672c9ae40b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a91fc3768c86a969ad513772432365c56"><td class="memItemLeft" align="right" valign="top">static StaticElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a91fc3768c86a969ad513772432365c56">getStaticElementInfoFromName</a> (String varName)</td></tr>
 <tr class="memdesc:a91fc3768c86a969ad513772432365c56"><td class="mdescLeft">&#160;</td><td class="mdescRight">I still don't understand this...  <a href="#a91fc3768c86a969ad513772432365c56">More...</a><br /></td></tr>
 <tr class="separator:a91fc3768c86a969ad513772432365c56"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8af0a6e27e2005f167bace752c444f20"><td class="memItemLeft" align="right" valign="top">static ClassInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a8af0a6e27e2005f167bace752c444f20">getResolvedClassInfo_StateValueStackSlot</a> (String className)</td></tr>
 <tr class="memdesc:a8af0a6e27e2005f167bace752c444f20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Method called from within <a class="el" href="_state_value_stack_slot_8java.html">StateValueStackSlot.java</a> only, under special circumstances, so it may call for a different migration that all the others (the others only call basic primitives and system types (Object, String)).  <a href="#a8af0a6e27e2005f167bace752c444f20">More...</a><br /></td></tr>
 <tr class="separator:a8af0a6e27e2005f167bace752c444f20"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
-Static Private Attributes</h2></td></tr>
-<tr class="memitem:a7d594382adbcf28eddc9daa859e7b03a"><td class="memItemLeft" align="right" valign="top">static ElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">lastElementInfo</a></td></tr>
-<tr class="separator:a7d594382adbcf28eddc9daa859e7b03a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class contains static functions that help with the migration of the JPF Inspector codebase from JPF6 to JPF8 during the 2016 update. </p>
 <p>Because the update may break things, some modifications that could have unintended consequences pass through this class so that when something breaks, we can fix it everywhere we broke it at the same time. When we are sure it works, this class will be removed and the functions' code inlined at the appropriate places. </p>
 
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00015">15</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
+<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00013">13</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a59b01084fb64116caedf3fb068af3ae4"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ChoiceGenerator&lt;?&gt; gov.nasa.jpf.inspector.migration.MigrationUtilities.getLastChoiceGenerator </td>
-          <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>vm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00022">22</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;                                                                 {</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <span class="keywordflow">return</span> vm.getChoiceGenerator();</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a97cf532b164e74cbdc4e0583f0e1b4e7"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ElementInfo gov.nasa.jpf.inspector.migration.MigrationUtilities.getLastElementInfo </td>
-          <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>vm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Gets the last ElementInfo manipulated via specific functions of the InspectorListener. </p>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a66361412e707c57651b239672c9ae40b" title="Remembers the last manipulated ElementInfo as a global variable. ">MigrationUtilities::setLastElementInfo(ElementInfo)</a> </dd></dl>
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00056">56</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                      {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">lastElementInfo</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities_html_a7d594382adbcf28eddc9daa859e7b03a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">gov.nasa.jpf.inspector.migration.MigrationUtilities.lastElementInfo</a></div><div class="ttdeci">static ElementInfo lastElementInfo</div><div class="ttdef"><b>Definition:</b> <a href="_migration_utilities_8java_source.html#l00051">MigrationUtilities.java:51</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ab67c2959e094b3c63c4a247ba876e091"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static Instruction gov.nasa.jpf.inspector.migration.MigrationUtilities.getLastInstruction </td>
-          <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>vm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00018">18</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                      {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    <span class="keywordflow">return</span> vm.getInstruction(); <span class="comment">// This is sketchy.</span></div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a391b83af6df7665cda87709b6a8fcc05"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static ThreadInfo gov.nasa.jpf.inspector.migration.MigrationUtilities.getLastThreadInfo </td>
-          <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>vm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00026">26</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;                                                    {</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">return</span> vm.getCurrentThread();</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
 <a class="anchor" id="a758f3ec518fcb042f6ed46c36b2c342c"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,8 +144,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>Replaces ClassInfo.getLoadedClass(). </p>
 
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00041">41</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                               {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    ArrayList&lt;ClassInfo&gt; loadedClasses = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordflow">for</span> (ClassInfo loadedClass : ClassLoaderInfo.getCurrentClassLoader()) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      loadedClasses.add(loadedClass);</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ClassInfo[] array = <span class="keyword">new</span> ClassInfo[loadedClasses.size()];</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    array = loadedClasses.toArray(array);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <span class="keywordflow">return</span> array;</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00025">25</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;                                               {</div><div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    ArrayList&lt;ClassInfo&gt; loadedClasses = <span class="keyword">new</span> ArrayList&lt;&gt;();</div><div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <span class="keywordflow">for</span> (ClassInfo loadedClass : ClassLoaderInfo.getCurrentClassLoader()) {</div><div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160;      loadedClasses.add(loadedClass);</div><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;    }</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ClassInfo[] array = <span class="keyword">new</span> ClassInfo[loadedClasses.size()];</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    array = loadedClasses.toArray(array);</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keywordflow">return</span> array;</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a39f88c90978607eee2a5773557848035"></a>
@@ -298,8 +170,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00034">34</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                 {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> ClassLoaderInfo.getCurrentResolvedClassInfo(className); <span class="comment">// or &quot;system&quot; resolved?</span></div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00016">16</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                                 {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    <span class="keywordflow">return</span> ClassLoaderInfo.getCurrentResolvedClassInfo(className); <span class="comment">// or &quot;system&quot; resolved?</span></div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8af0a6e27e2005f167bace752c444f20"></a>
@@ -326,8 +198,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>Method called from within <a class="el" href="_state_value_stack_slot_8java.html">StateValueStackSlot.java</a> only, under special circumstances, so it may call for a different migration that all the others (the others only call basic primitives and system types (Object, String)). </p>
 
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00092">92</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                                                     {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> MigrationUtilities.getResolvedClassInfo(className);</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00055">55</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;                                                                                     {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    <span class="keywordflow">return</span> MigrationUtilities.getResolvedClassInfo(className);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a91fc3768c86a969ad513772432365c56"></a>
@@ -355,88 +227,8 @@ Static Private Attributes</h2></td></tr>
 <p>I still don't understand this... </p>
 <p>Test it. </p>
 
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00076">76</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                                               {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    Statics statics = ClassLoaderInfo.getCurrentClassLoader().getStatics();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; statics.size(); i++) {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      StaticElementInfo sei = statics.get(i);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      <span class="keywordflow">if</span> (varName.equals(sei.getClassInfo().getName())) {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        <span class="keywordflow">return</span> sei;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;      }</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a6ee047cf88e4d11e9cd152dcf679d268"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static int gov.nasa.jpf.inspector.migration.MigrationUtilities.getThreadNumber </td>
-          <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>vm</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00030">30</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;                                           {</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">return</span> vm.getCurrentThread().getId();</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;  }</div></div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a66361412e707c57651b239672c9ae40b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">static void gov.nasa.jpf.inspector.migration.MigrationUtilities.setLastElementInfo </td>
-          <td>(</td>
-          <td class="paramtype">ElementInfo&#160;</td>
-          <td class="paramname"><em>lastElementInfo</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Remembers the last manipulated ElementInfo as a global variable. </p>
-<p>This replaces functionality that was present in the JVM class in JPF6 but was abandoned during refactoring to JPF8.</p>
-<p>Called from <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_inspector_listener_mode_notifications.html#a803f93af31f646c3fd8b408c846cd757">InspectorListenerModeNotifications#objectCreated(VM, ThreadInfo, ElementInfo)</a>. Called from <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_inspector_listener_mode_notifications.html#ab289557a81113a2441a39718e7765408">InspectorListenerModeNotifications#objectReleased(VM, ThreadInfo, ElementInfo)</a>. Called from <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_inspector_listener_mode_notifications.html#a0970e3cb2d6ea586507f7cd31c2eaeed">InspectorListenerModeNotifications#exceptionThrown(VM, ThreadInfo, ElementInfo)</a>. </p>
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00068">68</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;                                                                     {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    MigrationUtilities.lastElementInfo = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">lastElementInfo</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities_html_a7d594382adbcf28eddc9daa859e7b03a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1migration_1_1_migration_utilities.html#a7d594382adbcf28eddc9daa859e7b03a">gov.nasa.jpf.inspector.migration.MigrationUtilities.lastElementInfo</a></div><div class="ttdeci">static ElementInfo lastElementInfo</div><div class="ttdef"><b>Definition:</b> <a href="_migration_utilities_8java_source.html#l00051">MigrationUtilities.java:51</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a7d594382adbcf28eddc9daa859e7b03a"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">ElementInfo gov.nasa.jpf.inspector.migration.MigrationUtilities.lastElementInfo</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00051">51</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
-
+<p>Definition at line <a class="el" href="_migration_utilities_8java_source.html#l00039">39</a> of file <a class="el" href="_migration_utilities_8java_source.html">MigrationUtilities.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;                                                                               {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;    Statics statics = ClassLoaderInfo.getCurrentClassLoader().getStatics();</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;    <span class="keywordflow">for</span> (<span class="keywordtype">int</span> i = 0; i &lt; statics.size(); i++) {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      StaticElementInfo sei = statics.get(i);</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      <span class="keywordflow">if</span> (varName.equals(sei.getClassInfo().getName())) {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        <span class="keywordflow">return</span> sei;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      }</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    }</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

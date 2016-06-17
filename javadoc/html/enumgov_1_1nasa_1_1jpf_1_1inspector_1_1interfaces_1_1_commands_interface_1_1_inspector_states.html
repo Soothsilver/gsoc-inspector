@@ -98,24 +98,29 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>TODO this enum is used EVERYWHERE, and should be documented more throughly, also maybe renamed.  
+<p>This enumeration is used by callback handling classes.  
  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
 <tr class="memitem:a0c93e9277b93ac60324259e5ccae5d1b"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#a0c93e9277b93ac60324259e5ccae5d1b">JPF_STARTED</a></td></tr>
+<tr class="memdesc:a0c93e9277b93ac60324259e5ccae5d1b"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPF becomes started at the completion of the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a7bdbd7beca9adc2c57e0f01b295655bb">JPFInspector#bindWithJPF(JPF)</a>.  <a href="#a0c93e9277b93ac60324259e5ccae5d1b">More...</a><br /></td></tr>
 <tr class="separator:a0c93e9277b93ac60324259e5ccae5d1b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf">JPF_RUNNING</a></td></tr>
+<tr class="memdesc:aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPF becomes running whenever it resumes execution after leaving the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aae2d616c9e1b16fea4e9240b111b7ae3">StopHolder#stopExecution(InspectorState)</a>.  <a href="#aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf">More...</a><br /></td></tr>
 <tr class="separator:aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a63e33a2ed587c9bf523154e85100e6bd"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#a63e33a2ed587c9bf523154e85100e6bd">JPF_STOPPED</a></td></tr>
+<tr class="memdesc:a63e33a2ed587c9bf523154e85100e6bd"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPF becomes stopped immediately befpre the wait() call inside the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aae2d616c9e1b16fea4e9240b111b7ae3">StopHolder#stopExecution(InspectorState)</a>.  <a href="#a63e33a2ed587c9bf523154e85100e6bd">More...</a><br /></td></tr>
 <tr class="separator:a63e33a2ed587c9bf523154e85100e6bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3c4bb56ddbe380b75500261d0eed34d5"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#a3c4bb56ddbe380b75500261d0eed34d5">JPF_TERMINATING</a></td></tr>
+<tr class="memdesc:a3c4bb56ddbe380b75500261d0eed34d5"><td class="mdescLeft">&#160;</td><td class="mdescRight">JPF becomes terminating when the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#a3bbe9e2d1cd3f75c86c107708a770a55">StopHolder#notifyClientTerminating()</a> is run.  <a href="#a3c4bb56ddbe380b75500261d0eed34d5">More...</a><br /></td></tr>
 <tr class="separator:a3c4bb56ddbe380b75500261d0eed34d5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>TODO this enum is used EVERYWHERE, and should be documented more throughly, also maybe renamed. </p>
+<div class="textblock"><p>This enumeration is used by callback handling classes. </p>
+<p>Note that the server itself doesn't keep track of its state. Thus, these are not "states" as much as they are message that the Inspector's state changed. This enum is used just to inform the client. </p>
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00033">33</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00048">48</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
 <a class="anchor" id="aecb3fcd5c1dc3e15ae1a2dfcfb2cb3cf"></a>
 <div class="memitem">
@@ -127,7 +132,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00035">35</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>JPF becomes running whenever it resumes execution after leaving the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aae2d616c9e1b16fea4e9240b111b7ae3">StopHolder#stopExecution(InspectorState)</a>. </p>
+<p>Notably, the state JPF is in between its start and the first time it is stopped is JPF_STARTED, not JPF_RUNNING. </p>
+
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00057">57</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -141,7 +149,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00034">34</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>JPF becomes started at the completion of the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a7bdbd7beca9adc2c57e0f01b295655bb">JPFInspector#bindWithJPF(JPF)</a>. </p>
+
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00052">52</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -155,7 +165,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00036">36</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>JPF becomes stopped immediately befpre the wait() call inside the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#aae2d616c9e1b16fea4e9240b111b7ae3">StopHolder#stopExecution(InspectorState)</a>. </p>
+
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00061">61</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -169,7 +181,10 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00037">37</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>JPF becomes terminating when the method <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_stop_holder.html#a3bbe9e2d1cd3f75c86c107708a770a55">StopHolder#notifyClientTerminating()</a> is run. </p>
+<p>This method is called when JPF wants to terminate or when the Search object does. </p>
+
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00066">66</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 
 </div>
 </div>

@@ -8,6 +8,7 @@ var searchData=
   ['expressionbreakpointassert_2ejava',['ExpressionBreakpointAssert.java',['../_expression_breakpoint_assert_8java.html',1,'']]],
   ['expressionbreakpointchoicegenerator_2ejava',['ExpressionBreakpointChoiceGenerator.java',['../_expression_breakpoint_choice_generator_8java.html',1,'']]],
   ['expressionbreakpointcompare_2ejava',['ExpressionBreakpointCompare.java',['../_expression_breakpoint_compare_8java.html',1,'']]],
+  ['expressionbreakpointcustomhitcondition_2ejava',['ExpressionBreakpointCustomHitCondition.java',['../_expression_breakpoint_custom_hit_condition_8java.html',1,'']]],
   ['expressionbreakpointfieldaccess_2ejava',['ExpressionBreakpointFieldAccess.java',['../_expression_breakpoint_field_access_8java.html',1,'']]],
   ['expressionbreakpointgarbagecollection_2ejava',['ExpressionBreakpointGarbageCollection.java',['../_expression_breakpoint_garbage_collection_8java.html',1,'']]],
   ['expressionbreakpointinstruction_2ejava',['ExpressionBreakpointInstruction.java',['../_expression_breakpoint_instruction_8java.html',1,'']]],
@@ -31,6 +32,7 @@ var searchData=
   ['expressionnodeinterface_2ejava',['ExpressionNodeInterface.java',['../_expression_node_interface_8java.html',1,'']]],
   ['expressionparser_2ejava',['ExpressionParser.java',['../_expression_parser_8java.html',1,'']]],
   ['expressionparserinterface_2ejava',['ExpressionParserInterface.java',['../_expression_parser_interface_8java.html',1,'']]],
+  ['expressions_2ejava',['Expressions.java',['../_expressions_8java.html',1,'']]],
   ['expressionstateassignment_2ejava',['ExpressionStateAssignment.java',['../_expression_state_assignment_8java.html',1,'']]],
   ['expressionstateheap_2ejava',['ExpressionStateHeap.java',['../_expression_state_heap_8java.html',1,'']]],
   ['expressionstateheapentrylist_2ejava',['ExpressionStateHeapEntryList.java',['../_expression_state_heap_entry_list_8java.html',1,'']]],
@@ -57,6 +59,5 @@ var searchData=
   ['expressionstatevalueouterclass_2ejava',['ExpressionStateValueOuterClass.java',['../_expression_state_value_outer_class_8java.html',1,'']]],
   ['expressionstatevaluestatic_2ejava',['ExpressionStateValueStatic.java',['../_expression_state_value_static_8java.html',1,'']]],
   ['expressionstatevaluesuper_2ejava',['ExpressionStateValueSuper.java',['../_expression_state_value_super_8java.html',1,'']]],
-  ['expressionstatevaluethis_2ejava',['ExpressionStateValueThis.java',['../_expression_state_value_this_8java.html',1,'']]],
-  ['expressiontype_2ejava',['ExpressionType.java',['../_expression_type_8java.html',1,'']]]
+  ['expressionstatevaluethis_2ejava',['ExpressionStateValueThis.java',['../_expression_state_value_this_8java.html',1,'']]]
 ];

@@ -107,6 +107,7 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a4b7b414f0cabacf9a7b4da6beb54e208"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the JPFInspector back-end (server part).  <a href="#a4b7b414f0cabacf9a7b4da6beb54e208">More...</a><br /></td></tr>
 <tr class="separator:a4b7b414f0cabacf9a7b4da6beb54e208"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a645c51b724bc5cfeb3729ed3cbcd3d14"><td class="memItemLeft" align="right" valign="top">static <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html">JPFInspectorClientInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1_j_p_f_inspector_facade.html#a645c51b724bc5cfeb3729ed3cbcd3d14">getInspectorClient</a> (String target, PrintStream out)</td></tr>
+<tr class="memdesc:a645c51b724bc5cfeb3729ed3cbcd3d14"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates an instance of the JPFInspectorClient (the client part).  <a href="#a645c51b724bc5cfeb3729ed3cbcd3d14">More...</a><br /></td></tr>
 <tr class="separator:a645c51b724bc5cfeb3729ed3cbcd3d14"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
@@ -181,6 +182,8 @@ Static Public Member Functions</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>Creates an instance of the JPFInspectorClient (the client part). </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">target</td><td>Name of the target (.jpf file name, without the .jpf extension). For logging purposes only. </td></tr>
@@ -190,8 +193,8 @@ Static Public Member Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>New instance of high level client part of the JPF Inspector. * </dd></dl>
 
-<p>Definition at line <a class="el" href="_j_p_f_inspector_facade_8java_source.html#l00054">54</a> of file <a class="el" href="_j_p_f_inspector_facade_8java_source.html">JPFInspectorFacade.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                                                                                {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> JPFInspectorClient(target, out);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_j_p_f_inspector_facade_8java_source.html#l00056">56</a> of file <a class="el" href="_j_p_f_inspector_facade_8java_source.html">JPFInspectorFacade.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;                                                                                                {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> JPFInspectorClient(target, out);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

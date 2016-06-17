@@ -113,20 +113,31 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.expression.InspectorStateI
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:aacd53b4269a6d721ce2dba20abd3d782"><td class="memItemLeft" align="right" valign="top">VM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aacd53b4269a6d721ce2dba20abd3d782">getJVM</a> ()</td></tr>
-<tr class="separator:aacd53b4269a6d721ce2dba20abd3d782"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a0ef0d1393b5865d698c360d1e21ea5f2"><td class="memItemLeft" align="right" valign="top">Map&lt; Integer, Instruction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a0ef0d1393b5865d698c360d1e21ea5f2">getPreviousSteps</a> ()</td></tr>
-<tr class="separator:a0ef0d1393b5865d698c360d1e21ea5f2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5106772213b2792ecb1c93b092769c85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a5106772213b2792ecb1c93b092769c85">notifyListenerElementInfoMethodCall</a> (VM <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a>, <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a> <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>, ElementInfo elementInfo)</td></tr>
+<tr class="separator:a5106772213b2792ecb1c93b092769c85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aca9eecc6b034f639a7200db49948a379"><td class="memItemLeft" align="right" valign="top">ElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aca9eecc6b034f639a7200db49948a379">getLastCreatedOrReleasedElementInfo</a> ()</td></tr>
+<tr class="memdesc:aca9eecc6b034f639a7200db49948a379"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ElementInfo instance that represents the object of the system under test that was most recently created, released or the exception that was most recently thrown, whichever is the most recent.  <a href="#aca9eecc6b034f639a7200db49948a379">More...</a><br /></td></tr>
+<tr class="separator:aca9eecc6b034f639a7200db49948a379"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a35599b7e75baa1be692c339b456fa3c3"><td class="memItemLeft" align="right" valign="top">VM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a35599b7e75baa1be692c339b456fa3c3">getVM</a> ()</td></tr>
+<tr class="memdesc:a35599b7e75baa1be692c339b456fa3c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current JPF virtual machine.  <a href="#a35599b7e75baa1be692c339b456fa3c3">More...</a><br /></td></tr>
+<tr class="separator:a35599b7e75baa1be692c339b456fa3c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a43bffb4917b81b540fe9a1c5e8660503"><td class="memItemLeft" align="right" valign="top">Instruction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a43bffb4917b81b540fe9a1c5e8660503">getLastExecutedInstruction</a> (int thread)</td></tr>
+<tr class="memdesc:a43bffb4917b81b540fe9a1c5e8660503"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last instruction that was already executed by the virtual machine on the specified thread.  <a href="#a43bffb4917b81b540fe9a1c5e8660503">More...</a><br /></td></tr>
+<tr class="separator:a43bffb4917b81b540fe9a1c5e8660503"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:accaa8504548659684f49e818415c4f60"><td class="memItemLeft" align="right" valign="top">Search&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#accaa8504548659684f49e818415c4f60">getSearch</a> ()</td></tr>
+<tr class="memdesc:accaa8504548659684f49e818415c4f60"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the used Search object.  <a href="#accaa8504548659684f49e818415c4f60">More...</a><br /></td></tr>
 <tr class="separator:accaa8504548659684f49e818415c4f60"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afe75e0f49b3b98bc2e6530d647f43297"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#afe75e0f49b3b98bc2e6530d647f43297">getListenerMethod</a> ()</td></tr>
+<tr class="memdesc:afe75e0f49b3b98bc2e6530d647f43297"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the listener method that caused this state to be passed to a hit condition.  <a href="#afe75e0f49b3b98bc2e6530d647f43297">More...</a><br /></td></tr>
 <tr class="separator:afe75e0f49b3b98bc2e6530d647f43297"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab4f24df2dfae833b81bd5b6e1cb28f8c"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#ab4f24df2dfae833b81bd5b6e1cb28f8c">instructionExecuted</a> (VM newJVM)</td></tr>
-<tr class="separator:ab4f24df2dfae833b81bd5b6e1cb28f8c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac62676e0e93c76a47d4a74623e5f9ef2"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#ac62676e0e93c76a47d4a74623e5f9ef2">instructionExecuted</a> (int threadId, Instruction executedInstruction, VM newJVM)</td></tr>
+<tr class="separator:ac62676e0e93c76a47d4a74623e5f9ef2"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48d8ba84b9915f6a1c6968c80a23bd2f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a48d8ba84b9915f6a1c6968c80a23bd2f">stateChanged</a> (Search <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>, <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a> <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>)</td></tr>
 <tr class="separator:a48d8ba84b9915f6a1c6968c80a23bd2f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a3655365c4f59212cd19568ae17a25d80"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a3655365c4f59212cd19568ae17a25d80">notifyListenerMethodCall</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a> <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>, VM jvm)</td></tr>
 <tr class="separator:a3655365c4f59212cd19568ae17a25d80"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adb5acf944f1958e0413d9eed4e5cafd9"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#adb5acf944f1958e0413d9eed4e5cafd9">setCurrentInstructionInformation</a> (ThreadInfo currentThread, Instruction instructionToExecute)</td></tr>
+<tr class="separator:adb5acf944f1958e0413d9eed4e5cafd9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -138,27 +149,24 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:aad68b55c445091d252a965081641b48f"><td class="memItemLeft" align="right" valign="top">Search&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a></td></tr>
 <tr class="memdesc:aad68b55c445091d252a965081641b48f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Search class used for the last executed step.  <a href="#aad68b55c445091d252a965081641b48f">More...</a><br /></td></tr>
 <tr class="separator:aad68b55c445091d252a965081641b48f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7399cb79ee39368da7fb3440e586d52f"><td class="memItemLeft" align="right" valign="top">Instruction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a7399cb79ee39368da7fb3440e586d52f">currentInstruction</a> = null</td></tr>
-<tr class="memdesc:a7399cb79ee39368da7fb3440e586d52f"><td class="mdescLeft">&#160;</td><td class="mdescRight">The instruction about to be executed.  <a href="#a7399cb79ee39368da7fb3440e586d52f">More...</a><br /></td></tr>
-<tr class="separator:a7399cb79ee39368da7fb3440e586d52f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a625feb5ca6498aa4ca9393ad502ea325"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a625feb5ca6498aa4ca9393ad502ea325">currentThread</a> = 0</td></tr>
-<tr class="memdesc:a625feb5ca6498aa4ca9393ad502ea325"><td class="mdescLeft">&#160;</td><td class="mdescRight">The thread that will execute the next instruction to be executed.  <a href="#a625feb5ca6498aa4ca9393ad502ea325">More...</a><br /></td></tr>
-<tr class="separator:a625feb5ca6498aa4ca9393ad502ea325"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6cc5f61624118469f3c43361c867f439"><td class="memItemLeft" align="right" valign="top">InspectorState.ListenerMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#a49e44c44d3bb5c7af4f3b2acd441d0c9">ListenerMethod.LM_NOT_IN_LIST</a></td></tr>
+<tr class="memitem:a6cc5f61624118469f3c43361c867f439"><td class="memItemLeft" align="right" valign="top">InspectorState.ListenerMethod&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#a0e70b6d1ba7977dc3bb315c0a40bcc83">ListenerMethod.LM_NOT_IN_LIST</a></td></tr>
+<tr class="memdesc:a6cc5f61624118469f3c43361c867f439"><td class="mdescLeft">&#160;</td><td class="mdescRight">This field is using by breakpoint hit conditions to see if they should trigger.  <a href="#a6cc5f61624118469f3c43361c867f439">More...</a><br /></td></tr>
 <tr class="separator:a6cc5f61624118469f3c43361c867f439"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad8dc168f3149161c7b728999cb9ee74c"><td class="memItemLeft" align="right" valign="top">ElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#ad8dc168f3149161c7b728999cb9ee74c">lastCreatedOrReleasedElementInfo</a></td></tr>
+<tr class="separator:ad8dc168f3149161c7b728999cb9ee74c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents a program state, i.e. </p>
 <p>a point in the program timeline. </p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00032">32</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00036">36</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="aacd53b4269a6d721ce2dba20abd3d782"></a>
+<a class="anchor" id="aca9eecc6b034f639a7200db49948a379"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VM gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.getJVM </td>
+          <td class="memname">ElementInfo gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.getLastCreatedOrReleasedElementInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -166,10 +174,41 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#ab9eb1c115210ed33401b1ef79113008f">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
+<p>Returns the ElementInfo instance that represents the object of the system under test that was most recently created, released or the exception that was most recently thrown, whichever is the most recent. </p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00060">60</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                      {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00042">InspectorStateImpl.java:42</a></div></div>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a230f218d2ec2595c8adb23858bb6b643">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
+
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00066">66</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                           {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div></div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a43bffb4917b81b540fe9a1c5e8660503"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Instruction gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.getLastExecutedInstruction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the last instruction that was already executed by the virtual machine on the specified thread. </p>
+<p>Specifically, it is NOT the instruction that is about to be executed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>Index of a thread of the system under test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The last executed instruction of the htread. </dd></dl>
+
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a38b5cabeca769d485af1b16086c4d180">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
+
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00077">77</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                                            {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">lastExecutedInstructions</a>.containsKey(thread))</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;      <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">lastExecutedInstructions</a>.get(thread);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;    <span class="keywordflow">else</span></div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;      <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a51d0e82854748641ec231294a250d4eb"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastExecutedInstructions</a></div><div class="ttdeci">final Map&lt; Integer, Instruction &gt; lastExecutedInstructions</div><div class="ttdoc">For each thread, this stores the instruction that was last executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00044">InspectorStateImpl.java:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -186,30 +225,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the name of the listener method that caused this state to be passed to a hit condition. </p>
+<p>Each hit condition should check the return value of this method as one of the first things it does to tell if it wants to apply. </p>
+
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a73c801d3948ad0092f3e7ab2dda72ab8">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00075">75</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;                                             {</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a0ef0d1393b5865d698c360d1e21ea5f2"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Map&lt;Integer, Instruction&gt; gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.getPreviousSteps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#af87598d15579925cdad02c6980817dbb">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
-
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00065">65</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                       {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">lastExecutedInstructions</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a51d0e82854748641ec231294a250d4eb"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastExecutedInstructions</a></div><div class="ttdeci">final Map&lt; Integer, Instruction &gt; lastExecutedInstructions</div><div class="ttdoc">For each thread, this stores the instruction that was last executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00040">InspectorStateImpl.java:40</a></div></div>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00090">90</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                             {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdoc">This field is using by breakpoint hit conditions to see if they should trigger. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -226,33 +248,108 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the used Search object. </p>
+
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a7cc2b5750f78a1dffa6bf56a43842856">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00070">70</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;                             {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_aad68b55c445091d252a965081641b48f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.search</a></div><div class="ttdeci">Search search</div><div class="ttdoc">Search class used for the last executed step. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00085">85</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                             {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_aad68b55c445091d252a965081641b48f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.search</a></div><div class="ttdeci">Search search</div><div class="ttdoc">Search class used for the last executed step. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00050">InspectorStateImpl.java:50</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="ab4f24df2dfae833b81bd5b6e1cb28f8c"></a>
+<a class="anchor" id="a35599b7e75baa1be692c339b456fa3c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VM gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.getVM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current JPF virtual machine. </p>
+
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a41caf8f95207187ed36b7f99ed58132a">gov.nasa.jpf.inspector.server.expression.InspectorState</a>.</p>
+
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00071">71</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;                    {</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a>;</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="ac62676e0e93c76a47d4a74623e5f9ef2"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.instructionExecuted </td>
           <td>(</td>
-          <td class="paramtype">VM&#160;</td>
-          <td class="paramname"><em>newJVM</em></td><td>)</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>threadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
           <td></td>
+          <td class="paramtype">Instruction&#160;</td>
+          <td class="paramname"><em>executedInstruction</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">VM&#160;</td>
+          <td class="paramname"><em>newJVM</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00080">80</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;                                              {</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = newJVM;</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">lastExecutedInstructions</a>.put(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a625feb5ca6498aa4ca9393ad502ea325">currentThread</a>, <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a7399cb79ee39368da7fb3440e586d52f">currentInstruction</a>);</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a7399cb79ee39368da7fb3440e586d52f">currentInstruction</a> = newJVM.getInstruction();</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a625feb5ca6498aa4ca9393ad502ea325">currentThread</a> = newJVM.getCurrentThread().getId();</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = ListenerMethod.LM_INSTRUCTION_EXECUTED;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a625feb5ca6498aa4ca9393ad502ea325"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a625feb5ca6498aa4ca9393ad502ea325">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.currentThread</a></div><div class="ttdeci">int currentThread</div><div class="ttdoc">The thread that will execute the next instruction to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00055">InspectorStateImpl.java:55</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00042">InspectorStateImpl.java:42</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a7399cb79ee39368da7fb3440e586d52f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a7399cb79ee39368da7fb3440e586d52f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.currentInstruction</a></div><div class="ttdeci">Instruction currentInstruction</div><div class="ttdoc">The instruction about to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00051">InspectorStateImpl.java:51</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a51d0e82854748641ec231294a250d4eb"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastExecutedInstructions</a></div><div class="ttdeci">final Map&lt; Integer, Instruction &gt; lastExecutedInstructions</div><div class="ttdoc">For each thread, this stores the instruction that was last executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00040">InspectorStateImpl.java:40</a></div></div>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00095">95</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160;                                                                                            {</div><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = newJVM;</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = ListenerMethod.LM_INSTRUCTION_EXECUTED;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">lastExecutedInstructions</a>.put(threadId, executedInstruction);</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdoc">This field is using by breakpoint hit conditions to see if they should trigger. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a51d0e82854748641ec231294a250d4eb"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a51d0e82854748641ec231294a250d4eb">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastExecutedInstructions</a></div><div class="ttdeci">final Map&lt; Integer, Instruction &gt; lastExecutedInstructions</div><div class="ttdoc">For each thread, this stores the instruction that was last executed. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00044">InspectorStateImpl.java:44</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a5106772213b2792ecb1c93b092769c85"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.notifyListenerElementInfoMethodCall </td>
+          <td>(</td>
+          <td class="paramtype">VM&#160;</td>
+          <td class="paramname"><em>vm</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a>&#160;</td>
+          <td class="paramname"><em>listenerMethod</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">ElementInfo&#160;</td>
+          <td class="paramname"><em>elementInfo</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00060">60</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;                                                                                                                   {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#ad8dc168f3149161c7b728999cb9ee74c">lastCreatedOrReleasedElementInfo</a> = elementInfo;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a>;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdoc">This field is using by breakpoint hit conditions to see if they should trigger. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_ad8dc168f3149161c7b728999cb9ee74c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#ad8dc168f3149161c7b728999cb9ee74c">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastCreatedOrReleasedElementInfo</a></div><div class="ttdeci">ElementInfo lastCreatedOrReleasedElementInfo</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00058">InspectorStateImpl.java:58</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -280,10 +377,38 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00096">96</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                                                               {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = jvm;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00042">InspectorStateImpl.java:42</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00109">109</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;                                                                               {</div><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = jvm;</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdoc">This field is using by breakpoint hit conditions to see if they should trigger. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
 </div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="adb5acf944f1958e0413d9eed4e5cafd9"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.setCurrentInstructionInformation </td>
+          <td>(</td>
+          <td class="paramtype">ThreadInfo&#160;</td>
+          <td class="paramname"><em>currentThread</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">Instruction&#160;</td>
+          <td class="paramname"><em>instructionToExecute</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00114">114</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;                                                                                                           {</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    <span class="comment">// TODO this is meaningless, and never used</span></div><div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a48d8ba84b9915f6a1c6968c80a23bd2f"></a>
@@ -310,15 +435,15 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00090">90</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;                                                                          {</div><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>.getVM();</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00042">InspectorStateImpl.java:42</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_aad68b55c445091d252a965081641b48f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.search</a></div><div class="ttdeci">Search search</div><div class="ttdoc">Search class used for the last executed step. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00103">103</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;                                                                          {</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">vm</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>.getVM();</div><div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">search</a>;</div><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">listenerMethod</a>;</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a90bab30ea30485763bab0ed98f39078f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a90bab30ea30485763bab0ed98f39078f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.vm</a></div><div class="ttdeci">VM vm</div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00046">InspectorStateImpl.java:46</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_aad68b55c445091d252a965081641b48f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aad68b55c445091d252a965081641b48f">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.search</a></div><div class="ttdeci">Search search</div><div class="ttdoc">Search class used for the last executed step. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00050">InspectorStateImpl.java:50</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl_html_a6cc5f61624118469f3c43361c867f439"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a6cc5f61624118469f3c43361c867f439">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod</a></div><div class="ttdeci">InspectorState.ListenerMethod listenerMethod</div><div class="ttdoc">This field is using by breakpoint hit conditions to see if they should trigger. </div><div class="ttdef"><b>Definition:</b> <a href="_inspector_state_impl_8java_source.html#l00057">InspectorStateImpl.java:57</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a7399cb79ee39368da7fb3440e586d52f"></a>
+<a class="anchor" id="ad8dc168f3149161c7b728999cb9ee74c"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -326,7 +451,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">Instruction gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.currentInstruction = null</td>
+          <td class="memname">ElementInfo gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.lastCreatedOrReleasedElementInfo</td>
         </tr>
       </table>
   </td>
@@ -336,33 +461,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>The instruction about to be executed. </p>
-
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00051">51</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a625feb5ca6498aa4ca9393ad502ea325"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.currentThread = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>The thread that will execute the next instruction to be executed. </p>
-
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00055">55</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00058">58</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 
 </div>
 </div>
@@ -388,7 +487,7 @@ Private Attributes</h2></td></tr>
 <p>The instructions threads are currently pointing to but have not yet executed are not in this.</p>
 <p>The key is thread id. </p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00040">40</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00044">44</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 
 </div>
 </div>
@@ -400,7 +499,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">InspectorState.ListenerMethod gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod = <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#a49e44c44d3bb5c7af4f3b2acd441d0c9">ListenerMethod.LM_NOT_IN_LIST</a></td>
+          <td class="memname">InspectorState.ListenerMethod gov.nasa.jpf.inspector.server.expression.InspectorStateImpl.listenerMethod = <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#a0e70b6d1ba7977dc3bb315c0a40bcc83">ListenerMethod.LM_NOT_IN_LIST</a></td>
         </tr>
       </table>
   </td>
@@ -409,6 +508,9 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>This field is using by breakpoint hit conditions to see if they should trigger. </p>
+<p>It contains the last method that of the <a class="el" href="">InspectorListener</a> that caused the <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a7a8056c84648b6f750b934456ab4c0da">BreakpointHandler#checkBreakpoints(InspectorState)</a> method to be called. </p>
 
 <p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00057">57</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 
@@ -434,7 +536,7 @@ Private Attributes</h2></td></tr>
 
 <p>Search class used for the last executed step. </p>
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00046">46</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00050">50</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 
 </div>
 </div>
@@ -456,7 +558,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00042">42</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_impl_8java_source.html#l00046">46</a> of file <a class="el" href="_inspector_state_impl_8java_source.html">InspectorStateImpl.java</a>.</p>
 
 </div>
 </div>

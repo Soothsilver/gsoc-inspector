@@ -94,8 +94,6 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-attribs">Static Public Attributes</a> &#124;
 <a href="#pro-methods">Protected Member Functions</a> &#124;
-<a href="#pro-static-attribs">Static Protected Attributes</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable-members.html">List of all members</a>  </div>
@@ -104,7 +102,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Common predecessor for all "value" representing types Represents variable.  
+<p>Common abstract predecessor for all types representing a value.  
  <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.common.pse.PSEVariable:</div>
@@ -112,35 +110,37 @@ Inheritance diagram for gov.nasa.jpf.inspector.common.pse.PSEVariable:</div>
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.png" usemap="#gov.nasa.jpf.inspector.common.pse.PSEVariable_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.common.pse.PSEVariable_map" name="gov.nasa.jpf.inspector.common.pse.PSEVariable_map">
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html" title="Abstract class that holds properties common to all program state entries. " alt="gov.nasa.jpf.inspector.common.pse.ProgramStateEntry" shape="rect" coords="346,56,682,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_array.html" alt="gov.nasa.jpf.inspector.common.pse.PSEVariableArray" shape="rect" coords="0,168,336,192"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_object.html" title="Represents Object (a heap element different from array) " alt="gov.nasa.jpf.inspector.common.pse.PSEVariableObject" shape="rect" coords="346,168,682,192"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_primitive.html" alt="gov.nasa.jpf.inspector.common.pse.PSEVariablePrimitive" shape="rect" coords="692,168,1028,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html" title="Abstract class that holds properties common to all program state entries. " alt="gov.nasa.jpf.inspector.common.pse.ProgramStateEntry" shape="rect" coords="535,56,882,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_array.html" alt="gov.nasa.jpf.inspector.common.pse.PSEVariableArray" shape="rect" coords="0,168,347,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_object.html" title="Represents a non-array, non-primitive Java object. " alt="gov.nasa.jpf.inspector.common.pse.PSEVariableObject" shape="rect" coords="357,168,704,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_primitive.html" title="Represents a Java primitive. " alt="gov.nasa.jpf.inspector.common.pse.PSEVariablePrimitive" shape="rect" coords="714,168,1061,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_short_form.html" title="Represents an array or an object without loaded elements or fields. " alt="gov.nasa.jpf.inspector.common.pse.PSEVariableShortForm" shape="rect" coords="1071,168,1418,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ad1dc9e7dbc65a93af7c028831963c26f"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ad1dc9e7dbc65a93af7c028831963c26f">getVarName</a> ()</td></tr>
+<tr class="memdesc:ad1dc9e7dbc65a93af7c028831963c26f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the represented variable, field or parameter.  <a href="#ad1dc9e7dbc65a93af7c028831963c26f">More...</a><br /></td></tr>
 <tr class="separator:ad1dc9e7dbc65a93af7c028831963c26f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae3ebfecacb0600cb08019e22c220d888"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ae3ebfecacb0600cb08019e22c220d888">getVarTypeName</a> ()</td></tr>
+<tr class="memdesc:ae3ebfecacb0600cb08019e22c220d888"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Java type of the represented object.  <a href="#ae3ebfecacb0600cb08019e22c220d888">More...</a><br /></td></tr>
 <tr class="separator:ae3ebfecacb0600cb08019e22c220d888"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c0acb6295c44b5f04af6b04dca0641"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a58c0acb6295c44b5f04af6b04dca0641">getVarValue</a> ()</td></tr>
+<tr class="memdesc:a58c0acb6295c44b5f04af6b04dca0641"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the short-form value of the variable in text form.  <a href="#a58c0acb6295c44b5f04af6b04dca0641">More...</a><br /></td></tr>
 <tr class="separator:a58c0acb6295c44b5f04af6b04dca0641"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aabbed2b1c69ba2d76924bfa645a1502e"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a> ()</td></tr>
+<tr class="memdesc:aabbed2b1c69ba2d76924bfa645a1502e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether this entry is a static field.  <a href="#aabbed2b1c69ba2d76924bfa645a1502e">More...</a><br /></td></tr>
 <tr class="separator:aabbed2b1c69ba2d76924bfa645a1502e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aad5dd7fa8129442acd6fa032e1e2f59b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aad5dd7fa8129442acd6fa032e1e2f59b">varDefined</a> ()</td></tr>
-<tr class="separator:aad5dd7fa8129442acd6fa032e1e2f59b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8822dec7015fb0e5509dc4f01e18232"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ae8822dec7015fb0e5509dc4f01e18232">getIndex</a> ()</td></tr>
-<tr class="memdesc:ae8822dec7015fb0e5509dc4f01e18232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets index (stack slot index in the stack, field index in ElementInfo, array index of the element, heap index if represents whole ElementIfno) where the variable is defined.  <a href="#ae8822dec7015fb0e5509dc4f01e18232">More...</a><br /></td></tr>
+<tr class="memdesc:ae8822dec7015fb0e5509dc4f01e18232"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the index of this entry in its parent entry.  <a href="#ae8822dec7015fb0e5509dc4f01e18232">More...</a><br /></td></tr>
 <tr class="separator:ae8822dec7015fb0e5509dc4f01e18232"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac96b4ceba0c8c9c674b0cca509b63a3b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#ac96b4ceba0c8c9c674b0cca509b63a3b">getName</a> ()</td></tr>
-<tr class="separator:ac96b4ceba0c8c9c674b0cca509b63a3b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a5f1b62c50f124c1bd01be0111706a1f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5f1b62c50f124c1bd01be0111706a1f5">getClientID</a> ()</td></tr>
-<tr class="separator:a5f1b62c50f124c1bd01be0111706a1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d819571ca1cc982a7d31df70548fd96"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a9d819571ca1cc982a7d31df70548fd96">getStateExpr</a> ()</td></tr>
-<tr class="memdesc:a9d819571ca1cc982a7d31df70548fd96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Expression that can be used to obtain given entry.  <a href="#a9d819571ca1cc982a7d31df70548fd96">More...</a><br /></td></tr>
-<tr class="separator:a9d819571ca1cc982a7d31df70548fd96"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a14cf4f18b37e53de5ab54238ed35f9e4"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a14cf4f18b37e53de5ab54238ed35f9e4">getDefinedIn</a> ()</td></tr>
+<tr class="memdesc:a14cf4f18b37e53de5ab54238ed35f9e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the class this variable was defined in, if any.  <a href="#a14cf4f18b37e53de5ab54238ed35f9e4">More...</a><br /></td></tr>
+<tr class="separator:a14cf4f18b37e53de5ab54238ed35f9e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aebb7058c64f9df25b183fe422ae83a9b"><td class="memItemLeft" align="right" valign="top">abstract&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#aebb7058c64f9df25b183fe422ae83a9b">visit</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_visitor.html">PSEVisitor</a>&lt; T &gt; visitor)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:aebb7058c64f9df25b183fe422ae83a9b"><td class="mdescLeft">&#160;</td><td class="mdescRight">See <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_visitor.html">PSEVisitor</a> and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_value_printer.html">ValuePrinter</a>.  <a href="#aebb7058c64f9df25b183fe422ae83a9b">More...</a><br /></td></tr>
+<tr class="separator:aebb7058c64f9df25b183fe422ae83a9b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
@@ -161,20 +161,8 @@ Static Public Attributes</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
 Protected Member Functions</h2></td></tr>
-<tr class="memitem:afd22253d20835f412df56b43a8a3352a"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#afd22253d20835f412df56b43a8a3352a">PSEVariable</a> (String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5fbdd37745a66317f1ea7738c3bda2a6">name</a>, int <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5743d1d799e3e1e864755f1040da1962">clientID</a>, <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_node_interface.html">StateNodeInterface</a> sni, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>, boolean <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ad4f7133731afc14a4680c1928e960942">isStatic</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>, int <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>)</td></tr>
-<tr class="separator:afd22253d20835f412df56b43a8a3352a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab04eadea7420b70405969a6b95656411"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html">JPFInspectorBackEndInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#ab04eadea7420b70405969a6b95656411">getInspector</a> ()</td></tr>
-<tr class="separator:ab04eadea7420b70405969a6b95656411"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-static-attribs"></a>
-Static Protected Attributes</h2></td></tr>
-<tr class="memitem:a84ef5e9f23ec651d7a67a8ee72819b0e"><td class="memItemLeft" align="right" valign="top">static final boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a84ef5e9f23ec651d7a67a8ee72819b0e">DEBUG</a> = true</td></tr>
-<tr class="separator:a84ef5e9f23ec651d7a67a8ee72819b0e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a2a7282da9e128886419b853046f1fd4a"><td class="memItemLeft" align="right" valign="top">abstract public&lt; T &gt; T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a2a7282da9e128886419b853046f1fd4a">visit</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_visitor.html">PSEVisitor</a>&lt; T &gt; visitor)  throws JPFInspectorException</td></tr>
-<tr class="separator:a2a7282da9e128886419b853046f1fd4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a39399d45b1e904600e362e5c655c7bab"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a39399d45b1e904600e362e5c655c7bab">PSEVariable</a> (String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>, boolean <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ad4f7133731afc14a4680c1928e960942">isStatic</a>, String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>, int <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>)</td></tr>
+<tr class="separator:a39399d45b1e904600e362e5c655c7bab"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
@@ -197,12 +185,12 @@ Static Private Attributes</h2></td></tr>
 <tr class="separator:ad11aee75ecf196e7e13bf14e3f9287d4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Common predecessor for all "value" representing types Represents variable. </p>
-<p>Either primitive type (can be local variable, field), heap instance (this, field) or "Class" (this for static method) </p>
+<div class="textblock"><p>Common abstract predecessor for all types representing a value. </p>
+<p>Represents a variable. Either primitive type (can be local variable, field), heap instance (this, field) or "Class" (this for static methods) </p>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00029">29</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00027">27</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a class="anchor" id="afd22253d20835f412df56b43a8a3352a"></a>
+<a class="anchor" id="a39399d45b1e904600e362e5c655c7bab"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -212,24 +200,6 @@ Static Private Attributes</h2></td></tr>
         <tr>
           <td class="memname">gov.nasa.jpf.inspector.common.pse.PSEVariable.PSEVariable </td>
           <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>name</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">int&#160;</td>
-          <td class="paramname"><em>clientID</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_node_interface.html">StateNodeInterface</a>&#160;</td>
-          <td class="paramname"><em>sni</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
           <td class="paramtype">String&#160;</td>
           <td class="paramname"><em>varName</em>, </td>
         </tr>
@@ -276,42 +246,34 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00053">53</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                                   {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    super(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5fbdd37745a66317f1ea7738c3bda2a6">name</a>, <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5743d1d799e3e1e864755f1040da1962">clientID</a>, sni);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a>;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>;</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="comment">// if (sei.isReference()) {</span></div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// this.varValue = PSEVariable.elementInfo2String(sei.getReferenceValue());</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="comment">// } else {</span></div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="comment">// this.varValue = sei.getValue().toString();</span></div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// }</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aabbed2b1c69ba2d76924bfa645a1502e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">gov.nasa.jpf.inspector.common.pse.PSEVariable.isStatic</a></div><div class="ttdeci">boolean isStatic()</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00092">PSEVariable.java:92</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a2dd10359feb7e7fcf3a6f93c32b76c03"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">gov.nasa.jpf.inspector.common.pse.PSEVariable.definedIn</a></div><div class="ttdeci">final String definedIn</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00048">PSEVariable.java:48</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a898c9a245ba0da48961a76a29c8ee8b3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">gov.nasa.jpf.inspector.common.pse.PSEVariable.varValue</a></div><div class="ttdeci">final String varValue</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00045">PSEVariable.java:45</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a646062a613747f6813b99f010f361222"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">gov.nasa.jpf.inspector.common.pse.PSEVariable.varTypeName</a></div><div class="ttdeci">final String varTypeName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00044">PSEVariable.java:44</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aa1c82f7362843f3926328cb30c5067cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">gov.nasa.jpf.inspector.common.pse.PSEVariable.index</a></div><div class="ttdeci">final int index</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00051">PSEVariable.java:51</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_ab22ccad7c4981bcadd0ddf2df3337689"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">gov.nasa.jpf.inspector.common.pse.PSEVariable.varName</a></div><div class="ttdeci">final String varName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00043">PSEVariable.java:43</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a5743d1d799e3e1e864755f1040da1962"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5743d1d799e3e1e864755f1040da1962">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.clientID</a></div><div class="ttdeci">final int clientID</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00040">ProgramStateEntry.java:40</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a5fbdd37745a66317f1ea7738c3bda2a6"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5fbdd37745a66317f1ea7738c3bda2a6">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.name</a></div><div class="ttdeci">final String name</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00039">ProgramStateEntry.java:39</a></div></div>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00051">51</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                     {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a>;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aabbed2b1c69ba2d76924bfa645a1502e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">gov.nasa.jpf.inspector.common.pse.PSEVariable.isStatic</a></div><div class="ttdeci">boolean isStatic()</div><div class="ttdoc">Indicates whether this entry is a static field. </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00088">PSEVariable.java:88</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a2dd10359feb7e7fcf3a6f93c32b76c03"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">gov.nasa.jpf.inspector.common.pse.PSEVariable.definedIn</a></div><div class="ttdeci">final String definedIn</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00047">PSEVariable.java:47</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a898c9a245ba0da48961a76a29c8ee8b3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">gov.nasa.jpf.inspector.common.pse.PSEVariable.varValue</a></div><div class="ttdeci">final String varValue</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00044">PSEVariable.java:44</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a646062a613747f6813b99f010f361222"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">gov.nasa.jpf.inspector.common.pse.PSEVariable.varTypeName</a></div><div class="ttdeci">final String varTypeName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00043">PSEVariable.java:43</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aa1c82f7362843f3926328cb30c5067cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">gov.nasa.jpf.inspector.common.pse.PSEVariable.index</a></div><div class="ttdeci">final int index</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00049">PSEVariable.java:49</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_ab22ccad7c4981bcadd0ddf2df3337689"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">gov.nasa.jpf.inspector.common.pse.PSEVariable.varName</a></div><div class="ttdeci">final String varName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00042">PSEVariable.java:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a5f1b62c50f124c1bd01be0111706a1f5"></a>
+<a class="anchor" id="a14cf4f18b37e53de5ab54238ed35f9e4"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.getClientID </td>
+          <td class="memname">String gov.nasa.jpf.inspector.common.pse.PSEVariable.getDefinedIn </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_program_state_entry_8java_source.html#l00061">61</a> of file <a class="el" href="_program_state_entry_8java_source.html">ProgramStateEntry.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                            {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5743d1d799e3e1e864755f1040da1962">clientID</a>;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a5743d1d799e3e1e864755f1040da1962"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5743d1d799e3e1e864755f1040da1962">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.clientID</a></div><div class="ttdeci">final int clientID</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00040">ProgramStateEntry.java:40</a></div></div>
+<p>Gets the name of the class this variable was defined in, if any. </p>
+
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00107">107</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;                               {</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>;</div><div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a2dd10359feb7e7fcf3a6f93c32b76c03"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">gov.nasa.jpf.inspector.common.pse.PSEVariable.definedIn</a></div><div class="ttdeci">final String definedIn</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00047">PSEVariable.java:47</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -328,91 +290,16 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets index (stack slot index in the stack, field index in ElementInfo, array index of the element, heap index if represents whole ElementIfno) where the variable is defined. </p>
-<dl class="section return"><dt>Returns</dt><dd></dd></dl>
+<p>Gets the index of this entry in its parent entry. </p>
+<p>This might be:</p><ul>
+<li>stack slot index</li>
+<li>field index</li>
+<li>array index</li>
+<li>heap index </li>
+</ul>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00106">106</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;                         {</div><div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>;</div><div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aa1c82f7362843f3926328cb30c5067cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">gov.nasa.jpf.inspector.common.pse.PSEVariable.index</a></div><div class="ttdeci">final int index</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00051">PSEVariable.java:51</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ab04eadea7420b70405969a6b95656411"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html">JPFInspectorBackEndInterface</a> gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.getInspector </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_program_state_entry_8java_source.html#l00065">65</a> of file <a class="el" href="_program_state_entry_8java_source.html">ProgramStateEntry.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                         {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a90505dcc99081cf8eee88c360c771bf6">inspector</a>;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a90505dcc99081cf8eee88c360c771bf6"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a90505dcc99081cf8eee88c360c771bf6">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.inspector</a></div><div class="ttdeci">final JPFInspectorBackEndInterface inspector</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00041">ProgramStateEntry.java:41</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ac96b4ceba0c8c9c674b0cca509b63a3b"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.getName </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_program_state_entry_8java_source.html#l00057">57</a> of file <a class="el" href="_program_state_entry_8java_source.html">ProgramStateEntry.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                           {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5fbdd37745a66317f1ea7738c3bda2a6">name</a>;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a5fbdd37745a66317f1ea7738c3bda2a6"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5fbdd37745a66317f1ea7738c3bda2a6">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.name</a></div><div class="ttdeci">final String name</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00039">ProgramStateEntry.java:39</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="a9d819571ca1cc982a7d31df70548fd96"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">String gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.getStateExpr </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Expression that can be used to obtain given entry. </p>
-
-<p>Definition at line <a class="el" href="_program_state_entry_8java_source.html#l00072">72</a> of file <a class="el" href="_program_state_entry_8java_source.html">ProgramStateEntry.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;                                {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5051697f441f235c01ebcaaf0616555d">stateExpr</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry_html_a5051697f441f235c01ebcaaf0616555d"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html#a5051697f441f235c01ebcaaf0616555d">gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.stateExpr</a></div><div class="ttdeci">final String stateExpr</div><div class="ttdef"><b>Definition:</b> <a href="_program_state_entry_8java_source.html#l00042">ProgramStateEntry.java:42</a></div></div>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00100">100</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;                         {</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">index</a>;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aa1c82f7362843f3926328cb30c5067cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aa1c82f7362843f3926328cb30c5067cd">gov.nasa.jpf.inspector.common.pse.PSEVariable.index</a></div><div class="ttdeci">final int index</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00049">PSEVariable.java:49</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -428,10 +315,12 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Gets name of represented variable, field or parameter. Can get null if name is not known (no debug information or stack slot) </dd></dl>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00074">74</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;                              {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>;</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_ab22ccad7c4981bcadd0ddf2df3337689"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">gov.nasa.jpf.inspector.common.pse.PSEVariable.varName</a></div><div class="ttdeci">final String varName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00043">PSEVariable.java:43</a></div></div>
+<p>Gets the name of the represented variable, field or parameter. </p>
+<p>Returns null if the name is not known (no debug information or stack slot, for example). </p>
+
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00066">66</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                              {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">varName</a>;</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_ab22ccad7c4981bcadd0ddf2df3337689"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#ab22ccad7c4981bcadd0ddf2df3337689">gov.nasa.jpf.inspector.common.pse.PSEVariable.varName</a></div><div class="ttdeci">final String varName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00042">PSEVariable.java:42</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -447,10 +336,11 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Gets type of represented entry. </dd></dl>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00081">81</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                  {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a646062a613747f6813b99f010f361222"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">gov.nasa.jpf.inspector.common.pse.PSEVariable.varTypeName</a></div><div class="ttdeci">final String varTypeName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00044">PSEVariable.java:44</a></div></div>
+<p>Gets the Java type of the represented object. </p>
+
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00073">73</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                  {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">varTypeName</a>;</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a646062a613747f6813b99f010f361222"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a646062a613747f6813b99f010f361222">gov.nasa.jpf.inspector.common.pse.PSEVariable.varTypeName</a></div><div class="ttdeci">final String varTypeName</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00043">PSEVariable.java:43</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -466,10 +356,12 @@ Static Private Attributes</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
-<dl class="section return"><dt>Returns</dt><dd>Gets value of variable in textual form (meaning full only for primitive types and strings) </dd></dl>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00088">88</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                               {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a898c9a245ba0da48961a76a29c8ee8b3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">gov.nasa.jpf.inspector.common.pse.PSEVariable.varValue</a></div><div class="ttdeci">final String varValue</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00045">PSEVariable.java:45</a></div></div>
+<p>Gets the short-form value of the variable in text form. </p>
+<p>See the "Commands" -&gt; "print" -&gt; "Output interpretation" for details. </p>
+
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00081">81</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                               {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">varValue</a>;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a898c9a245ba0da48961a76a29c8ee8b3"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a898c9a245ba0da48961a76a29c8ee8b3">gov.nasa.jpf.inspector.common.pse.PSEVariable.varValue</a></div><div class="ttdeci">final String varValue</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00044">PSEVariable.java:44</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -486,30 +378,14 @@ Static Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00092">92</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                             {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a>;</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aabbed2b1c69ba2d76924bfa645a1502e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">gov.nasa.jpf.inspector.common.pse.PSEVariable.isStatic</a></div><div class="ttdeci">boolean isStatic()</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00092">PSEVariable.java:92</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="aad5dd7fa8129442acd6fa032e1e2f59b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">String gov.nasa.jpf.inspector.common.pse.PSEVariable.varDefined </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
+<p>Indicates whether this entry is a static field. </p>
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00096">96</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                              {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">definedIn</a>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_a2dd10359feb7e7fcf3a6f93c32b76c03"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#a2dd10359feb7e7fcf3a6f93c32b76c03">gov.nasa.jpf.inspector.common.pse.PSEVariable.definedIn</a></div><div class="ttdeci">final String definedIn</div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00048">PSEVariable.java:48</a></div></div>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00088">88</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;                             {</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">isStatic</a>;</div><div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable_html_aabbed2b1c69ba2d76924bfa645a1502e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_variable.html#aabbed2b1c69ba2d76924bfa645a1502e">gov.nasa.jpf.inspector.common.pse.PSEVariable.isStatic</a></div><div class="ttdeci">boolean isStatic()</div><div class="ttdoc">Indicates whether this entry is a static field. </div><div class="ttdef"><b>Definition:</b> <a href="_p_s_e_variable_8java_source.html#l00088">PSEVariable.java:88</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a2a7282da9e128886419b853046f1fd4a"></a>
+<a class="anchor" id="aebb7058c64f9df25b183fe422ae83a9b"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -517,7 +393,7 @@ Static Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">abstract public&lt;T&gt; T gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.visit </td>
+          <td class="memname">abstract &lt;T&gt; T gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.visit </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_visitor.html">PSEVisitor</a>&lt; T &gt;&#160;</td>
           <td class="paramname"><em>visitor</em></td><td>)</td>
@@ -526,36 +402,16 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">abstract</span><span class="mlabel">package</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">abstract</span><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>See <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_visitor.html">PSEVisitor</a> and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_value_printer.html">ValuePrinter</a>. </p>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="a84ef5e9f23ec651d7a67a8ee72819b0e"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">final boolean gov.nasa.jpf.inspector.common.pse.ProgramStateEntry.DEBUG = true</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Definition at line <a class="el" href="_program_state_entry_8java_source.html#l00035">35</a> of file <a class="el" href="_program_state_entry_8java_source.html">ProgramStateEntry.java</a>.</p>
-
-</div>
-</div>
 <a class="anchor" id="a2dd10359feb7e7fcf3a6f93c32b76c03"></a>
 <div class="memitem">
 <div class="memproto">
@@ -574,7 +430,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00048">48</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00047">47</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -596,7 +452,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00037">37</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00035">35</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -618,7 +474,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00038">38</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00036">36</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -640,7 +496,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00041">41</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00039">39</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -662,7 +518,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00035">35</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00033">33</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -684,7 +540,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00036">36</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00034">34</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -706,7 +562,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00034">34</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00032">32</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -728,7 +584,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00033">33</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00031">31</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -750,7 +606,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00051">51</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00049">49</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -772,7 +628,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00047">47</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00046">46</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -794,7 +650,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00031">31</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00029">29</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -816,7 +672,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00043">43</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00042">42</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -838,7 +694,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00044">44</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00043">43</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>
@@ -860,7 +716,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00045">45</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
+<p>Definition at line <a class="el" href="_p_s_e_variable_8java_source.html#l00044">44</a> of file <a class="el" href="_p_s_e_variable_8java_source.html">PSEVariable.java</a>.</p>
 
 </div>
 </div>

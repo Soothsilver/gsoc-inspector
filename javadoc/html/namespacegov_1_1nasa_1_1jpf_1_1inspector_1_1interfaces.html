@@ -112,8 +112,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html">BreakpointState</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Determines the action that occurs when the breakpoint is hit.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html">BreakPointStatus</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All information about a specific breakpoint.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All information about a specific breakpoint.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html">ChoiceGeneratorsInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfaces related to choice generators and managing behavior of CG.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#details">More...</a><br /></td></tr>
@@ -123,8 +123,14 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html">CommandsInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server must implement this interface and the client uses it to start or stop execution and to do stepping.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_custom_command.html">CustomCommand</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to create a custom command that you can use within the JPF Inspector console.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_custom_command.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_custom_hit_condition.html">CustomHitCondition</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implement this interface to create a custom hit condition that you can use with JPF Inspector.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_custom_hit_condition.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Call backs to the client part.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO This is implemented by both client and server classes?? Something strange is going on.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html">InstructionPosition</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -135,7 +141,7 @@ Classes</h2></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interface provided by JPFInspector back-end ("server") part.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html">ProgramStateInterface</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Is intended for inspection of state of the SuT.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface is part of the server's contract to the client.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

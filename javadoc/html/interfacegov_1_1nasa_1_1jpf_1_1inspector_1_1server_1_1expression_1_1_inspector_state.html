@@ -114,32 +114,40 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.expression.InspectorState:
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents called method on the listener interface.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents a method of the Listener interface.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:af87598d15579925cdad02c6980817dbb"><td class="memItemLeft" align="right" valign="top">Map&lt; Integer, Instruction &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#af87598d15579925cdad02c6980817dbb">getPreviousSteps</a> ()</td></tr>
-<tr class="separator:af87598d15579925cdad02c6980817dbb"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab9eb1c115210ed33401b1ef79113008f"><td class="memItemLeft" align="right" valign="top">VM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#ab9eb1c115210ed33401b1ef79113008f">getJVM</a> ()</td></tr>
-<tr class="separator:ab9eb1c115210ed33401b1ef79113008f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a230f218d2ec2595c8adb23858bb6b643"><td class="memItemLeft" align="right" valign="top">ElementInfo&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a230f218d2ec2595c8adb23858bb6b643">getLastCreatedOrReleasedElementInfo</a> ()</td></tr>
+<tr class="memdesc:a230f218d2ec2595c8adb23858bb6b643"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the ElementInfo instance that represents the object of the system under test that was most recently created, released or the exception that was most recently thrown, whichever is the most recent.  <a href="#a230f218d2ec2595c8adb23858bb6b643">More...</a><br /></td></tr>
+<tr class="separator:a230f218d2ec2595c8adb23858bb6b643"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a41caf8f95207187ed36b7f99ed58132a"><td class="memItemLeft" align="right" valign="top">VM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a41caf8f95207187ed36b7f99ed58132a">getVM</a> ()</td></tr>
+<tr class="memdesc:a41caf8f95207187ed36b7f99ed58132a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current JPF virtual machine.  <a href="#a41caf8f95207187ed36b7f99ed58132a">More...</a><br /></td></tr>
+<tr class="separator:a41caf8f95207187ed36b7f99ed58132a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b5cabeca769d485af1b16086c4d180"><td class="memItemLeft" align="right" valign="top">Instruction&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a38b5cabeca769d485af1b16086c4d180">getLastExecutedInstruction</a> (int thread)</td></tr>
+<tr class="memdesc:a38b5cabeca769d485af1b16086c4d180"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the last instruction that was already executed by the virtual machine on the specified thread.  <a href="#a38b5cabeca769d485af1b16086c4d180">More...</a><br /></td></tr>
+<tr class="separator:a38b5cabeca769d485af1b16086c4d180"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7cc2b5750f78a1dffa6bf56a43842856"><td class="memItemLeft" align="right" valign="top">Search&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a7cc2b5750f78a1dffa6bf56a43842856">getSearch</a> ()</td></tr>
+<tr class="memdesc:a7cc2b5750f78a1dffa6bf56a43842856"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the used Search object.  <a href="#a7cc2b5750f78a1dffa6bf56a43842856">More...</a><br /></td></tr>
 <tr class="separator:a7cc2b5750f78a1dffa6bf56a43842856"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a73c801d3948ad0092f3e7ab2dda72ab8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_1_1_listener_method.html">ListenerMethod</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state.html#a73c801d3948ad0092f3e7ab2dda72ab8">getListenerMethod</a> ()</td></tr>
+<tr class="memdesc:a73c801d3948ad0092f3e7ab2dda72ab8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the name of the listener method that caused this state to be passed to a hit condition.  <a href="#a73c801d3948ad0092f3e7ab2dda72ab8">More...</a><br /></td></tr>
 <tr class="separator:a73c801d3948ad0092f3e7ab2dda72ab8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents state of the SuT and the inspector. </p>
-<p>Holds all necessary information needed to evaluate expressions <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html">ExpressionNodeInterface</a>. </p>
+<p>Holds all necessary information needed to evaluate expressions (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_node_interface.html">ExpressionNodeInterface</a>).</p>
+<p>This is a public-facing interface that is passed to custom breakpoint hit conditions. </p>
 
-<p>Definition at line <a class="el" href="_inspector_state_8java_source.html#l00036">36</a> of file <a class="el" href="_inspector_state_8java_source.html">InspectorState.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_state_8java_source.html#l00033">33</a> of file <a class="el" href="_inspector_state_8java_source.html">InspectorState.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ab9eb1c115210ed33401b1ef79113008f"></a>
+<a class="anchor" id="a230f218d2ec2595c8adb23858bb6b643"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">VM gov.nasa.jpf.inspector.server.expression.InspectorState.getJVM </td>
+          <td class="memname">ElementInfo gov.nasa.jpf.inspector.server.expression.InspectorState.getLastCreatedOrReleasedElementInfo </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -147,7 +155,36 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aacd53b4269a6d721ce2dba20abd3d782">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
+<p>Returns the ElementInfo instance that represents the object of the system under test that was most recently created, released or the exception that was most recently thrown, whichever is the most recent. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#aca9eecc6b034f639a7200db49948a379">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38b5cabeca769d485af1b16086c4d180"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Instruction gov.nasa.jpf.inspector.server.expression.InspectorState.getLastExecutedInstruction </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>thread</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the last instruction that was already executed by the virtual machine on the specified thread. </p>
+<p>Specifically, it is NOT the instruction that is about to be executed. </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">thread</td><td>Index of a thread of the system under test. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>The last executed instruction of the htread. </dd></dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a43bffb4917b81b540fe9a1c5e8660503">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
 
 </div>
 </div>
@@ -164,24 +201,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the name of the listener method that caused this state to be passed to a hit condition. </p>
+<p>Each hit condition should check the return value of this method as one of the first things it does to tell if it wants to apply. </p>
+
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#afe75e0f49b3b98bc2e6530d647f43297">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="af87598d15579925cdad02c6980817dbb"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Map&lt;Integer, Instruction&gt; gov.nasa.jpf.inspector.server.expression.InspectorState.getPreviousSteps </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a0ef0d1393b5865d698c360d1e21ea5f2">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
 
 </div>
 </div>
@@ -198,7 +221,28 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Returns the used Search object. </p>
+
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#accaa8504548659684f49e818415c4f60">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a41caf8f95207187ed36b7f99ed58132a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VM gov.nasa.jpf.inspector.server.expression.InspectorState.getVM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the current JPF virtual machine. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_inspector_state_impl.html#a35599b7e75baa1be692c339b456fa3c3">gov.nasa.jpf.inspector.server.expression.InspectorStateImpl</a>.</p>
 
 </div>
 </div>

@@ -109,9 +109,9 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterf
   <img src="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.png" usemap="#gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface_map" name="gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface_map">
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html" title="Interface provided by JPFInspector back-end (&quot;server&quot;) part. " alt="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface" shape="rect" coords="0,56,440,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html" alt="gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager" shape="rect" coords="450,56,890,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html" title="Manages choice generators and used choices. " alt="gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager" shape="rect" coords="450,56,890,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="0,112,440,136"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,440,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" title="Represents the concrete server part of the Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,440,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -147,13 +147,13 @@ Public Attributes</h2></td></tr>
 <tr class="memdesc:a06e944a19ec78b45921210b4f15ac2ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant that marks that there is no forward default choice from previous backward steps.  <a href="#a06e944a19ec78b45921210b4f15ac2ed">More...</a><br /></td></tr>
 <tr class="separator:a06e944a19ec78b45921210b4f15ac2ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8044dfb52a9f70488bc7584f8f84a1f5"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a8044dfb52a9f70488bc7584f8f84a1f5">USE_DEFAULT_CHOICE</a> = -1</td></tr>
-<tr class="memdesc:a8044dfb52a9f70488bc7584f8f84a1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant that marks that for the current value for the CoiceGenerator should by taken from the default forward choice.  <a href="#a8044dfb52a9f70488bc7584f8f84a1f5">More...</a><br /></td></tr>
+<tr class="memdesc:a8044dfb52a9f70488bc7584f8f84a1f5"><td class="mdescLeft">&#160;</td><td class="mdescRight">Constant that marks that for the current value for the ChoiceGenerator should by taken from the default forward choice.  <a href="#a8044dfb52a9f70488bc7584f8f84a1f5">More...</a><br /></td></tr>
 <tr class="separator:a8044dfb52a9f70488bc7584f8f84a1f5"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Interfaces related to choice generators and managing behavior of CG. </p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00014">14</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00013">13</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a50be99532b75699fd9b5b24b38bd27ca"></a>
 <div class="memitem">
@@ -270,7 +270,7 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 <p>Constant that marks that there is no forward default choice from previous backward steps. </p>
 <p>Can be used in <a class="el" href="">InspectorCallBacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00082">82</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00087">87</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -284,10 +284,10 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
       </table>
 </div><div class="memdoc">
 
-<p>Constant that marks that for the current value for the CoiceGenerator should by taken from the default forward choice. </p>
+<p>Constant that marks that for the current value for the ChoiceGenerator should by taken from the default forward choice. </p>
 <p>Can be used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a055b8d48f863633614dee147bc607ed7">method call. </a></p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00089">89</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00094">94</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>

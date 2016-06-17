@@ -98,7 +98,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Is intended for inspection of state of the SuT.  
+<p>This interface is part of the server's contract to the client.  
  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.interfaces.ProgramStateInterface:</div>
@@ -109,7 +109,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.ProgramStateInterface:
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html" title="Interface provided by JPFInspector back-end (&quot;server&quot;) part. " alt="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface" shape="rect" coords="0,56,387,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html" title="Handles commands that can be used to inspect program state, e.g. " alt="gov.nasa.jpf.inspector.server.programstate.ProgramStateManager" shape="rect" coords="397,56,784,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="0,112,387,136"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,387,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" title="Represents the concrete server part of the Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,387,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -125,20 +125,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a3a64e61b42c7338fe4f90c9c8519177f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates given expression and gets final representation (thread/method/variable) value.  <a href="#a3a64e61b42c7338fe4f90c9c8519177f">More...</a><br /></td></tr>
 <tr class="separator:a3a64e61b42c7338fe4f90c9c8519177f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaf980401ba045fdd70af10cb1c956ee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#aaf980401ba045fdd70af10cb1c956ee0">setValue</a> (String expr)  throws JPFInspectorException</td></tr>
-<tr class="memdesc:aaf980401ba045fdd70af10cb1c956ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets value of the variable.  <a href="#aaf980401ba045fdd70af10cb1c956ee0">More...</a><br /></td></tr>
+<tr class="memdesc:aaf980401ba045fdd70af10cb1c956ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the value of a variable or a field.  <a href="#aaf980401ba045fdd70af10cb1c956ee0">More...</a><br /></td></tr>
 <tr class="separator:aaf980401ba045fdd70af10cb1c956ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a992e2deda1c948e41ae9abcc776eec7b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#a992e2deda1c948e41ae9abcc776eec7b">setValue</a> (String lValue, String rValue)  throws JPFInspectorException</td></tr>
-<tr class="memdesc:a992e2deda1c948e41ae9abcc776eec7b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets value of the variable.  <a href="#a992e2deda1c948e41ae9abcc776eec7b">More...</a><br /></td></tr>
-<tr class="separator:a992e2deda1c948e41ae9abcc776eec7b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Is intended for inspection of state of the SuT. </p>
-<p>Stateless (all important information always provides client)</p>
-<ul>
-<li>there will be 3 views - threads+stack, heap, variables </li>
-</ul>
+<div class="textblock"><p>This interface is part of the server's contract to the client. </p>
+<p>It contains methods used by commands that read and manipulate the program state of the system under test.</p>
+<p>Stateless (all important information is always provided by the client).</p>
+<p>There will be 3 views - threads+stack, heap, variables. </p>
 
-<p>Definition at line <a class="el" href="_program_state_interface_8java_source.html#l00036">36</a> of file <a class="el" href="_program_state_interface_8java_source.html">ProgramStateInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_program_state_interface_8java_source.html#l00037">37</a> of file <a class="el" href="_program_state_interface_8java_source.html">ProgramStateInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a3a64e61b42c7338fe4f90c9c8519177f"></a>
 <div class="memitem">
@@ -251,66 +247,21 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Sets value of the variable. </p>
-<p>If setting is not successful throws exception.</p>
+<p>Changes the value of a variable or a field. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">expr</td><td>String with expression in the following form "lvalue state expression = rvalue state expression" </td></tr>
+    <tr><td class="paramname">expr</td><td>String with an expression in the following form "lvalue-state-expression = rvalue-state-expression" </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="exception"><dt>Exceptions</dt><dd>
   <table class="exception">
-    <tr><td class="paramname">JPFInspectorException</td><td></td></tr>
+    <tr><td class="paramname">JPFInspectorException</td><td>If it fails to change the value. </td></tr>
   </table>
   </dd>
 </dl>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#a75133d9acd32d5e0d94e63b25594866b">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a1c3264f06b28f41e6b0ded6c5f71863a">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a992e2deda1c948e41ae9abcc776eec7b"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gov.nasa.jpf.inspector.interfaces.ProgramStateInterface.setValue </td>
-          <td>(</td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>lValue</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype">String&#160;</td>
-          <td class="paramname"><em>rValue</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_exception.html">JPFInspectorException</a></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Sets value of the variable. </p>
-<p>If setting is not successful throws exception.</p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">lValue</td><td>String with state expression (as can used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#a3a64e61b42c7338fe4f90c9c8519177f">evaluateStateExpression(String)</a> which represents value of variable (not a constant, a stack frame, etc.) </td></tr>
-    <tr><td class="paramname">rValue</td><td>String with state expression (as can used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#a3a64e61b42c7338fe4f90c9c8519177f">evaluateStateExpression(String)</a> which represents value of the "same"/assignable type lValue. </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="exception"><dt>Exceptions</dt><dd>
-  <table class="exception">
-    <tr><td class="paramname">JPFInspectorException</td><td></td></tr>
-  </table>
-  </dd>
-</dl>
-
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#a5a008bc92c261213623bd6a8dfc291bb">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a35d1f2b50faf4f50aebb6722f43eb7da">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>

@@ -99,7 +99,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!--header-->
 <div class="contents">
 
-<p>Call backs to the client part.  
+<p>TODO This is implemented by both client and server classes?? Something strange is going on.  
  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.interfaces.InspectorCallBacks:</div>
@@ -130,9 +130,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:afe2463c7186265f972991c9c7ab4ec19"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#afe2463c7186265f972991c9c7ab4ec19">genericInfo</a> (String msg)</td></tr>
 <tr class="memdesc:afe2463c7186265f972991c9c7ab4ec19"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel used for sending various messages for the user.  <a href="#afe2463c7186265f972991c9c7ab4ec19">More...</a><br /></td></tr>
 <tr class="separator:afe2463c7186265f972991c9c7ab4ec19"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a130333a1ece0818a1161ca8597d027e6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a130333a1ece0818a1161ca8597d027e6">notifyBreakpointHit</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html">BreakPointStatus</a> bp)</td></tr>
-<tr class="memdesc:a130333a1ece0818a1161ca8597d027e6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when breakpoint is hitted.  <a href="#a130333a1ece0818a1161ca8597d027e6">More...</a><br /></td></tr>
-<tr class="separator:a130333a1ece0818a1161ca8597d027e6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a15d9b5a5f980cfcddd2fbcd2753c2174"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a15d9b5a5f980cfcddd2fbcd2753c2174">notifyBreakpointHit</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> bp)</td></tr>
+<tr class="memdesc:a15d9b5a5f980cfcddd2fbcd2753c2174"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when breakpoint is hit.  <a href="#a15d9b5a5f980cfcddd2fbcd2753c2174">More...</a><br /></td></tr>
+<tr class="separator:a15d9b5a5f980cfcddd2fbcd2753c2174"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a8ebe532769c4bced7461e073fa79a7a0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a8ebe532769c4bced7461e073fa79a7a0">notifyChoiceGeneratorNewChoice</a> (ChoiceGeneratorsInterface.CGTypes cgType, String cgName, int cgId, String[] choices, int nextChoice, int defaultChoice)</td></tr>
 <tr class="memdesc:a8ebe532769c4bced7461e073fa79a7a0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification from the server that ChoiceGenerator is asked for new value.  <a href="#a8ebe532769c4bced7461e073fa79a7a0">More...</a><br /></td></tr>
 <tr class="separator:a8ebe532769c4bced7461e073fa79a7a0"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -144,11 +144,11 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:a83f9486958bbd33ee9d1a767252dbfd6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Call backs to the client part. </p>
-<p>Used to notify client about interesting events. Client has to implement this interface and provide them to the server.</p>
-<p>Note: Only JPF thread is permitted to sent callbacks (except <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#afe2463c7186265f972991c9c7ab4ec19">method which can be called by any thread</a>) </p>
+<div class="textblock"><p>TODO This is implemented by both client and server classes?? Something strange is going on. </p>
+<p>This handles callbacks to the client. Used to notify client about interesting events. Client has to implement this interface and provide them to the server.</p>
+<p>Note: Only JPF thread is permitted to sent callbacks (except <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#afe2463c7186265f972991c9c7ab4ec19">genericInfo(String)</a> which can be called by any thread) </p>
 
-<p>Definition at line <a class="el" href="_inspector_call_backs_8java_source.html#l00030">30</a> of file <a class="el" href="_inspector_call_backs_8java_source.html">InspectorCallBacks.java</a>.</p>
+<p>Definition at line <a class="el" href="_inspector_call_backs_8java_source.html#l00032">32</a> of file <a class="el" href="_inspector_call_backs_8java_source.html">InspectorCallBacks.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac9e585a3096b0be7e25dc789b6b39cfa"></a>
 <div class="memitem">
@@ -202,21 +202,21 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a130333a1ece0818a1161ca8597d027e6"></a>
+<a class="anchor" id="a15d9b5a5f980cfcddd2fbcd2753c2174"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gov.nasa.jpf.inspector.interfaces.InspectorCallBacks.notifyBreakpointHit </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_status.html">BreakPointStatus</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&#160;</td>
           <td class="paramname"><em>bp</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when breakpoint is hitted. </p>
+<p>Called when breakpoint is hit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">bp</td><td>Breakpoint that is reached. </td></tr>
@@ -224,7 +224,7 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_callback_execution_decorator.html#a06eb644c91c09d652a0d08ed9fa4de09">gov.nasa.jpf.inspector.client.CallbackExecutionDecorator</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#ae60d11cc3bbba13dde00f095f2129bcf">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_client_callback_handler.html#ad270cf7f61001a7d3903ff7c52f92419">gov.nasa.jpf.inspector.client.JPFClientCallbackHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_callback_recording_decorator.html#a97471d92651a8eb8886ae56fc728268c">gov.nasa.jpf.inspector.client.CallbackRecordingDecorator</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_callback_execution_decorator.html#a1848967a7b758cb94cc31a8479261fc5">gov.nasa.jpf.inspector.client.CallbackExecutionDecorator</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#aaa07013030ffa8657cee4db9e3581fc4">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_client_callback_handler.html#ab8a284a3fe0bfa5ae4307e1eb2a947ac">gov.nasa.jpf.inspector.client.JPFClientCallbackHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_callback_recording_decorator.html#a3ec6b3b84ec7f7a72d599e81e8be7b67">gov.nasa.jpf.inspector.client.CallbackRecordingDecorator</a>.</p>
 
 </div>
 </div>

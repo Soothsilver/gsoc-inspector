@@ -108,22 +108,26 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.CommandsInterface:</di
   <img src="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.png" usemap="#gov.nasa.jpf.inspector.interfaces.CommandsInterface_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.interfaces.CommandsInterface_map" name="gov.nasa.jpf.inspector.interfaces.CommandsInterface_map">
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html" title="Interface provided by JPFInspector back-end (&quot;server&quot;) part. " alt="gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface" shape="rect" coords="0,56,377,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html" title="Handles start and stop commands. " alt="gov.nasa.jpf.inspector.server.breakpoints.CommandsManager" shape="rect" coords="387,56,764,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html" title="Handles start and stop commands, stepping, and stopping and resuming of the SuT. " alt="gov.nasa.jpf.inspector.server.breakpoints.CommandsManager" shape="rect" coords="387,56,764,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="0,112,377,136"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,377,192"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" title="Represents the concrete server part of the Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="0,168,377,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html">InspectorStates</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">TODO this enum is used EVERYWHERE, and should be documented more throughly, also maybe renamed.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#details">More...</a><br /></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration is used by callback handling classes.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates how many instructions should be skipped when stepping.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
+<tr class="memitem:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#afdca6bee39b4f13aeda2c6ff05d808ba">waitUntilStopped</a> ()</td></tr>
+<tr class="memdesc:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until JPF is stopped.  <a href="#afdca6bee39b4f13aeda2c6ff05d808ba">More...</a><br /></td></tr>
+<tr class="separator:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a940cf004fed68f888d56c14dfab136e1"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a940cf004fed68f888d56c14dfab136e1">isPaused</a> ()</td></tr>
 <tr class="memdesc:a940cf004fed68f888d56c14dfab136e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a JPF instance has started but its execution is currently stopped.  <a href="#a940cf004fed68f888d56c14dfab136e1">More...</a><br /></td></tr>
 <tr class="separator:a940cf004fed68f888d56c14dfab136e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -141,7 +145,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The server must implement this interface and the client uses it to start or stop execution and to do stepping. </p>
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00033">33</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a6a733100d8162d5f18063519a88257"></a>
 <div class="memitem">
@@ -234,6 +238,26 @@ Public Member Functions</h2></td></tr>
 <p>Stops an execution (like on breakpoint). </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ad3de2e0a6d30af40d0167bb7ec11f305">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a463604600d1f706e87ace1aeb2c4ef39">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="afdca6bee39b4f13aeda2c6ff05d808ba"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.waitUntilStopped </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until JPF is stopped. </p>
+<p>If JPF is not yet started, it returns immediately. If JPF has started but is currently paused, it returns immediately. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ab274e4aac662eb11d23384731d44ddbf">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#abd58ed16bb53e0090d0fd25c870ee36c">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>

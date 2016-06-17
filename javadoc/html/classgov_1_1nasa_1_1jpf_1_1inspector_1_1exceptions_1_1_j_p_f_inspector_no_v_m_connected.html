@@ -91,8 +91,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_no_v_m_connected-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -109,15 +109,15 @@ Inheritance diagram for gov.nasa.jpf.inspector.exceptions.JPFInspectorNoVMConnec
 </map>
  </div></div>
 <table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
-Public Member Functions</h2></td></tr>
-<tr class="memitem:a65417fb5675d3d20e566b2ca6e1b10b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_no_v_m_connected.html#a65417fb5675d3d20e566b2ca6e1b10b8">JPFInspectorNoVMConnected</a> ()</td></tr>
-<tr class="separator:a65417fb5675d3d20e566b2ca6e1b10b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-methods"></a>
 Static Public Member Functions</h2></td></tr>
 <tr class="memitem:a05679229247c53b88e4382d47a47c149"><td class="memItemLeft" align="right" valign="top">static void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_no_v_m_connected.html#a05679229247c53b88e4382d47a47c149">checkVM</a> (VM vm)  throws JPFInspectorNoVMConnected </td></tr>
 <tr class="separator:a05679229247c53b88e4382d47a47c149"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a65417fb5675d3d20e566b2ca6e1b10b8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_no_v_m_connected.html#a65417fb5675d3d20e566b2ca6e1b10b8">JPFInspectorNoVMConnected</a> ()</td></tr>
+<tr class="separator:a65417fb5675d3d20e566b2ca6e1b10b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -132,6 +132,9 @@ Static Private Attributes</h2></td></tr>
 <a class="anchor" id="a65417fb5675d3d20e566b2ca6e1b10b8"></a>
 <div class="memitem">
 <div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">gov.nasa.jpf.inspector.exceptions.JPFInspectorNoVMConnected.JPFInspectorNoVMConnected </td>
@@ -140,10 +143,15 @@ Static Private Attributes</h2></td></tr>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Definition at line <a class="el" href="_j_p_f_inspector_no_v_m_connected_8java_source.html#l00032">32</a> of file <a class="el" href="_j_p_f_inspector_no_v_m_connected_8java_source.html">JPFInspectorNoVMConnected.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                      {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    super(<span class="stringliteral">&quot;JVM not as a part of the state (JPF not connected)&quot;</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// TODO when does this occur?</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div></div><!-- fragment -->
+<div class="fragment"><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;                                      {</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    super(<span class="stringliteral">&quot;The JPF virtual machine is not loaded (JPF is not connected).&quot;</span>);</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <span class="comment">// This shouldn&#39;t actually ever happen - it&#39;s more like a failsafe.</span></div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
