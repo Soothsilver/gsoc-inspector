@@ -121,8 +121,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa6053d5106dec6cab7a2168e6a2f0804"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aa6053d5106dec6cab7a2168e6a2f0804">bindWithJPF</a> (JPF jpf)  throws JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:aa6053d5106dec6cab7a2168e6a2f0804"><td class="mdescLeft">&#160;</td><td class="mdescRight">New JPF can be bound only if previous one has finished (stops execution) or no JPF is bound.  <a href="#aa6053d5106dec6cab7a2168e6a2f0804">More...</a><br /></td></tr>
 <tr class="separator:aa6053d5106dec6cab7a2168e6a2f0804"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21714f0ec11b7faad1e05314db452b93"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#a21714f0ec11b7faad1e05314db452b93">getCallBack</a> ()</td></tr>
-<tr class="separator:a21714f0ec11b7faad1e05314db452b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae58e169269835221b9d292b0450117c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_inspector_server_callbacks.html">InspectorServerCallbacks</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#ae58e169269835221b9d292b0450117c3">getServerCallbacks</a> ()</td></tr>
+<tr class="memdesc:ae58e169269835221b9d292b0450117c3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the server-side serializer of callbacks.  <a href="#ae58e169269835221b9d292b0450117c3">More...</a><br /></td></tr>
+<tr class="separator:ae58e169269835221b9d292b0450117c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa44895798f3c029fbb50a93677c510fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aa44895798f3c029fbb50a93677c510fb">waitUntilJpfBecomesConnected</a> ()</td></tr>
 <tr class="memdesc:aa44895798f3c029fbb50a93677c510fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until JPF is connected with the Inspector.  <a href="#aa44895798f3c029fbb50a93677c510fb">More...</a><br /></td></tr>
 <tr class="separator:aa44895798f3c029fbb50a93677c510fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -138,21 +139,27 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c7644c0aa203769bba68374c0cb07ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4c7644c0aa203769bba68374c0cb07ea">start</a> ()  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a4c7644c0aa203769bba68374c0cb07ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes stopped execution.  <a href="#a4c7644c0aa203769bba68374c0cb07ea">More...</a><br /></td></tr>
 <tr class="separator:a4c7644c0aa203769bba68374c0cb07ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b1e8416849af72a29520099345a68b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a51b1e8416849af72a29520099345a68b">requestTermination</a> ()</td></tr>
+<tr class="memdesc:a51b1e8416849af72a29520099345a68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the JPF to terminate at the earliest opportunity.  <a href="#a51b1e8416849af72a29520099345a68b">More...</a><br /></td></tr>
+<tr class="separator:a51b1e8416849af72a29520099345a68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c3596280086831444dcb06079c9412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ad5c3596280086831444dcb06079c9412">forwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
 <tr class="separator:ad5c3596280086831444dcb06079c9412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6a733100d8162d5f18063519a88257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a6a6a733100d8162d5f18063519a88257">backwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
 <tr class="separator:a6a6a733100d8162d5f18063519a88257"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185cabae1a57bb5ad5866f7170db2f0b"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a185cabae1a57bb5ad5866f7170db2f0b">getBreakPoints</a> ()</td></tr>
-<tr class="separator:a185cabae1a57bb5ad5866f7170db2f0b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6edbd0160bdad06cfd47eab559e48b2e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a6edbd0160bdad06cfd47eab559e48b2e">createBreakPoint</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html">BreakPointCreationInformation</a> newBP)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
-<tr class="memdesc:a6edbd0160bdad06cfd47eab559e48b2e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint.  <a href="#a6edbd0160bdad06cfd47eab559e48b2e">More...</a><br /></td></tr>
-<tr class="separator:a6edbd0160bdad06cfd47eab559e48b2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a7dbd7885a26f09fecdb5008c5fea2639"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a7dbd7885a26f09fecdb5008c5fea2639">getBreakpoints</a> ()</td></tr>
+<tr class="separator:a7dbd7885a26f09fecdb5008c5fea2639"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a62e0b337bb85dbe8e8a68e179fa8a73f">createBreakPoint</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a> newBP)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
+<tr class="memdesc:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint.  <a href="#a62e0b337bb85dbe8e8a68e179fa8a73f">More...</a><br /></td></tr>
+<tr class="separator:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a72a13897af9c71756fb9081d6d75a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a6a72a13897af9c71756fb9081d6d75a2">createAssert</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html">AssertCreationInformation</a> newAssert)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
-<tr class="memdesc:a6a72a13897af9c71756fb9081d6d75a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID)  <a href="#a6a72a13897af9c71756fb9081d6d75a2">More...</a><br /></td></tr>
+<tr class="memdesc:a6a72a13897af9c71756fb9081d6d75a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID)  <a href="#a6a72a13897af9c71756fb9081d6d75a2">More...</a><br /></td></tr>
 <tr class="separator:a6a72a13897af9c71756fb9081d6d75a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a1b117659c4230581c31e5c5448675bcd"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a1b117659c4230581c31e5c5448675bcd">deleteBreakPoint</a> (int bpID)</td></tr>
-<tr class="memdesc:a1b117659c4230581c31e5c5448675bcd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the breakpoint with specified ID.  <a href="#a1b117659c4230581c31e5c5448675bcd">More...</a><br /></td></tr>
-<tr class="separator:a1b117659c4230581c31e5c5448675bcd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aee6b55d322c4d1de26a5999e6c448f55"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#aee6b55d322c4d1de26a5999e6c448f55">deleteBreakpoint</a> (int bpID)</td></tr>
+<tr class="memdesc:aee6b55d322c4d1de26a5999e6c448f55"><td class="mdescLeft">&#160;</td><td class="mdescRight">Deletes the breakpoint with the specified ID.  <a href="#aee6b55d322c4d1de26a5999e6c448f55">More...</a><br /></td></tr>
+<tr class="separator:aee6b55d322c4d1de26a5999e6c448f55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a16c64375b92140a3934e758ddab7ba07"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a16c64375b92140a3934e758ddab7ba07">changeBreakpointState</a> (int breakpointId, <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html">BreakpointState</a> newState)</td></tr>
+<tr class="memdesc:a16c64375b92140a3934e758ddab7ba07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the state of a breakpoint.  <a href="#a16c64375b92140a3934e758ddab7ba07">More...</a><br /></td></tr>
+<tr class="separator:a16c64375b92140a3934e758ddab7ba07"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a54531453dd2373d8f9f166a79547495a"><td class="memItemLeft" align="right" valign="top">Map&lt; Integer, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_p_s_e_thread.html">PSEThread</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#a54531453dd2373d8f9f166a79547495a">getThreads</a> (Integer threadNum)  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a54531453dd2373d8f9f166a79547495a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets selected/all threads and their status.  <a href="#a54531453dd2373d8f9f166a79547495a">More...</a><br /></td></tr>
 <tr class="separator:a54531453dd2373d8f9f166a79547495a"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -190,7 +197,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Interface provided by JPFInspector back-end ("server") part. </p>
 <p>Low level interface. </p>
 
-<p>Definition at line <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html">JPFInspectorBackEndInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html#l00029">29</a> of file <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html">JPFInspectorBackEndInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a6a6a733100d8162d5f18063519a88257"></a>
 <div class="memitem">
@@ -250,6 +257,52 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="a16c64375b92140a3934e758ddab7ba07"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.changeBreakpointState </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>breakpointId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_state.html">BreakpointState</a>&#160;</td>
+          <td class="paramname"><em>newState</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes the state of a breakpoint. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">breakpointId</td><td>The breakpoint's ID. </td></tr>
+    <tr><td class="paramname">newState</td><td>The new state that the breakpoint should assume. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the breakpoint's state changed; false if the breakpoint does not exist. </dd></dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#ac39108a25cf5b4c4c941ea9c9f21251f">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a778db989e29bb0881d06be2286d7d742">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6a72a13897af9c71756fb9081d6d75a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -272,7 +325,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID) </p>
+<p>Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID) </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newAssert</td><td>Structure with new information about new Assert. </td></tr>
@@ -285,7 +338,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a6edbd0160bdad06cfd47eab559e48b2e"></a>
+<a class="anchor" id="a62e0b337bb85dbe8e8a68e179fa8a73f"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -295,7 +348,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.createBreakPoint </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html">BreakPointCreationInformation</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a>&#160;</td>
           <td class="paramname"><em>newBP</em></td><td>)</td>
           <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_parsing_error_exception.html">JPFInspectorParsingErrorException</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
         </tr>
@@ -307,7 +360,7 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_creation_information.html#a24626231e3744e59f505d0731d4ca9e1">BreakPointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint. </p>
+<p>Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">newBP</td><td>Structure with new information about new BP. </td></tr>
@@ -316,11 +369,11 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Get informations about state of the created/modified breakpoint or null if error takes place. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a64fa22cc9617c9863e96c2ee4c9750cd">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#aca5b68afe3e2508936dabc91fac2cb29">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a2e4ca8d547e3bfbfe985e10172236c0c">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ac58cb1c2b654f808f0175924d2468721">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="a1b117659c4230581c31e5c5448675bcd"></a>
+<a class="anchor" id="aee6b55d322c4d1de26a5999e6c448f55"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -328,7 +381,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">boolean gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.deleteBreakPoint </td>
+          <td class="memname">boolean gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.deleteBreakpoint </td>
           <td>(</td>
           <td class="paramtype">int&#160;</td>
           <td class="paramname"><em>bpID</em></td><td>)</td>
@@ -342,16 +395,16 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Deletes the breakpoint with specified ID. </p>
+<p>Deletes the breakpoint with the specified ID. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bpID</td><td>Identification of the Breakpoint to delete </td></tr>
+    <tr><td class="paramname">bpID</td><td>The breakpoint's ID. </td></tr>
   </table>
   </dd>
 </dl>
-<dl class="section return"><dt>Returns</dt><dd>true if Breakpoint with given bpID exists, false if BP not found. </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>True if the breakpoint was deleted; false if the breakpoint did not exist. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a1c3463920026db455b01278f5c11fd8d">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a2ba1c1cc1dbfe753bdaf436df0f27b45">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a3884846ac533d48db9f79cee67f4b29c">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ab4115ebcac4d091fa6c4b5f892fe82d0">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -392,7 +445,7 @@ Public Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#aafa2d8336ed4229843f36fe99897be71">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a6b844731ae2bc8d6934ad1c731dce319">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a6b844731ae2bc8d6934ad1c731dce319">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#aafa2d8336ed4229843f36fe99897be71">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>.</p>
 
 </div>
 </div>
@@ -422,7 +475,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a185cabae1a57bb5ad5866f7170db2f0b"></a>
+<a class="anchor" id="a7dbd7885a26f09fecdb5008c5fea2639"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -430,7 +483,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">List&lt;<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&gt; gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.getBreakPoints </td>
+          <td class="memname">List&lt;<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&gt; gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.getBreakpoints </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -444,24 +497,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Gets list with currently existing Breakpoints. Never gets null, if no breakpoint exists, then empty list is returned. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a9cdafc1d1c6e6fe7071aa65c1bd92a7a">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a8fe59d180351c4060dfc2e6413abd70c">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a21714f0ec11b7faad1e05314db452b93"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a> gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface.getCallBack </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#aa162cc3bac2d88c62d170d036c5e1ccc">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae6c609d6d96be90b41090462c71f92a3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a6f0d254bd20ebbaf814696308b09d838">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>.</p>
 
 </div>
 </div>
@@ -490,7 +526,27 @@ Public Attributes</h2></td></tr>
 <p>Returned array holds entry for any combination of <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_mode.html">CGMode</a> and <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_types.html">CGTypes</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Get status of CG notifications. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ae58e169269835221b9d292b0450117c3"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_inspector_server_callbacks.html">InspectorServerCallbacks</a> gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface.getServerCallbacks </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the server-side serializer of callbacks. </p>
+<p>When this serializer's methods are called, new callbacks are sent to the client. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a0084157560d6b1f1f997f5e5ebdc1aba">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
 
 </div>
 </div>
@@ -670,6 +726,33 @@ Note: For any combination of type and mode parameter there is stored state that 
 
 </div>
 </div>
+<a class="anchor" id="a51b1e8416849af72a29520099345a68b"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.requestTermination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Causes the JPF to terminate at the earliest opportunity. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a34b2501c193ff47e630e3b7f7f2ba138">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a63e63ad43eb703ac73365511900f1ba7">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a055b8d48f863633614dee147bc607ed7"></a>
 <div class="memitem">
 <div class="memproto">
@@ -694,7 +777,7 @@ Note: For any combination of type and mode parameter there is stored state that 
 
 <p>Specifies which choice should the current <a class="el" href="">ChoiceGenerator</a> use. </p>
 <p><br />
-Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> is called.</p>
+Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selectedChoice</td><td>Choice which the <a class="el" href="">ChoiceGenerator</a> will return. Value <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a8044dfb52a9f70488bc7584f8f84a1f5">USE_DEFAULT_CHOICE</a> can be specify to uses value from previous execution. If no default value exists, no value is selected and error is reported to the user. </td></tr>
@@ -868,9 +951,9 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 </div><div class="memdoc">
 
 <p>Constant that marks that there is no forward default choice from previous backward steps. </p>
-<p>Can be used in <a class="el" href="">InspectorCallBacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
+<p>Can be used in <a class="el" href="">InspectorCallbacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00087">87</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00086">86</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -895,7 +978,7 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 <p>Constant that marks that for the current value for the ChoiceGenerator should by taken from the default forward choice. </p>
 <p>Can be used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a055b8d48f863633614dee147bc607ed7">method call. </a></p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00094">94</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00093">93</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>

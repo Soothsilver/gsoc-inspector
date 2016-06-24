@@ -98,13 +98,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Sends the <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a88d8b3a998af8d143bc1152497ea7909">InspectorCallbacks#genericInfo(String)</a> callback.  
+ <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.png" usemap="#gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo_map" name="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html" alt="gov.nasa.jpf.inspector.server.callbacks.CallbackCommand" shape="rect" coords="0,0,473,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html" title="A callback command is a server-side class that sends a specific callback to the client. " alt="gov.nasa.jpf.inspector.server.callbacks.CallbackCommand" shape="rect" coords="0,0,473,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -112,11 +115,11 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.commands.Callbac
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a3f08e9622507e785f5d8ad0a3a21b7d6"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a3f08e9622507e785f5d8ad0a3a21b7d6">CallbackCommandGenericInfo</a> (String <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a>)</td></tr>
 <tr class="separator:a3f08e9622507e785f5d8ad0a3a21b7d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8a9547198a54b3807f0de2ed45cb2f9d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8a9547198a54b3807f0de2ed45cb2f9d">sendCallback</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a> callbacks)</td></tr>
-<tr class="memdesc:a8a9547198a54b3807f0de2ed45cb2f9d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to send represented callback.  <a href="#a8a9547198a54b3807f0de2ed45cb2f9d">More...</a><br /></td></tr>
-<tr class="separator:a8a9547198a54b3807f0de2ed45cb2f9d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ae4d008b85e1a8793c7bc9c62a1c032b7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#ae4d008b85e1a8793c7bc9c62a1c032b7">sendCallback</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html">InspectorCallbacks</a> clientCallbacks)</td></tr>
+<tr class="memdesc:ae4d008b85e1a8793c7bc9c62a1c032b7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends this callback to the client.  <a href="#ae4d008b85e1a8793c7bc9c62a1c032b7">More...</a><br /></td></tr>
+<tr class="separator:ae4d008b85e1a8793c7bc9c62a1c032b7"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a64bcc2fce69378fd551d98a25b0dd734"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a64bcc2fce69378fd551d98a25b0dd734">waitJPF2stop</a> ()</td></tr>
-<tr class="memdesc:a64bcc2fce69378fd551d98a25b0dd734"><td class="mdescLeft">&#160;</td><td class="mdescRight">if false callback should be sent as soon as all previous callbacks are processed if true callbacks should be sent if JPF is stopped.  <a href="#a64bcc2fce69378fd551d98a25b0dd734">More...</a><br /></td></tr>
+<tr class="memdesc:a64bcc2fce69378fd551d98a25b0dd734"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the callback sending thread should wait for JPF to be paused.  <a href="#a64bcc2fce69378fd551d98a25b0dd734">More...</a><br /></td></tr>
 <tr class="separator:a64bcc2fce69378fd551d98a25b0dd734"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
@@ -125,8 +128,9 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a8abf18685ad4efcc4655476cd6340c2e"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00006">6</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
+<div class="textblock"><p>Sends the <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a88d8b3a998af8d143bc1152497ea7909">InspectorCallbacks#genericInfo(String)</a> callback. </p>
+
+<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00009">9</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a3f08e9622507e785f5d8ad0a3a21b7d6"></a>
 <div class="memitem">
@@ -142,38 +146,39 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00010">10</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;                                                 {</div><div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;    super();</div><div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a>;</div><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info_html_a8abf18685ad4efcc4655476cd6340c2e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo.msg</a></div><div class="ttdeci">final String msg</div><div class="ttdef"><b>Definition:</b> <a href="_callback_command_generic_info_8java_source.html#l00008">CallbackCommandGenericInfo.java:8</a></div></div>
+<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00013">13</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;                                                 {</div><div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a>;</div><div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info_html_a8abf18685ad4efcc4655476cd6340c2e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo.msg</a></div><div class="ttdeci">final String msg</div><div class="ttdef"><b>Definition:</b> <a href="_callback_command_generic_info_8java_source.html#l00011">CallbackCommandGenericInfo.java:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a8a9547198a54b3807f0de2ed45cb2f9d"></a>
+<a class="anchor" id="ae4d008b85e1a8793c7bc9c62a1c032b7"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo.sendCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a>&#160;</td>
-          <td class="paramname"><em>callbacks</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html">InspectorCallbacks</a>&#160;</td>
+          <td class="paramname"><em>clientCallbacks</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called to send represented callback. </p>
+<p>Sends this callback to the client. </p>
+<p>Only the callback sending thread calls this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callbacks</td><td>Interface where sent the callback. </td></tr>
+    <tr><td class="paramname">clientCallbacks</td><td>Client-side class that displays callbacks to the user. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#ae4cee95135293dd8c53e04fd7145b67f">gov.nasa.jpf.inspector.server.callbacks.CallbackCommand</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#a92a6768643007f520c46a5bdc328ede4">gov.nasa.jpf.inspector.server.callbacks.CallbackCommand</a>.</p>
 
-<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00016">16</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;                                                          {</div><div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;    callbacks.genericInfo(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a>);</div><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info_html_a8abf18685ad4efcc4655476cd6340c2e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo.msg</a></div><div class="ttdeci">final String msg</div><div class="ttdef"><b>Definition:</b> <a href="_callback_command_generic_info_8java_source.html#l00008">CallbackCommandGenericInfo.java:8</a></div></div>
+<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00018">18</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;                                                                {</div><div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;    clientCallbacks.genericInfo(<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">msg</a>);</div><div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info_html_a8abf18685ad4efcc4655476cd6340c2e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8abf18685ad4efcc4655476cd6340c2e">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo.msg</a></div><div class="ttdeci">final String msg</div><div class="ttdef"><b>Definition:</b> <a href="_callback_command_generic_info_8java_source.html#l00011">CallbackCommandGenericInfo.java:11</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -190,13 +195,13 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>if false callback should be sent as soon as all previous callbacks are processed if true callbacks should be sent if JPF is stopped. </p>
-<dl class="section return"><dt>Returns</dt><dd>Specifies callback behavior. </dd></dl>
+<p>Indicates whether the callback sending thread should wait for JPF to be paused. </p>
+<p>If false, the callback should be sent as soon as all previous callbacks are processed. If true, the callbacks should only be sent once JPF is stopped. Until then, the callback sending thread will be blocked. </p>
 
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#a156477000bc705d78978af529e60fc5a">gov.nasa.jpf.inspector.server.callbacks.CallbackCommand</a>.</p>
 
-<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00021">21</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;                                 {</div><div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00023">23</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;                                 {</div><div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">false</span>;</div><div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -218,7 +223,7 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00008">8</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
+<p>Definition at line <a class="el" href="_callback_command_generic_info_8java_source.html#l00011">11</a> of file <a class="el" href="_callback_command_generic_info_8java_source.html">CallbackCommandGenericInfo.java</a>.</p>
 
 </div>
 </div>

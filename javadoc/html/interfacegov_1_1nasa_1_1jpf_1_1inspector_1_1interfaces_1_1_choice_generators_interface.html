@@ -172,7 +172,7 @@ Public Attributes</h2></td></tr>
 <p>Returned array holds entry for any combination of <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_mode.html">CGMode</a> and <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_types.html">CGTypes</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Get status of CG notifications. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
 
 </div>
 </div>
@@ -244,7 +244,7 @@ Note: For any combination of type and mode parameter there is stored state that 
 
 <p>Specifies which choice should the current <a class="el" href="">ChoiceGenerator</a> use. </p>
 <p><br />
-Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> is called.</p>
+Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> is called.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">selectedChoice</td><td>Choice which the <a class="el" href="">ChoiceGenerator</a> will return. Value <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a8044dfb52a9f70488bc7584f8f84a1f5">USE_DEFAULT_CHOICE</a> can be specify to uses value from previous execution. If no default value exists, no value is selected and error is reported to the user. </td></tr>
@@ -268,9 +268,9 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 </div><div class="memdoc">
 
 <p>Constant that marks that there is no forward default choice from previous backward steps. </p>
-<p>Can be used in <a class="el" href="">InspectorCallBacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
+<p>Can be used in <a class="el" href="">InspectorCallbacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00087">87</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00086">86</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -287,7 +287,7 @@ Useful only immediately after <a class="el" href="">InspectorCallBacks#notifyCho
 <p>Constant that marks that for the current value for the ChoiceGenerator should by taken from the default forward choice. </p>
 <p>Can be used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a055b8d48f863633614dee147bc607ed7">method call. </a></p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00094">94</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00093">93</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>

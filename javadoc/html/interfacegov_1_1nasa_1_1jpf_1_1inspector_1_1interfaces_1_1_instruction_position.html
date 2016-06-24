@@ -92,12 +92,15 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gov.nasa.jpf.inspector.interfaces.InstructionPosition Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Represents the coordinates of an instruction, i.e.  
+ <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.interfaces.InstructionPosition:</div>
 <div class="dyncontent">
@@ -111,7 +114,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.InstructionPosition:</
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5cae68ff61d71dbf7b90e30b8291784"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac5cae68ff61d71dbf7b90e30b8291784">getLineNumber</a> ()</td></tr>
-<tr class="memdesc:ac5cae68ff61d71dbf7b90e30b8291784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unspecified line.  <a href="#ac5cae68ff61d71dbf7b90e30b8291784">More...</a><br /></td></tr>
+<tr class="memdesc:ac5cae68ff61d71dbf7b90e30b8291784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be obtained by calling Instruction.getLineNumber()  <a href="#ac5cae68ff61d71dbf7b90e30b8291784">More...</a><br /></td></tr>
 <tr class="separator:ac5cae68ff61d71dbf7b90e30b8291784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fb787ee623734fb5be1266d14727ce"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac1fb787ee623734fb5be1266d14727ce">getFileName</a> ()</td></tr>
 <tr class="memdesc:ac1fb787ee623734fb5be1266d14727ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name where the class is defined.  <a href="#ac1fb787ee623734fb5be1266d14727ce">More...</a><br /></td></tr>
@@ -130,14 +133,17 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a70c3855595601858a5d63e30db44a63d"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a70c3855595601858a5d63e30db44a63d">getInstructionName</a> ()</td></tr>
 <tr class="separator:a70c3855595601858a5d63e30db44a63d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af542a3a926e7a0ef8ad18bde5ee98634"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#af542a3a926e7a0ef8ad18bde5ee98634">IP_POS_LINE_NOT_DEFINED</a> = -1</td></tr>
-<tr class="separator:af542a3a926e7a0ef8ad18bde5ee98634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a38e1f4adbba824577ad4461424144585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a38e1f4adbba824577ad4461424144585">IP_POS_LINE_NOT_DEFINED</a> = -1</td></tr>
+<tr class="memdesc:a38e1f4adbba824577ad4461424144585"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code line is unspecified.  <a href="#a38e1f4adbba824577ad4461424144585">More...</a><br /></td></tr>
+<tr class="separator:a38e1f4adbba824577ad4461424144585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00024">24</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
+<div class="textblock"><p>Represents the coordinates of an instruction, i.e. </p>
+<p>its location in the source code and in its method's bytecode. </p>
+
+<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00027">27</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1a109a1b9cac93e4d189ef5498863fce"></a>
 <div class="memitem">
@@ -226,7 +232,6 @@ Static Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unspecified line. </p>
 <p>Can be obtained by calling Instruction.getLineNumber() </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#a0ebbca9205ea60a39c4ee0c99f9a4272">gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl</a>.</p>
@@ -298,25 +303,19 @@ Static Public Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="af542a3a926e7a0ef8ad18bde5ee98634"></a>
+<a class="anchor" id="a38e1f4adbba824577ad4461424144585"></a>
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int gov.nasa.jpf.inspector.interfaces.InstructionPosition.IP_POS_LINE_NOT_DEFINED = -1</td>
+          <td class="memname">int gov.nasa.jpf.inspector.interfaces.InstructionPosition.IP_POS_LINE_NOT_DEFINED = -1</td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00026">26</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
+<p>The source code line is unspecified. </p>
+
+<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00032">32</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
 
 </div>
 </div>

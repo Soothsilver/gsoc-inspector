@@ -93,7 +93,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
 <a href="#pub-static-methods">Static Public Member Functions</a> &#124;
-<a href="#pub-static-attribs">Static Public Attributes</a> &#124;
+<a href="#pub-attribs">Public Attributes</a> &#124;
 <a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="#pri-static-methods">Static Private Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
@@ -111,7 +111,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.breakpoints.InstructionPos
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.png" usemap="#gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl_map" name="gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html" alt="gov.nasa.jpf.inspector.interfaces.InstructionPosition" shape="rect" coords="0,0,376,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html" title="Represents the coordinates of an instruction, i.e. " alt="gov.nasa.jpf.inspector.interfaces.InstructionPosition" shape="rect" coords="0,0,376,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -123,7 +123,7 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:ac4beaec76a586dfba936cae0f25f9e86"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification that new Class has been loaded.  <a href="#ac4beaec76a586dfba936cae0f25f9e86">More...</a><br /></td></tr>
 <tr class="separator:ac4beaec76a586dfba936cae0f25f9e86"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0ebbca9205ea60a39c4ee0c99f9a4272"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#a0ebbca9205ea60a39c4ee0c99f9a4272">getLineNumber</a> ()</td></tr>
-<tr class="memdesc:a0ebbca9205ea60a39c4ee0c99f9a4272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Unspecified line.  <a href="#a0ebbca9205ea60a39c4ee0c99f9a4272">More...</a><br /></td></tr>
+<tr class="memdesc:a0ebbca9205ea60a39c4ee0c99f9a4272"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be obtained by calling Instruction.getLineNumber()  <a href="#a0ebbca9205ea60a39c4ee0c99f9a4272">More...</a><br /></td></tr>
 <tr class="separator:a0ebbca9205ea60a39c4ee0c99f9a4272"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a684f11d2a16eafa3bac9e4f7e62fc0e1"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#a684f11d2a16eafa3bac9e4f7e62fc0e1">hitPosition</a> (Instruction instr)</td></tr>
 <tr class="memdesc:a684f11d2a16eafa3bac9e4f7e62fc0e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether given instruction take place at represented position.  <a href="#a684f11d2a16eafa3bac9e4f7e62fc0e1">More...</a><br /></td></tr>
@@ -150,10 +150,11 @@ Static Public Member Functions</h2></td></tr>
 <tr class="memdesc:a475f560825aa68d3d7df0015bcc63013"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates instruction position that represents the same location (file and line) as given instruction.  <a href="#a475f560825aa68d3d7df0015bcc63013">More...</a><br /></td></tr>
 <tr class="separator:a475f560825aa68d3d7df0015bcc63013"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
-Static Public Attributes</h2></td></tr>
-<tr class="memitem:af542a3a926e7a0ef8ad18bde5ee98634"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#af542a3a926e7a0ef8ad18bde5ee98634">IP_POS_LINE_NOT_DEFINED</a> = -1</td></tr>
-<tr class="separator:af542a3a926e7a0ef8ad18bde5ee98634"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
+Public Attributes</h2></td></tr>
+<tr class="memitem:a38e1f4adbba824577ad4461424144585"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a38e1f4adbba824577ad4461424144585">IP_POS_LINE_NOT_DEFINED</a> = -1</td></tr>
+<tr class="memdesc:a38e1f4adbba824577ad4461424144585"><td class="mdescLeft">&#160;</td><td class="mdescRight">The source code line is unspecified.  <a href="#a38e1f4adbba824577ad4461424144585">More...</a><br /></td></tr>
+<tr class="separator:a38e1f4adbba824577ad4461424144585"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
 Private Member Functions</h2></td></tr>
@@ -173,7 +174,7 @@ Static Private Member Functions</h2></td></tr>
 Private Attributes</h2></td></tr>
 <tr class="memitem:a516c1bf9f9237fa2da514022d0ed4679"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1expressions_1_1_file_name.html">FileName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#a516c1bf9f9237fa2da514022d0ed4679">fileName</a> = null</td></tr>
 <tr class="separator:a516c1bf9f9237fa2da514022d0ed4679"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ab362ce71d6d351401c64199096a5a75c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#ab362ce71d6d351401c64199096a5a75c">line</a> = <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#af542a3a926e7a0ef8ad18bde5ee98634">InstructionPosition.IP_POS_LINE_NOT_DEFINED</a></td></tr>
+<tr class="memitem:ab362ce71d6d351401c64199096a5a75c"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#ab362ce71d6d351401c64199096a5a75c">line</a> = <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a38e1f4adbba824577ad4461424144585">InstructionPosition.IP_POS_LINE_NOT_DEFINED</a></td></tr>
 <tr class="separator:ab362ce71d6d351401c64199096a5a75c"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ae8a3786b40675ad5b90a137b828c539b"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#ae8a3786b40675ad5b90a137b828c539b">sourceLine</a> = null</td></tr>
 <tr class="separator:ae8a3786b40675ad5b90a137b828c539b"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -465,7 +466,6 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Unspecified line. </p>
 <p>Can be obtained by calling Instruction.getLineNumber() </p>
 
 <p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac5cae68ff61d71dbf7b90e30b8291784">gov.nasa.jpf.inspector.interfaces.InstructionPosition</a>.</p>
@@ -692,7 +692,7 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="af542a3a926e7a0ef8ad18bde5ee98634"></a>
+<a class="anchor" id="a38e1f4adbba824577ad4461424144585"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -700,17 +700,19 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">final int gov.nasa.jpf.inspector.interfaces.InstructionPosition.IP_POS_LINE_NOT_DEFINED = -1</td>
+          <td class="memname">int gov.nasa.jpf.inspector.interfaces.InstructionPosition.IP_POS_LINE_NOT_DEFINED = -1</td>
         </tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span><span class="mlabel">inherited</span></span>  </td>
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00026">26</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
+<p>The source code line is unspecified. </p>
+
+<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00032">32</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
 
 </div>
 </div>
@@ -722,7 +724,7 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl.line = <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#af542a3a926e7a0ef8ad18bde5ee98634">InstructionPosition.IP_POS_LINE_NOT_DEFINED</a></td>
+          <td class="memname">int gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl.line = <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a38e1f4adbba824577ad4461424144585">InstructionPosition.IP_POS_LINE_NOT_DEFINED</a></td>
         </tr>
       </table>
   </td>

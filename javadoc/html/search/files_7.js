@@ -1,12 +1,16 @@
 var searchData=
 [
-  ['inspectorcallbacks_2ejava',['InspectorCallBacks.java',['../_inspector_call_backs_8java.html',1,'']]],
+  ['inspectorcallbacks_2ejava',['InspectorCallbacks.java',['../_inspector_callbacks_8java.html',1,'']]],
   ['inspectorconfiguration_2ejava',['InspectorConfiguration.java',['../_inspector_configuration_8java.html',1,'']]],
   ['inspectorlistener_2ejava',['InspectorListener.java',['../_inspector_listener_8java.html',1,'']]],
   ['inspectorlistenermodenotifications_2ejava',['InspectorListenerModeNotifications.java',['../_inspector_listener_mode_notifications_8java.html',1,'']]],
   ['inspectorlistenermodesilent_2ejava',['InspectorListenerModeSilent.java',['../_inspector_listener_mode_silent_8java.html',1,'']]],
+  ['inspectorprimaryconsolepanel_2ejava',['InspectorPrimaryConsolePanel.java',['../_inspector_primary_console_panel_8java.html',1,'']]],
+  ['inspectorservercallbacks_2ejava',['InspectorServerCallbacks.java',['../_inspector_server_callbacks_8java.html',1,'']]],
   ['inspectorstate_2ejava',['InspectorState.java',['../_inspector_state_8java.html',1,'']]],
   ['inspectorstateimpl_2ejava',['InspectorStateImpl.java',['../_inspector_state_impl_8java.html',1,'']]],
+  ['inspectorstatuschange_2ejava',['InspectorStatusChange.java',['../_inspector_status_change_8java.html',1,'']]],
+  ['inspectortoolbarcommand_2ejava',['InspectorToolbarCommand.java',['../_inspector_toolbar_command_8java.html',1,'']]],
   ['instructionposition_2ejava',['InstructionPosition.java',['../_instruction_position_8java.html',1,'']]],
   ['instructionpositionimpl_2ejava',['InstructionPositionImpl.java',['../_instruction_position_impl_8java.html',1,'']]],
   ['instructiontype_2ejava',['InstructionType.java',['../_instruction_type_8java.html',1,'']]],

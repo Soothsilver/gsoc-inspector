@@ -97,6 +97,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">gov.nasa.jpf.inspector.server.callbacks.CallbackCommand Interface Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>A callback command is a server-side class that sends a specific callback to the client.  
+ <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.CallbackCommand:</div>
 <div class="dyncontent">
@@ -105,8 +108,8 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.CallbackCommand:
   <map id="gov.nasa.jpf.inspector.server.callbacks.CallbackCommand_map" name="gov.nasa.jpf.inspector.server.callbacks.CallbackCommand_map">
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_breakpoint_hit.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandBreakpointHit" shape="rect" coords="0,56,569,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_choice_generator_new_choice.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandChoiceGeneratorNewChoice" shape="rect" coords="579,56,1148,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError" shape="rect" coords="1158,56,1727,80"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo" shape="rect" coords="1737,56,2306,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html" title="Sends the InspectorCallbacks#genericError(String) callbacks. " alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError" shape="rect" coords="1158,56,1727,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html" title="Sends the InspectorCallbacks#genericInfo(String) callback. " alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo" shape="rect" coords="1737,56,2306,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_specify_choice_to_use.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandSpecifyChoiceToUse" shape="rect" coords="2316,56,2885,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_state_changed.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandStateChanged" shape="rect" coords="2895,56,3464,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_used_choice.html" alt="gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandUsedChoice" shape="rect" coords="3474,56,4043,80"/>
@@ -115,40 +118,43 @@ Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.CallbackCommand:
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ae4cee95135293dd8c53e04fd7145b67f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#ae4cee95135293dd8c53e04fd7145b67f">sendCallback</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a> callbacks)</td></tr>
-<tr class="memdesc:ae4cee95135293dd8c53e04fd7145b67f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called to send represented callback.  <a href="#ae4cee95135293dd8c53e04fd7145b67f">More...</a><br /></td></tr>
-<tr class="separator:ae4cee95135293dd8c53e04fd7145b67f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a92a6768643007f520c46a5bdc328ede4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#a92a6768643007f520c46a5bdc328ede4">sendCallback</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html">InspectorCallbacks</a> clientCallbacks)</td></tr>
+<tr class="memdesc:a92a6768643007f520c46a5bdc328ede4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sends this callback to the client.  <a href="#a92a6768643007f520c46a5bdc328ede4">More...</a><br /></td></tr>
+<tr class="separator:a92a6768643007f520c46a5bdc328ede4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a156477000bc705d78978af529e60fc5a"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html#a156477000bc705d78978af529e60fc5a">waitJPF2stop</a> ()</td></tr>
-<tr class="memdesc:a156477000bc705d78978af529e60fc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">if false callback should be sent as soon as all previous callbacks are processed if true callbacks should be sent if JPF is stopped.  <a href="#a156477000bc705d78978af529e60fc5a">More...</a><br /></td></tr>
+<tr class="memdesc:a156477000bc705d78978af529e60fc5a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether the callback sending thread should wait for JPF to be paused.  <a href="#a156477000bc705d78978af529e60fc5a">More...</a><br /></td></tr>
 <tr class="separator:a156477000bc705d78978af529e60fc5a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_callback_command_8java_source.html#l00005">5</a> of file <a class="el" href="_callback_command_8java_source.html">CallbackCommand.java</a>.</p>
+<div class="textblock"><p>A callback command is a server-side class that sends a specific callback to the client. </p>
+<p>Each class corresponds to a type of callback. </p>
+
+<p>Definition at line <a class="el" href="_callback_command_8java_source.html#l00009">9</a> of file <a class="el" href="_callback_command_8java_source.html">CallbackCommand.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="ae4cee95135293dd8c53e04fd7145b67f"></a>
+<a class="anchor" id="a92a6768643007f520c46a5bdc328ede4"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gov.nasa.jpf.inspector.server.callbacks.CallbackCommand.sendCallback </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html">InspectorCallBacks</a>&#160;</td>
-          <td class="paramname"><em>callbacks</em></td><td>)</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html">InspectorCallbacks</a>&#160;</td>
+          <td class="paramname"><em>clientCallbacks</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called to send represented callback. </p>
+<p>Sends this callback to the client. </p>
+<p>Only the callback sending thread calls this method.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">callbacks</td><td>Interface where sent the callback. </td></tr>
+    <tr><td class="paramname">clientCallbacks</td><td>Client-side class that displays callbacks to the user. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_choice_generator_new_choice.html#a39ed8b0f6a265269f77c4ebcd2782f7f">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandChoiceGeneratorNewChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_used_choice.html#a94bd9e411f615a9d2f16b1b93f593b7a">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandUsedChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_state_changed.html#a2d5ba3e613f89a44e500b949dbbd8130">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandStateChanged</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_breakpoint_hit.html#aeecbb0871ffec48a3e0f2c70ab15d529">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandBreakpointHit</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html#a42ed40f8139f20d38913140d29bcf1f0">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a8a9547198a54b3807f0de2ed45cb2f9d">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_specify_choice_to_use.html#a581ac34e0c2e0b6c3f09798b7e8bdb08">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandSpecifyChoiceToUse</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_choice_generator_new_choice.html#af7aac251378dc010b48a570da79077b2">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandChoiceGeneratorNewChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_used_choice.html#a95c2469d2b41e0457230472e0981f228">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandUsedChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html#a6d3c0b9ccaa699ce3f5cb01238e0627e">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#ae4d008b85e1a8793c7bc9c62a1c032b7">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_state_changed.html#a35c4ac5c8677584b7f5e913c5e8951d6">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandStateChanged</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_breakpoint_hit.html#a6600f021c731c7012c325423471b2bb3">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandBreakpointHit</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_specify_choice_to_use.html#a4473aefc0f78c5fdd1fd3ea1272e272b">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandSpecifyChoiceToUse</a>.</p>
 
 </div>
 </div>
@@ -165,10 +171,10 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>if false callback should be sent as soon as all previous callbacks are processed if true callbacks should be sent if JPF is stopped. </p>
-<dl class="section return"><dt>Returns</dt><dd>Specifies callback behavior. </dd></dl>
+<p>Indicates whether the callback sending thread should wait for JPF to be paused. </p>
+<p>If false, the callback should be sent as soon as all previous callbacks are processed. If true, the callbacks should only be sent once JPF is stopped. Until then, the callback sending thread will be blocked. </p>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_choice_generator_new_choice.html#a64ae39788c0bd6cc54f9d7b039534b8c">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandChoiceGeneratorNewChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_used_choice.html#ac9f4c3b7073de17dad9eb1487e471983">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandUsedChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_state_changed.html#a7e6e83514e98395c3b1a63265980967d">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandStateChanged</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_breakpoint_hit.html#a29df60af9ac0b70c256fd4e6274b8bf0">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandBreakpointHit</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html#a7480e70e3fdb3a61db7f915fc7e9f47c">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a64bcc2fce69378fd551d98a25b0dd734">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_specify_choice_to_use.html#ad8864c40e6d457618ef1f0e67727dadf">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandSpecifyChoiceToUse</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_choice_generator_new_choice.html#a64ae39788c0bd6cc54f9d7b039534b8c">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandChoiceGeneratorNewChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_used_choice.html#ac9f4c3b7073de17dad9eb1487e471983">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandUsedChoice</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_error.html#a7480e70e3fdb3a61db7f915fc7e9f47c">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericError</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_generic_info.html#a64bcc2fce69378fd551d98a25b0dd734">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandGenericInfo</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_state_changed.html#a7e6e83514e98395c3b1a63265980967d">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandStateChanged</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_breakpoint_hit.html#a29df60af9ac0b70c256fd4e6274b8bf0">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandBreakpointHit</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1commands_1_1_callback_command_specify_choice_to_use.html#ad8864c40e6d457618ef1f0e67727dadf">gov.nasa.jpf.inspector.server.callbacks.commands.CallbackCommandSpecifyChoiceToUse</a>.</p>
 
 </div>
 </div>

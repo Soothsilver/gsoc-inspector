@@ -16,13 +16,11 @@ var searchData=
   ['generated',['generated',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1generated.html',1,'gov::nasa::jpf::inspector::client::parser']]],
   ['generated',['generated',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1generated.html',1,'gov::nasa::jpf::inspector::server::expression']]],
   ['gov',['gov',['../namespacegov.html',1,'']]],
-  ['gui',['gui',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1gui.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell']]],
   ['inspector',['inspector',['../namespacegov_1_1nasa_1_1jpf_1_1inspector.html',1,'gov::nasa::jpf']]],
   ['interfaces',['interfaces',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces.html',1,'gov::nasa::jpf::inspector']]],
   ['jpf',['jpf',['../namespacegov_1_1nasa_1_1jpf.html',1,'gov::nasa']]],
   ['jpf',['jpf',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf.html',1,'gov::nasa::jpf::inspector::server']]],
   ['jpfshell',['jpfshell',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell.html',1,'gov::nasa::jpf::inspector::frontends']]],
-  ['migration',['migration',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1migration.html',1,'gov::nasa::jpf::inspector']]],
   ['nasa',['nasa',['../namespacegov_1_1nasa.html',1,'gov']]],
   ['parser',['parser',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1parser.html',1,'gov::nasa::jpf::inspector::utils']]],
   ['parser',['parser',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser.html',1,'gov::nasa::jpf::inspector::client']]],
@@ -31,5 +29,6 @@ var searchData=
   ['pse',['pse',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse.html',1,'gov::nasa::jpf::inspector::common']]],
   ['relop',['relop',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1relop.html',1,'gov::nasa::jpf::inspector::server::programstate']]],
   ['server',['server',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1server.html',1,'gov::nasa::jpf::inspector']]],
+  ['terminal',['terminal',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1terminal.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell']]],
   ['utils',['utils',['../namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1utils.html',1,'gov::nasa::jpf::inspector']]]
 ];

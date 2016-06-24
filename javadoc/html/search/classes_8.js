@@ -1,8 +1,9 @@
 var searchData=
 [
   ['javakeywordscontext',['JavaKeyWordsContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1generated_1_1_expression_grammar52377ca4d64c457ef62d775bf8853416.html',1,'gov::nasa::jpf::inspector::server::expression::generated::ExpressionGrammarParser']]],
-  ['jlinesimpleoutputstream',['JLineSimpleOutputStream',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1gui_1_1_swing_terminal_1_1_j_line_simple_output_stream.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell::gui::SwingTerminal']]],
-  ['jlineusertextoutputstream',['JLineUserTextOutputStream',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1gui_1_1_swing_terminal_1_1_j_line_user_text_output_stream.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell::gui::SwingTerminal']]],
+  ['jlinecommandlineshell',['JLineCommandLineShell',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_j_line_command_line_shell.html',1,'gov::nasa::jpf::inspector::frontends::cmd']]],
+  ['jlinesimpleoutputstream',['JLineSimpleOutputStream',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1terminal_1_1_swing_terminal_1_1_j_line_simple_output_stream.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell::terminal::SwingTerminal']]],
+  ['jlineusertextoutputstream',['JLineUserTextOutputStream',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1terminal_1_1_swing_terminal_1_1_j_line_user_text_output_stream.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell::terminal::SwingTerminal']]],
   ['jpfclientcallbackhandler',['JPFClientCallbackHandler',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_client_callback_handler.html',1,'gov::nasa::jpf::inspector::client']]],
   ['jpfinspector',['JPFInspector',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html',1,'gov::nasa::jpf::inspector::server::jpf']]],
   ['jpfinspectorarrayindexoutoutrangeexception',['JPFInspectorArrayIndexOutOutRangeException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_array_index_out_out_range_exception.html',1,'gov::nasa::jpf::inspector::exceptions']]],
@@ -36,6 +37,5 @@ var searchData=
   ['jpfinspectornullvalueexception',['JPFInspectorNullValueException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_null_value_exception.html',1,'gov::nasa::jpf::inspector::exceptions']]],
   ['jpfinspectorparallel',['JPFInspectorParallel',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html',1,'gov::nasa::jpf::inspector::server::jpf']]],
   ['jpfinspectorparsingerrorexception',['JPFInspectorParsingErrorException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_parsing_error_exception.html',1,'gov::nasa::jpf::inspector::exceptions']]],
-  ['jpfinspectorruntimeparsingexception',['JPFInspectorRuntimeParsingException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1parser_1_1_j_p_f_inspector_runtime_parsing_exception.html',1,'gov::nasa::jpf::inspector::utils::parser']]],
-  ['jpfshellinspectorpanel',['JPFShellInspectorPanel',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1jpfshell_1_1_j_p_f_shell_inspector_panel.html',1,'gov::nasa::jpf::inspector::frontends::jpfshell']]]
+  ['jpfinspectorruntimeparsingexception',['JPFInspectorRuntimeParsingException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1parser_1_1_j_p_f_inspector_runtime_parsing_exception.html',1,'gov::nasa::jpf::inspector::utils::parser']]]
 ];

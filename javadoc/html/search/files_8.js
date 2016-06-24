@@ -1,5 +1,6 @@
 var searchData=
 [
+  ['jlinecommandlineshell_2ejava',['JLineCommandLineShell.java',['../_j_line_command_line_shell_8java.html',1,'']]],
   ['jpfclientcallbackhandler_2ejava',['JPFClientCallbackHandler.java',['../_j_p_f_client_callback_handler_8java.html',1,'']]],
   ['jpfinspector_2ejava',['JPFInspector.java',['../_j_p_f_inspector_8java.html',1,'']]],
   ['jpfinspectorarrayindexoutoutrangeexception_2ejava',['JPFInspectorArrayIndexOutOutRangeException.java',['../_j_p_f_inspector_array_index_out_out_range_exception_8java.html',1,'']]],
@@ -33,6 +34,5 @@ var searchData=
   ['jpfinspectornullvalueexception_2ejava',['JPFInspectorNullValueException.java',['../_j_p_f_inspector_null_value_exception_8java.html',1,'']]],
   ['jpfinspectorparallel_2ejava',['JPFInspectorParallel.java',['../_j_p_f_inspector_parallel_8java.html',1,'']]],
   ['jpfinspectorparsingerrorexception_2ejava',['JPFInspectorParsingErrorException.java',['../_j_p_f_inspector_parsing_error_exception_8java.html',1,'']]],
-  ['jpfinspectorruntimeparsingexception_2ejava',['JPFInspectorRuntimeParsingException.java',['../_j_p_f_inspector_runtime_parsing_exception_8java.html',1,'']]],
-  ['jpfshellinspectorpanel_2ejava',['JPFShellInspectorPanel.java',['../_j_p_f_shell_inspector_panel_8java.html',1,'']]]
+  ['jpfinspectorruntimeparsingexception_2ejava',['JPFInspectorRuntimeParsingException.java',['../_j_p_f_inspector_runtime_parsing_exception_8java.html',1,'']]]
 ];

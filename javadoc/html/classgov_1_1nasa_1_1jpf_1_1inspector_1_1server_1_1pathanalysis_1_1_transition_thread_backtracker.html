@@ -107,11 +107,11 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4ebb7b90ea61c6e40ed85ec25c33537e"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a4ebb7b90ea61c6e40ed85ec25c33537e">TransitionThreadBacktracker</a> (Path path, int <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a>)</td></tr>
 <tr class="memdesc:a4ebb7b90ea61c6e40ed85ec25c33537e"><td class="mdescLeft">&#160;</td><td class="mdescRight">Initializes the backtracker.  <a href="#a4ebb7b90ea61c6e40ed85ec25c33537e">More...</a><br /></td></tr>
 <tr class="separator:a4ebb7b90ea61c6e40ed85ec25c33537e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad9effffddf4f1f6fd2687739e7dc1d87"><td class="memItemLeft" align="right" valign="top">Transition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ad9effffddf4f1f6fd2687739e7dc1d87">getPreviousTransition</a> ()</td></tr>
-<tr class="memdesc:ad9effffddf4f1f6fd2687739e7dc1d87"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the previous transition in given thread.  <a href="#ad9effffddf4f1f6fd2687739e7dc1d87">More...</a><br /></td></tr>
-<tr class="separator:ad9effffddf4f1f6fd2687739e7dc1d87"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a689e9b865db3038ab6d71734830c634a"><td class="memItemLeft" align="right" valign="top">Transition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a689e9b865db3038ab6d71734830c634a">backtrackToPreviousTransition</a> ()</td></tr>
+<tr class="memdesc:a689e9b865db3038ab6d71734830c634a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Backtracks to the previous transition in given thread.  <a href="#a689e9b865db3038ab6d71734830c634a">More...</a><br /></td></tr>
+<tr class="separator:a689e9b865db3038ab6d71734830c634a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a414a24c21a4c9e62c5aee10bf284efea"><td class="memItemLeft" align="right" valign="top">Transition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a414a24c21a4c9e62c5aee10bf284efea">getCurrentTransition</a> ()</td></tr>
-<tr class="memdesc:a414a24c21a4c9e62c5aee10bf284efea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets result of the last <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ad9effffddf4f1f6fd2687739e7dc1d87">getPreviousTransition()</a> call, or null if no such call was yet made.  <a href="#a414a24c21a4c9e62c5aee10bf284efea">More...</a><br /></td></tr>
+<tr class="memdesc:a414a24c21a4c9e62c5aee10bf284efea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets result of the last <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a689e9b865db3038ab6d71734830c634a">backtrackToPreviousTransition()</a> call, or null if no such call was yet made.  <a href="#a414a24c21a4c9e62c5aee10bf284efea">More...</a><br /></td></tr>
 <tr class="separator:a414a24c21a4c9e62c5aee10bf284efea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af524ecf8ea30843d72652a71c8ad11a3"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#af524ecf8ea30843d72652a71c8ad11a3">getBacksteppedTransitions</a> ()</td></tr>
 <tr class="memdesc:af524ecf8ea30843d72652a71c8ad11a3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of transitions we backtracked through.  <a href="#af524ecf8ea30843d72652a71c8ad11a3">More...</a><br /></td></tr>
@@ -131,17 +131,11 @@ Private Attributes</h2></td></tr>
 <tr class="memitem:a226a7f84b473fcf5973e9ce6896c5735"><td class="memItemLeft" align="right" valign="top">Transition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a> = null</td></tr>
 <tr class="memdesc:a226a7f84b473fcf5973e9ce6896c5735"><td class="mdescLeft">&#160;</td><td class="mdescRight">The transition that the backtracker currently examines.  <a href="#a226a7f84b473fcf5973e9ce6896c5735">More...</a><br /></td></tr>
 <tr class="separator:a226a7f84b473fcf5973e9ce6896c5735"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a188efd2f5bf48d8c71943789a66b3219"><td class="memItemLeft" align="right" valign="top">Transition&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a188efd2f5bf48d8c71943789a66b3219">prevReturnedTransition</a> = null</td></tr>
-<tr class="memdesc:a188efd2f5bf48d8c71943789a66b3219"><td class="mdescLeft">&#160;</td><td class="mdescRight">revious (not last, but one before the last) result of <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ad9effffddf4f1f6fd2687739e7dc1d87">getPreviousTransition()</a> call.  <a href="#a188efd2f5bf48d8c71943789a66b3219">More...</a><br /></td></tr>
-<tr class="separator:a188efd2f5bf48d8c71943789a66b3219"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a08629010f6db8d01a84a5e2d0154a936"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a08629010f6db8d01a84a5e2d0154a936">prevReturnedBacksteppedTransitions</a> = 0</td></tr>
-<tr class="memdesc:a08629010f6db8d01a84a5e2d0154a936"><td class="mdescLeft">&#160;</td><td class="mdescRight">Number of transition to backtrack to obtain <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a188efd2f5bf48d8c71943789a66b3219">prevReturnedTransition</a>.  <a href="#a08629010f6db8d01a84a5e2d0154a936">More...</a><br /></td></tr>
-<tr class="separator:a08629010f6db8d01a84a5e2d0154a936"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>An interator that gives transitions starting at the current transition and then backtracking to the past, and the iterator ignores transitions executed by threads other than the one we are interested in. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00012">12</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00013">13</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a4ebb7b90ea61c6e40ed85ec25c33537e"></a>
 <div class="memitem">
@@ -168,6 +162,7 @@ Private Attributes</h2></td></tr>
 </div><div class="memdoc">
 
 <p>Initializes the backtracker. </p>
+<p>Starts uninitialized and "backtrackToPreviousTransition" must be called once to get to the current transition first.</p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">path</td><td>The current JPF transition path. </td></tr>
@@ -176,13 +171,38 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00053">53</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                              {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    assert (path != null);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a>;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a> = path.descendingIterator();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_aba5dcd1646802854653af84fd5e420b5"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.reversePathIterator</a></div><div class="ttdeci">final Iterator&lt; Transition &gt; reversePathIterator</div><div class="ttdoc">Iterates over transitions in the current path, from the latest to the root transition. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00019">TransitionThreadBacktracker.java:19</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_ab5825d940eb7057fe8f2493e2c9baa14"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.threadId</a></div><div class="ttdeci">final int threadId</div><div class="ttdoc">The thread we are interested in. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00024">TransitionThreadBacktracker.java:24</a></div></div>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00048">48</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;                                                              {</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    assert (path != null);</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a>;</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a> = path.descendingIterator();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_aba5dcd1646802854653af84fd5e420b5"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.reversePathIterator</a></div><div class="ttdeci">final Iterator&lt; Transition &gt; reversePathIterator</div><div class="ttdoc">Iterates over transitions in the current path, from the latest to the root transition. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00020">TransitionThreadBacktracker.java:20</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_ab5825d940eb7057fe8f2493e2c9baa14"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.threadId</a></div><div class="ttdeci">final int threadId</div><div class="ttdoc">The thread we are interested in. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00025">TransitionThreadBacktracker.java:25</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="a689e9b865db3038ab6d71734830c634a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">Transition gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.backtrackToPreviousTransition </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Backtracks to the previous transition in given thread. </p>
+<p>Can be used iteratively to go back in program trace. When this method is first called, it returns the current transition.</p>
+<dl class="section return"><dt>Returns</dt><dd>The transition that was backtracked to, or null if the backtracking faileed because no such transition exists. </dd></dl>
+
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00061">61</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                    {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    Debugging.getLogger().info(<span class="stringliteral">&quot;Backtracking: Transition backtracking commences.&quot;</span>);</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;    <span class="comment">// Iterate until we find a transition executed by the thread we are interested in.</span></div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a>.hasNext()) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;      <span class="comment">// Update current state</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a>.next();</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      Debugging.getLogger().info(<span class="stringliteral">&quot;Backtracking: Backtracked to transition labeled &#39;&quot;</span> + <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>.getLabel() + <span class="stringliteral">&quot;&#39;&quot;</span>);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">backsteppedTransitions</a>++;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>.getThreadIndex() == <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a>) {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      }</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    }</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="comment">// No such Transition exists</span></div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a226a7f84b473fcf5973e9ce6896c5735"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.currentTransition</a></div><div class="ttdeci">Transition currentTransition</div><div class="ttdoc">The transition that the backtracker currently examines. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00038">TransitionThreadBacktracker.java:38</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_abfd6313c73f25511f92f2e6a755c335c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.backsteppedTransitions</a></div><div class="ttdeci">int backsteppedTransitions</div><div class="ttdoc">Number of transitions we backtracked through. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00032">TransitionThreadBacktracker.java:32</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_aba5dcd1646802854653af84fd5e420b5"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.reversePathIterator</a></div><div class="ttdeci">final Iterator&lt; Transition &gt; reversePathIterator</div><div class="ttdoc">Iterates over transitions in the current path, from the latest to the root transition. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00020">TransitionThreadBacktracker.java:20</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_ab5825d940eb7057fe8f2493e2c9baa14"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.threadId</a></div><div class="ttdeci">final int threadId</div><div class="ttdoc">The thread we are interested in. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00025">TransitionThreadBacktracker.java:25</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
 <a class="anchor" id="af524ecf8ea30843d72652a71c8ad11a3"></a>
 <div class="memitem">
 <div class="memproto">
@@ -200,8 +220,8 @@ Private Attributes</h2></td></tr>
 <p>"0" means we haven't begun yet. "1" means we backtracked through the topmost transition only.</p>
 <p>This includes transitions executed by threads other than the one we are interested in. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00102">102</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                         {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">backsteppedTransitions</a>;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_abfd6313c73f25511f92f2e6a755c335c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.backsteppedTransitions</a></div><div class="ttdeci">int backsteppedTransitions</div><div class="ttdoc">Number of transitions we backtracked through. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00031">TransitionThreadBacktracker.java:31</a></div></div>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00096">96</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00096"></a><span class="lineno">   96</span>&#160;                                         {</div><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">backsteppedTransitions</a>;</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_abfd6313c73f25511f92f2e6a755c335c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.backsteppedTransitions</a></div><div class="ttdeci">int backsteppedTransitions</div><div class="ttdoc">Number of transitions we backtracked through. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00032">TransitionThreadBacktracker.java:32</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -218,38 +238,11 @@ Private Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Gets result of the last <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ad9effffddf4f1f6fd2687739e7dc1d87">getPreviousTransition()</a> call, or null if no such call was yet made. </p>
+<p>Gets result of the last <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a689e9b865db3038ab6d71734830c634a">backtrackToPreviousTransition()</a> call, or null if no such call was yet made. </p>
 <dl class="section return"><dt>Returns</dt><dd>Current transition of the backtracker. </dd></dl>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00091">91</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160;                                           {</div><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>;</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a226a7f84b473fcf5973e9ce6896c5735"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.currentTransition</a></div><div class="ttdeci">Transition currentTransition</div><div class="ttdoc">The transition that the backtracker currently examines. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00037">TransitionThreadBacktracker.java:37</a></div></div>
-</div><!-- fragment -->
-</div>
-</div>
-<a class="anchor" id="ad9effffddf4f1f6fd2687739e7dc1d87"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transition gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.getPreviousTransition </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Gets the previous transition in given thread. </p>
-<p>Can be used iteratively to go back in program trace. When this method is first called, it returns the current transition.</p>
-<dl class="section return"><dt>Returns</dt><dd>Get previous transition in given thread or null if no such transition exists. </dd></dl>
-
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00066">66</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                            {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">// Remember previous state</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a08629010f6db8d01a84a5e2d0154a936">prevReturnedBacksteppedTransitions</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">backsteppedTransitions</a>;</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a188efd2f5bf48d8c71943789a66b3219">prevReturnedTransition</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>;</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="comment">// Iterate until we find a transition executed by the thread we are interested in.</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordflow">while</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a>.hasNext()) {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;      <span class="comment">// Update current state</span></div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a> = <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">reversePathIterator</a>.next();</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">backsteppedTransitions</a>++;</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>.getThreadIndex() == <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">threadId</a>) {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;        <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>;</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;      }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    }</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <span class="comment">// No such Transition exists</span></div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a226a7f84b473fcf5973e9ce6896c5735"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.currentTransition</a></div><div class="ttdeci">Transition currentTransition</div><div class="ttdoc">The transition that the backtracker currently examines. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00037">TransitionThreadBacktracker.java:37</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_abfd6313c73f25511f92f2e6a755c335c"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#abfd6313c73f25511f92f2e6a755c335c">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.backsteppedTransitions</a></div><div class="ttdeci">int backsteppedTransitions</div><div class="ttdoc">Number of transitions we backtracked through. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00031">TransitionThreadBacktracker.java:31</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_aba5dcd1646802854653af84fd5e420b5"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#aba5dcd1646802854653af84fd5e420b5">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.reversePathIterator</a></div><div class="ttdeci">final Iterator&lt; Transition &gt; reversePathIterator</div><div class="ttdoc">Iterates over transitions in the current path, from the latest to the root transition. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00019">TransitionThreadBacktracker.java:19</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a188efd2f5bf48d8c71943789a66b3219"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a188efd2f5bf48d8c71943789a66b3219">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.prevReturnedTransition</a></div><div class="ttdeci">Transition prevReturnedTransition</div><div class="ttdoc">revious (not last, but one before the last) result of getPreviousTransition() call. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00042">TransitionThreadBacktracker.java:42</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_ab5825d940eb7057fe8f2493e2c9baa14"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ab5825d940eb7057fe8f2493e2c9baa14">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.threadId</a></div><div class="ttdeci">final int threadId</div><div class="ttdoc">The thread we are interested in. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00024">TransitionThreadBacktracker.java:24</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a08629010f6db8d01a84a5e2d0154a936"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a08629010f6db8d01a84a5e2d0154a936">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.prevReturnedBacksteppedTransitions</a></div><div class="ttdeci">int prevReturnedBacksteppedTransitions</div><div class="ttdoc">Number of transition to backtrack to obtain prevReturnedTransition. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00046">TransitionThreadBacktracker.java:46</a></div></div>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00085">85</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;                                           {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <span class="keywordflow">return</span> <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">currentTransition</a>;</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker_html_a226a7f84b473fcf5973e9ce6896c5735"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a226a7f84b473fcf5973e9ce6896c5735">gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.currentTransition</a></div><div class="ttdeci">Transition currentTransition</div><div class="ttdoc">The transition that the backtracker currently examines. </div><div class="ttdef"><b>Definition:</b> <a href="_transition_thread_backtracker_8java_source.html#l00038">TransitionThreadBacktracker.java:38</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -275,7 +268,7 @@ Private Attributes</h2></td></tr>
 <p>Number of transitions we backtracked through. </p>
 <p>"0" means we haven't begun yet. "1" means we backtracked through the topmost transition only. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00031">31</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00032">32</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
 
 </div>
 </div>
@@ -300,55 +293,7 @@ Private Attributes</h2></td></tr>
 <p>The transition that the backtracker currently examines. </p>
 <p>At start, this is null. After the first getPreviousTransition call, it will be the current transition. Then, it will be the previous one etc. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00037">37</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a08629010f6db8d01a84a5e2d0154a936"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.prevReturnedBacksteppedTransitions = 0</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Number of transition to backtrack to obtain <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#a188efd2f5bf48d8c71943789a66b3219">prevReturnedTransition</a>. </p>
-
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00046">46</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a188efd2f5bf48d8c71943789a66b3219"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">Transition gov.nasa.jpf.inspector.server.pathanalysis.TransitionThreadBacktracker.prevReturnedTransition = null</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">private</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>revious (not last, but one before the last) result of <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1pathanalysis_1_1_transition_thread_backtracker.html#ad9effffddf4f1f6fd2687739e7dc1d87">getPreviousTransition()</a> call. </p>
-
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00042">42</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00038">38</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
 
 </div>
 </div>
@@ -373,7 +318,7 @@ Private Attributes</h2></td></tr>
 <p>Iterates over transitions in the current path, from the latest to the root transition. </p>
 <p>The first transition from this iterator is the transition that was current when the backtracker was initialized. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00019">19</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00020">20</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
 
 </div>
 </div>
@@ -397,7 +342,7 @@ Private Attributes</h2></td></tr>
 
 <p>The thread we are interested in. </p>
 
-<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00024">24</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
+<p>Definition at line <a class="el" href="_transition_thread_backtracker_8java_source.html#l00025">25</a> of file <a class="el" href="_transition_thread_backtracker_8java_source.html">TransitionThreadBacktracker.java</a>.</p>
 
 </div>
 </div>

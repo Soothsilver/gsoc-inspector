@@ -92,34 +92,39 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pri-methods">Private Member Functions</a> &#124;
 <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer-members.html">List of all members</a>  </div>
   <div class="headertitle">
 <div class="title">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>This class implements <a class="el" href="">InspectorCallbacks</a> in the server.  
+ <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#details">More...</a></p>
 <div class="dynheader">
 Inheritance diagram for gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer:</div>
 <div class="dyncontent">
  <div class="center">
   <img src="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.png" usemap="#gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer_map" name="gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer_map">
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html" title="TODO This is implemented by both client and server classes?? Something strange is going on..." alt="gov.nasa.jpf.inspector.interfaces.InspectorCallBacks" shape="rect" coords="0,0,449,24"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_inspector_server_callbacks.html" title="This is the callbacks interface implemented by the server. " alt="gov.nasa.jpf.inspector.server.callbacks.InspectorServerCallbacks" shape="rect" coords="0,56,449,80"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html" title="This handles callbacks from the server to the client. " alt="gov.nasa.jpf.inspector.interfaces.InspectorCallbacks" shape="rect" coords="0,0,449,24"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a724f27751711165c1062cdb3a76cbd73"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a724f27751711165c1062cdb3a76cbd73">notifyStateChange</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html">InspectorStates</a> newState, String details)</td></tr>
-<tr class="memdesc:a724f27751711165c1062cdb3a76cbd73"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when state of the inspector is modified - paused, resumed, property violated.  <a href="#a724f27751711165c1062cdb3a76cbd73">More...</a><br /></td></tr>
-<tr class="separator:a724f27751711165c1062cdb3a76cbd73"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac1c81bb945aec88395b04a58a46adacf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#ac1c81bb945aec88395b04a58a46adacf">notifyStateChange</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_status_change.html">InspectorStatusChange</a> newState, String details)</td></tr>
+<tr class="memdesc:ac1c81bb945aec88395b04a58a46adacf"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server calls this when the Inspector's running status (running/stopped) changes.  <a href="#ac1c81bb945aec88395b04a58a46adacf">More...</a><br /></td></tr>
+<tr class="separator:ac1c81bb945aec88395b04a58a46adacf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a893bb1738c37dc0cba354b49faa99eac"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a893bb1738c37dc0cba354b49faa99eac">genericError</a> (String msg)</td></tr>
-<tr class="memdesc:a893bb1738c37dc0cba354b49faa99eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">Inspector detected unrecoverable error that should be reported to user.  <a href="#a893bb1738c37dc0cba354b49faa99eac">More...</a><br /></td></tr>
+<tr class="memdesc:a893bb1738c37dc0cba354b49faa99eac"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server calls this whenever an error should be reported to the console.  <a href="#a893bb1738c37dc0cba354b49faa99eac">More...</a><br /></td></tr>
 <tr class="separator:a893bb1738c37dc0cba354b49faa99eac"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a0e7c50fd2c71a1784f6b831c1b9e866d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a0e7c50fd2c71a1784f6b831c1b9e866d">genericInfo</a> (String msg)</td></tr>
-<tr class="memdesc:a0e7c50fd2c71a1784f6b831c1b9e866d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Channel used for sending various messages for the user.  <a href="#a0e7c50fd2c71a1784f6b831c1b9e866d">More...</a><br /></td></tr>
+<tr class="memdesc:a0e7c50fd2c71a1784f6b831c1b9e866d"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server calls this whenever a non-error message should be printed to the user.  <a href="#a0e7c50fd2c71a1784f6b831c1b9e866d">More...</a><br /></td></tr>
 <tr class="separator:a0e7c50fd2c71a1784f6b831c1b9e866d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aaa07013030ffa8657cee4db9e3581fc4"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#aaa07013030ffa8657cee4db9e3581fc4">notifyBreakpointHit</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> bp)</td></tr>
-<tr class="memdesc:aaa07013030ffa8657cee4db9e3581fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Called when breakpoint is hit.  <a href="#aaa07013030ffa8657cee4db9e3581fc4">More...</a><br /></td></tr>
+<tr class="memdesc:aaa07013030ffa8657cee4db9e3581fc4"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server calls this whenever a breakpoint is hit.  <a href="#aaa07013030ffa8657cee4db9e3581fc4">More...</a><br /></td></tr>
 <tr class="separator:aaa07013030ffa8657cee4db9e3581fc4"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aee7a8953cff2c17d29923d1267684f0b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#aee7a8953cff2c17d29923d1267684f0b">notifyChoiceGeneratorNewChoice</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_types.html">CGTypes</a> cgType, String cgName, int cgId, String[] choices, int nextChoice, int defaultChoice)</td></tr>
 <tr class="memdesc:aee7a8953cff2c17d29923d1267684f0b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification from the server that ChoiceGenerator is asked for new value.  <a href="#aee7a8953cff2c17d29923d1267684f0b">More...</a><br /></td></tr>
@@ -130,10 +135,22 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad5bbe59d8f6b40222c374182751430cc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#ad5bbe59d8f6b40222c374182751430cc">notifyUsedChoice</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_types.html">CGTypes</a> cgType, String cgName, int cgId, int usedChoiceIndex, String usedChoice)</td></tr>
 <tr class="memdesc:ad5bbe59d8f6b40222c374182751430cc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Notification from the server with used choice.  <a href="#ad5bbe59d8f6b40222c374182751430cc">More...</a><br /></td></tr>
 <tr class="separator:ad5bbe59d8f6b40222c374182751430cc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa26d4e23b6d0bfe94ad9a211044deb9a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#aa26d4e23b6d0bfe94ad9a211044deb9a">waitUntilCallbackQueueIsEmpty</a> ()</td></tr>
+<tr class="memdesc:aa26d4e23b6d0bfe94ad9a211044deb9a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until the queue of the callbacks to send becomes empty, then returns.  <a href="#aa26d4e23b6d0bfe94ad9a211044deb9a">More...</a><br /></td></tr>
+<tr class="separator:aa26d4e23b6d0bfe94ad9a211044deb9a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-methods"></a>
+Private Member Functions</h2></td></tr>
+<tr class="memitem:a3aa024ea11e4b764daa5c915ccaf4525"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html">CallbackCommand</a> cmdCB)</td></tr>
+<tr class="memdesc:a3aa024ea11e4b764daa5c915ccaf4525"><td class="mdescLeft">&#160;</td><td class="mdescRight">Queue a new callback to be sent.  <a href="#a3aa024ea11e4b764daa5c915ccaf4525">More...</a><br /></td></tr>
+<tr class="separator:a3aa024ea11e4b764daa5c915ccaf4525"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00196">196</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="textblock"><p>This class implements <a class="el" href="">InspectorCallbacks</a> in the server. </p>
+<p>If you call a method of this class, the appropriate callback will be scheduled to be sent to the client.\</p>
+<p>All methods of this class merely create a new <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html">CallbackCommand</a> and add it to the callback queue. </p>
+
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00198">198</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a893bb1738c37dc0cba354b49faa99eac"></a>
 <div class="memitem">
@@ -149,7 +166,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Inspector detected unrecoverable error that should be reported to user. </p>
+<p>The server calls this whenever an error should be reported to the console. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">msg</td><td>Message to print. </td></tr>
@@ -157,10 +174,10 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#ac9e585a3096b0be7e25dc789b6b39cfa">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a75389ab88feb88a5f5146a2020f0daf5">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00205">205</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;                                          {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;      CallbackCommandGenericError cb = <span class="keyword">new</span> CallbackCommandGenericError(msg);</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00232">232</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;                                          {</div><div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;      CallbackCommandGenericError cb = <span class="keyword">new</span> CallbackCommandGenericError(msg);</div><div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -178,7 +195,7 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Channel used for sending various messages for the user. </p>
+<p>The server calls this whenever a non-error message should be printed to the user. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramname">msg</td><td>Message to print. </td></tr>
@@ -186,10 +203,10 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#afe2463c7186265f972991c9c7ab4ec19">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a88d8b3a998af8d143bc1152497ea7909">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00211">211</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;                                         {</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;      CallbackCommandGenericInfo cb = <span class="keyword">new</span> CallbackCommandGenericInfo(msg);</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00238">238</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;                                         {</div><div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160;      CallbackCommandGenericInfo cb = <span class="keyword">new</span> CallbackCommandGenericInfo(msg);</div><div class="line"><a name="l00240"></a><span class="lineno">  240</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -207,18 +224,18 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when breakpoint is hit. </p>
+<p>The server calls this whenever a breakpoint is hit. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">bp</td><td>Breakpoint that is reached. </td></tr>
+    <tr><td class="paramname">bp</td><td>Information about the hit breakpoint. </td></tr>
   </table>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a15d9b5a5f980cfcddd2fbcd2753c2174">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a5e636c33abb39615ea5665dd351af069">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00217">217</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;                                                          {</div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;      CallbackCommandBreakpointHit cb = <span class="keyword">new</span> CallbackCommandBreakpointHit(bp);</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00244">244</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00244"></a><span class="lineno">  244</span>&#160;                                                          {</div><div class="line"><a name="l00245"></a><span class="lineno">  245</span>&#160;      CallbackCommandBreakpointHit cb = <span class="keyword">new</span> CallbackCommandBreakpointHit(bp);</div><div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -284,21 +301,21 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a8ebe532769c4bced7461e073fa79a7a0">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#afa7d942786d35aec418669377b5b4a41">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00223">223</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;                                                                                                                                              {</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;      CallbackCommandChoiceGeneratorNewChoice cb = <span class="keyword">new</span> CallbackCommandChoiceGeneratorNewChoice(cgType, cgName, cgId, choices, nextChoice, defaultChoice);</div><div class="line"><a name="l00225"></a><span class="lineno">  225</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00250">250</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;                                                                                                                                              {</div><div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;      CallbackCommandChoiceGeneratorNewChoice cb = <span class="keyword">new</span> CallbackCommandChoiceGeneratorNewChoice(cgType, cgName, cgId, choices, nextChoice, defaultChoice);</div><div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00253"></a><span class="lineno">  253</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
-<a class="anchor" id="a724f27751711165c1062cdb3a76cbd73"></a>
+<a class="anchor" id="ac1c81bb945aec88395b04a58a46adacf"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname">void gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.notifyStateChange </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html">InspectorStates</a>&#160;</td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_status_change.html">InspectorStatusChange</a>&#160;</td>
           <td class="paramname"><em>newState</em>, </td>
         </tr>
         <tr>
@@ -315,12 +332,19 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Called when state of the inspector is modified - paused, resumed, property violated. </p>
+<p>The server calls this when the Inspector's running status (running/stopped) changes. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newState</td><td>What status the Inspector switched to </td></tr>
+    <tr><td class="paramname">details</td><td>Information that should be printed to the console </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a347d6a1237962eb4305f45b718004c53">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#a3258c743658bcdc24637f7a455dcec20">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00199">199</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;                                                                             {</div><div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;      CallbackCommandStateChanged cb = <span class="keyword">new</span> CallbackCommandStateChanged(newState, details);</div><div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00202"></a><span class="lineno">  202</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00226">226</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00226"></a><span class="lineno">  226</span>&#160;                                                                                   {</div><div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;      CallbackCommandStateChanged cb = <span class="keyword">new</span> CallbackCommandStateChanged(newState, details);</div><div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -378,10 +402,49 @@ Public Member Functions</h2></td></tr>
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a83f9486958bbd33ee9d1a767252dbfd6">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#af2dd87ed4b3e0b24422aae277a284b77">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00235">235</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160;                                                                                                                   {</div><div class="line"><a name="l00236"></a><span class="lineno">  236</span>&#160;      CallbackCommandUsedChoice cb = <span class="keyword">new</span> CallbackCommandUsedChoice(cgType, cgName, cgId, usedChoiceIndex, usedChoice);</div><div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00262">262</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;                                                                                                                   {</div><div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;      CallbackCommandUsedChoice cb = <span class="keyword">new</span> CallbackCommandUsedChoice(cgType, cgName, cgId, usedChoiceIndex, usedChoice);</div><div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00265"></a><span class="lineno">  265</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="a3aa024ea11e4b764daa5c915ccaf4525"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callback_command.html">CallbackCommand</a>&#160;</td>
+          <td class="paramname"><em>cmdCB</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">private</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Queue a new callback to be sent. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">cmdCB</td><td>The callback to be sent to the client. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00204">204</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;                                                         {</div><div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a10aff7ac289e87978a9bebd2ef3c87ae">DEBUG</a>) {</div><div class="line"><a name="l00206"></a><span class="lineno">  206</span>&#160;        <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a55e47f1fd77417732cce3c607672644f">out</a>.println(this.getClass().getSimpleName() + <span class="stringliteral">&quot;.planNewCallback(cmdCB=&quot;</span> + cmdCB + <span class="stringliteral">&quot;)&quot;</span>);</div><div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;      }</div><div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;</div><div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;      assert (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a3c4071a546588209852c336b484a378e">stopHolder</a> != null); <span class="comment">// too early to register CB</span></div><div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;</div><div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;      <span class="keyword">synchronized</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>) {</div><div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;        <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a10aff7ac289e87978a9bebd2ef3c87ae">DEBUG</a>) {</div><div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;          <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a55e47f1fd77417732cce3c607672644f">out</a>.println(this.getClass().getSimpleName() + <span class="stringliteral">&quot;.planNewCallback(cmdCB=&quot;</span> + cmdCB + <span class="stringliteral">&quot;) - synch&quot;</span>);</div><div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;        }</div><div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;        <span class="keywordflow">if</span> (!<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a2cf0bafbdc759f89c0b54c36d437effa">terminating</a>) {</div><div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160;          <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>.add(cmdCB);</div><div class="line"><a name="l00217"></a><span class="lineno">  217</span>&#160;          <span class="comment">// Wake up the callback thread and, maybe in rare cases, also any threads that wait for the callback queue to be empty.</span></div><div class="line"><a name="l00218"></a><span class="lineno">  218</span>&#160;          <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>.notifyAll();</div><div class="line"><a name="l00219"></a><span class="lineno">  219</span>&#160;        }</div><div class="line"><a name="l00220"></a><span class="lineno">  220</span>&#160;      }</div><div class="line"><a name="l00221"></a><span class="lineno">  221</span>&#160;      <span class="keywordflow">if</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a10aff7ac289e87978a9bebd2ef3c87ae">DEBUG</a>) {</div><div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;        <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a55e47f1fd77417732cce3c607672644f">out</a>.println(this.getClass().getSimpleName() + <span class="stringliteral">&quot;.planNewCallback(cmdCB=&quot;</span> + cmdCB + <span class="stringliteral">&quot;) - end&quot;</span>);</div><div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;      }</div><div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_a2cf0bafbdc759f89c0b54c36d437effa"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a2cf0bafbdc759f89c0b54c36d437effa">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.terminating</a></div><div class="ttdeci">volatile boolean terminating</div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00034">CallbacksSender.java:34</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_a55e47f1fd77417732cce3c607672644f"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a55e47f1fd77417732cce3c607672644f">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.out</a></div><div class="ttdeci">PrintStream out</div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00032">CallbacksSender.java:32</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_a10aff7ac289e87978a9bebd2ef3c87ae"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a10aff7ac289e87978a9bebd2ef3c87ae">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.DEBUG</a></div><div class="ttdeci">static final boolean DEBUG</div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00031">CallbacksSender.java:31</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_a3c4071a546588209852c336b484a378e"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#a3c4071a546588209852c336b484a378e">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.stopHolder</a></div><div class="ttdeci">StopHolder stopHolder</div><div class="ttdoc">Cyclic dependency - set immediately after stopHolder is created. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00043">CallbacksSender.java:43</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_acb014ac0b40ae806144a7477bc9f3341"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.callbackQueue</a></div><div class="ttdeci">final List&lt; CallbackCommand &gt; callbackQueue</div><div class="ttdoc">Queue of clientCallbacks scheduled to be sent from the server to the client. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00052">CallbacksSender.java:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -409,10 +472,32 @@ Note: This method is called after <a class="el" href="">notifyChoiceGeneratorNew
   </dd>
 </dl>
 
-<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_call_backs.html#a95bd37f4f3ad147514c86fa77856b51d">gov.nasa.jpf.inspector.interfaces.InspectorCallBacks</a>.</p>
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_inspector_callbacks.html#aa82f07ab46cb266f5a0747b72b88bd31">gov.nasa.jpf.inspector.interfaces.InspectorCallbacks</a>.</p>
 
-<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00229">229</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160;                                                        {</div><div class="line"><a name="l00230"></a><span class="lineno">  230</span>&#160;      CallbackCommandSpecifyChoiceToUse cb = <span class="keyword">new</span> CallbackCommandSpecifyChoiceToUse(maxChoiceIndex);</div><div class="line"><a name="l00231"></a><span class="lineno">  231</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">planNewCallback</a>(cb);</div><div class="line"><a name="l00232"></a><span class="lineno">  232</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_ab4ea578bd6190b6e61b2445a79dab78a"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#ab4ea578bd6190b6e61b2445a79dab78a">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue new callback to be executed. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00171">CallbacksSender.java:171</a></div></div>
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00256">256</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;                                                        {</div><div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;      CallbackCommandSpecifyChoiceToUse cb = <span class="keyword">new</span> CallbackCommandSpecifyChoiceToUse(maxChoiceIndex);</div><div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">planNewCallback</a>(cb);</div><div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer_html_a3aa024ea11e4b764daa5c915ccaf4525"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_1_1_callbacks_serializer.html#a3aa024ea11e4b764daa5c915ccaf4525">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.planNewCallback</a></div><div class="ttdeci">void planNewCallback(CallbackCommand cmdCB)</div><div class="ttdoc">Queue a new callback to be sent. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00204">CallbacksSender.java:204</a></div></div>
+</div><!-- fragment -->
+</div>
+</div>
+<a class="anchor" id="aa26d4e23b6d0bfe94ad9a211044deb9a"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.CallbacksSerializer.waitUntilCallbackQueueIsEmpty </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Blocks until the queue of the callbacks to send becomes empty, then returns. </p>
+
+<p>Implements <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_inspector_server_callbacks.html#a306e8e3882db3d044befddd88b018879">gov.nasa.jpf.inspector.server.callbacks.InspectorServerCallbacks</a>.</p>
+
+<p>Definition at line <a class="el" href="_callbacks_sender_8java_source.html#l00268">268</a> of file <a class="el" href="_callbacks_sender_8java_source.html">CallbacksSender.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00268"></a><span class="lineno">  268</span>&#160;                                                {</div><div class="line"><a name="l00269"></a><span class="lineno">  269</span>&#160;      <span class="keyword">synchronized</span> (<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>) {</div><div class="line"><a name="l00270"></a><span class="lineno">  270</span>&#160;        <span class="keywordflow">while</span> (!<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>.isEmpty()) {</div><div class="line"><a name="l00271"></a><span class="lineno">  271</span>&#160;          <span class="keywordflow">try</span> {</div><div class="line"><a name="l00272"></a><span class="lineno">  272</span>&#160;            <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">callbackQueue</a>.wait();</div><div class="line"><a name="l00273"></a><span class="lineno">  273</span>&#160;          } <span class="keywordflow">catch</span> (InterruptedException e) {</div><div class="line"><a name="l00274"></a><span class="lineno">  274</span>&#160;            Thread.currentThread().interrupt();</div><div class="line"><a name="l00275"></a><span class="lineno">  275</span>&#160;          }</div><div class="line"><a name="l00276"></a><span class="lineno">  276</span>&#160;        }</div><div class="line"><a name="l00277"></a><span class="lineno">  277</span>&#160;      }</div><div class="line"><a name="l00278"></a><span class="lineno">  278</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender_html_acb014ac0b40ae806144a7477bc9f3341"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1callbacks_1_1_callbacks_sender.html#acb014ac0b40ae806144a7477bc9f3341">gov.nasa.jpf.inspector.server.callbacks.CallbacksSender.callbackQueue</a></div><div class="ttdeci">final List&lt; CallbackCommand &gt; callbackQueue</div><div class="ttdoc">Queue of clientCallbacks scheduled to be sent from the server to the client. </div><div class="ttdef"><b>Definition:</b> <a href="_callbacks_sender_8java_source.html#l00052">CallbacksSender.java:52</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>

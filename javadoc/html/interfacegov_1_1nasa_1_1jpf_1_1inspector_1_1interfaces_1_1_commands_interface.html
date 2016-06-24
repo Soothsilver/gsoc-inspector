@@ -116,9 +116,6 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.CommandsInterface:</di
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html">InspectorStates</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This enumeration is used by callback handling classes.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_inspector_states.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates how many instructions should be skipped when stepping.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -137,6 +134,9 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a4c7644c0aa203769bba68374c0cb07ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a4c7644c0aa203769bba68374c0cb07ea">start</a> ()  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a4c7644c0aa203769bba68374c0cb07ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resumes stopped execution.  <a href="#a4c7644c0aa203769bba68374c0cb07ea">More...</a><br /></td></tr>
 <tr class="separator:a4c7644c0aa203769bba68374c0cb07ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a51b1e8416849af72a29520099345a68b"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a51b1e8416849af72a29520099345a68b">requestTermination</a> ()</td></tr>
+<tr class="memdesc:a51b1e8416849af72a29520099345a68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the JPF to terminate at the earliest opportunity.  <a href="#a51b1e8416849af72a29520099345a68b">More...</a><br /></td></tr>
+<tr class="separator:a51b1e8416849af72a29520099345a68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c3596280086831444dcb06079c9412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ad5c3596280086831444dcb06079c9412">forwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
 <tr class="separator:ad5c3596280086831444dcb06079c9412"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a6a733100d8162d5f18063519a88257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a6a6a733100d8162d5f18063519a88257">backwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
@@ -200,6 +200,25 @@ Public Member Functions</h2></td></tr>
 <p>This is the only time at which program state inspection can take place. </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a54c452fe42dbda043d9880bf3ee918f4">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#af2c9e09057bc590cfe24c464f4164668">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a51b1e8416849af72a29520099345a68b"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.requestTermination </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Causes the JPF to terminate at the earliest opportunity. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a34b2501c193ff47e630e3b7f7f2ba138">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a63e63ad43eb703ac73365511900f1ba7">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
