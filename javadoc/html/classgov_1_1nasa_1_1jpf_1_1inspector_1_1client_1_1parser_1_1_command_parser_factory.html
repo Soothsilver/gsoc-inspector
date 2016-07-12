@@ -120,7 +120,7 @@ Static Package Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>This class is used to create an ANTLR parser for client commands. </p>
 
-<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00031">31</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
+<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00029">29</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a323b35e24a71d5ef06e290ca11df2e5c"></a>
 <div class="memitem">
@@ -145,8 +145,8 @@ Static Package Functions</h2></td></tr>
 
 <p>Returns a new parser for parsing commands directly from the user. </p>
 
-<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00036">36</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;                                                                 {</div><div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CommandParserUserCommands();</div><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00034">34</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;                                                                 {</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CommandParserUserCommands();</div><div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a8b78547aae5e807317b120b914c0a805"></a>
@@ -180,8 +180,8 @@ Static Package Functions</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>The ANTLR parser. </dd></dl>
 
-<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00052">52</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;                                                      {</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    org.antlr.v4.runtime.Lexer lexer = <span class="keyword">new</span> ConsoleGrammarLexer(<span class="keyword">new</span> ANTLRInputStream(expr));</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    lexer.removeErrorListeners();</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    lexer.addErrorListener(ThrowingErrorListener.getInstance());</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    CommonTokenStream tokens = <span class="keyword">new</span> CommonTokenStream(lexer);</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    ConsoleGrammarParser parser = <span class="keyword">new</span> ConsoleGrammarParser(tokens);</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    parser.removeErrorListeners();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    parser.addErrorListener(ThrowingErrorListener.getInstance());</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;    <span class="keywordflow">return</span> parser;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00050">50</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;                                                      {</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    org.antlr.v4.runtime.Lexer lexer = <span class="keyword">new</span> ConsoleGrammarLexer(<span class="keyword">new</span> ANTLRInputStream(expr));</div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;    lexer.removeErrorListeners();</div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    lexer.addErrorListener(ThrowingErrorListener.getInstance());</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    CommonTokenStream tokens = <span class="keyword">new</span> CommonTokenStream(lexer);</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    ConsoleGrammarParser parser = <span class="keyword">new</span> ConsoleGrammarParser(tokens);</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;    parser.removeErrorListeners();</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    parser.addErrorListener(ThrowingErrorListener.getInstance());</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordflow">return</span> parser;</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aa1df4872c92e061409180052e42f4622"></a>
@@ -207,8 +207,8 @@ Static Package Functions</h2></td></tr>
 
 <p>Returns a new parser for parsing commands replayed by the recorder (which includes the hidden callback commands). </p>
 
-<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00043">43</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;                                                                 {</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CommandParserRecordedCommands();</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_command_parser_factory_8java_source.html#l00041">41</a> of file <a class="el" href="_command_parser_factory_8java_source.html">CommandParserFactory.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                                 {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordflow">return</span> <span class="keyword">new</span> CommandParserRecordedCommands();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following file:<ul>

@@ -111,8 +111,9 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInt
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html" title="Server-side component that handles breakpoint management. " alt="gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface" shape="rect" coords="387,0,764,24"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html" title="This interface is part of the server&#39;s contract to the client. " alt="gov.nasa.jpf.inspector.interfaces.ProgramStateInterface" shape="rect" coords="774,0,1151,24"/>
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html" title="Interfaces related to choice generators and managing behavior of CG. " alt="gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface" shape="rect" coords="1161,0,1538,24"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="580,112,957,136"/>
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" title="Represents the concrete server part of the Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="580,168,957,192"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_attribute_manager_interface.html" alt="gov.nasa.jpf.inspector.interfaces.AttributeManagerInterface" shape="rect" coords="1548,0,1925,24"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html" title="Represents the server part of JPF Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspector" shape="rect" coords="774,112,1151,136"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html" title="Represents the concrete server part of the Inspector. " alt="gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel" shape="rect" coords="774,168,1151,192"/>
 </map>
  </div></div>
 <table class="memberdecls">
@@ -127,6 +128,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aa44895798f3c029fbb50a93677c510fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aa44895798f3c029fbb50a93677c510fb">waitUntilJpfBecomesConnected</a> ()</td></tr>
 <tr class="memdesc:aa44895798f3c029fbb50a93677c510fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until JPF is connected with the Inspector.  <a href="#aa44895798f3c029fbb50a93677c510fb">More...</a><br /></td></tr>
 <tr class="separator:aa44895798f3c029fbb50a93677c510fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa1d0fb5364bb0b5d155ca7f41d6de9dc"><td class="memItemLeft" align="right" valign="top">VM&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aa1d0fb5364bb0b5d155ca7f41d6de9dc">getVM</a> ()</td></tr>
+<tr class="memdesc:aa1d0fb5364bb0b5d155ca7f41d6de9dc"><td class="mdescLeft">&#160;</td><td class="mdescRight">This may violate encapsulation, but, on the other hand, the Inspector's codebase is already too fragmented and adding more interfaces and yet another hierarchy of data objects isn't worth it, but perhaps we'll think of an alternative.  <a href="#aa1d0fb5364bb0b5d155ca7f41d6de9dc">More...</a><br /></td></tr>
+<tr class="separator:aa1d0fb5364bb0b5d155ca7f41d6de9dc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af65556f768fed3284aebf09bea346fb8"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#af65556f768fed3284aebf09bea346fb8">preventJpfFromResuming</a> ()</td></tr>
+<tr class="memdesc:af65556f768fed3284aebf09bea346fb8"><td class="mdescLeft">&#160;</td><td class="mdescRight">If JPF is currently blocked, then it will be prevented from resuming until <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aaf9260d31c500fd09122d31260a4f6bf">permitJpfToResumeAgain()</a> is called.  <a href="#af65556f768fed3284aebf09bea346fb8">More...</a><br /></td></tr>
+<tr class="separator:af65556f768fed3284aebf09bea346fb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaf9260d31c500fd09122d31260a4f6bf"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aaf9260d31c500fd09122d31260a4f6bf">permitJpfToResumeAgain</a> ()</td></tr>
+<tr class="memdesc:aaf9260d31c500fd09122d31260a4f6bf"><td class="mdescLeft">&#160;</td><td class="mdescRight">If JPF is currently paused and prevented from resuming, it will be woken up and allowed to resume.  <a href="#aaf9260d31c500fd09122d31260a4f6bf">More...</a><br /></td></tr>
+<tr class="separator:aaf9260d31c500fd09122d31260a4f6bf"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#afdca6bee39b4f13aeda2c6ff05d808ba">waitUntilStopped</a> ()</td></tr>
 <tr class="memdesc:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="mdescLeft">&#160;</td><td class="mdescRight">Blocks until JPF is stopped.  <a href="#afdca6bee39b4f13aeda2c6ff05d808ba">More...</a><br /></td></tr>
 <tr class="separator:afdca6bee39b4f13aeda2c6ff05d808ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -143,14 +153,21 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a51b1e8416849af72a29520099345a68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the JPF to terminate at the earliest opportunity.  <a href="#a51b1e8416849af72a29520099345a68b">More...</a><br /></td></tr>
 <tr class="separator:a51b1e8416849af72a29520099345a68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c3596280086831444dcb06079c9412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ad5c3596280086831444dcb06079c9412">forwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:ad5c3596280086831444dcb06079c9412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a forward step.  <a href="#ad5c3596280086831444dcb06079c9412">More...</a><br /></td></tr>
 <tr class="separator:ad5c3596280086831444dcb06079c9412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6a733100d8162d5f18063519a88257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a6a6a733100d8162d5f18063519a88257">backwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
-<tr class="separator:a6a6a733100d8162d5f18063519a88257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776fdfc94730d3af9d0acda10db0895f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a776fdfc94730d3af9d0acda10db0895f">backstepTransition</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> transitionKind, int count)  throws JPFInspectorGenericErrorException</td></tr>
+<tr class="separator:a776fdfc94730d3af9d0acda10db0895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ac3c84ce3ee9820d2f45d0ef31c84bb03">backstep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a backwards step.  <a href="#ac3c84ce3ee9820d2f45d0ef31c84bb03">More...</a><br /></td></tr>
+<tr class="separator:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ce0a439b4997d35781cad40bcab2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ac8ce0a439b4997d35781cad40bcab2ad">backFieldAccessStep</a> (String fieldNameExpression)  throws JPFInspectorGenericErrorException</td></tr>
+<tr class="memdesc:ac8ce0a439b4997d35781cad40bcab2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a back_field_access backwards step.  <a href="#ac8ce0a439b4997d35781cad40bcab2ad">More...</a><br /></td></tr>
+<tr class="separator:ac8ce0a439b4997d35781cad40bcab2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7dbd7885a26f09fecdb5008c5fea2639"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a7dbd7885a26f09fecdb5008c5fea2639">getBreakpoints</a> ()</td></tr>
 <tr class="separator:a7dbd7885a26f09fecdb5008c5fea2639"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a62e0b337bb85dbe8e8a68e179fa8a73f">createBreakPoint</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a> newBP)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
-<tr class="memdesc:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint.  <a href="#a62e0b337bb85dbe8e8a68e179fa8a73f">More...</a><br /></td></tr>
-<tr class="separator:a62e0b337bb85dbe8e8a68e179fa8a73f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aaaf6569e8e25e3297fe1acef8a15a8d6"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#aaaf6569e8e25e3297fe1acef8a15a8d6">createBreakpoint</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a> newBP)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
+<tr class="memdesc:aaaf6569e8e25e3297fe1acef8a15a8d6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies an existing breakpoint.  <a href="#aaaf6569e8e25e3297fe1acef8a15a8d6">More...</a><br /></td></tr>
+<tr class="separator:aaaf6569e8e25e3297fe1acef8a15a8d6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a6a72a13897af9c71756fb9081d6d75a2"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_break_point_manager_interface.html#a6a72a13897af9c71756fb9081d6d75a2">createAssert</a> (<a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html">AssertCreationInformation</a> newAssert)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:a6a72a13897af9c71756fb9081d6d75a2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Creates new assertion (if breakpoint ID is set <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#ada2748ecfa8b49b5816ba67793b29492">BreakpointCreationInformation#BP_ID_NOT_DEFINED</a> or modifies existing assertion ( with same ID)  <a href="#a6a72a13897af9c71756fb9081d6d75a2">More...</a><br /></td></tr>
 <tr class="separator:a6a72a13897af9c71756fb9081d6d75a2"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -172,6 +189,12 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:aaf980401ba045fdd70af10cb1c956ee0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#aaf980401ba045fdd70af10cb1c956ee0">setValue</a> (String expr)  throws JPFInspectorException</td></tr>
 <tr class="memdesc:aaf980401ba045fdd70af10cb1c956ee0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes the value of a variable or a field.  <a href="#aaf980401ba045fdd70af10cb1c956ee0">More...</a><br /></td></tr>
 <tr class="separator:aaf980401ba045fdd70af10cb1c956ee0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afbdf09b2b656b43ffd60a71151333810"><td class="memItemLeft" align="right" valign="top"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_enabling_result.html">ThreadEnablingResult</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#afbdf09b2b656b43ffd60a71151333810">changeThreadSuppressionStatus</a> (int threadId, <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_suppression_status.html">ThreadSuppressionStatus</a> newStatus)</td></tr>
+<tr class="memdesc:afbdf09b2b656b43ffd60a71151333810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Changes a thread's suppression status.  <a href="#afbdf09b2b656b43ffd60a71151333810">More...</a><br /></td></tr>
+<tr class="separator:afbdf09b2b656b43ffd60a71151333810"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a450e279e799006b233dc673099742e81"><td class="memItemLeft" align="right" valign="top">Integer[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a450e279e799006b233dc673099742e81">getSuppressedThreads</a> ()</td></tr>
+<tr class="memdesc:a450e279e799006b233dc673099742e81"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the indices of threads which were suppressed using <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#afbdf09b2b656b43ffd60a71151333810">changeThreadSuppressionStatus(int, ThreadSuppressionStatus)</a> and remain suppressed still.  <a href="#a450e279e799006b233dc673099742e81">More...</a><br /></td></tr>
+<tr class="separator:a450e279e799006b233dc673099742e81"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a7c85aa8be525bc12e0fcacfbdb7e3094"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a7c85aa8be525bc12e0fcacfbdb7e3094">modifyCGNotifications</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_notification_specification.html">CGNotificationSpecification</a> nofitySpec)</td></tr>
 <tr class="memdesc:a7c85aa8be525bc12e0fcacfbdb7e3094"><td class="mdescLeft">&#160;</td><td class="mdescRight">Updates the behavior (user is notified or prompted) of the JPF if ChoiceGenetator event occurs.  <a href="#a7c85aa8be525bc12e0fcacfbdb7e3094">More...</a><br /></td></tr>
 <tr class="separator:a7c85aa8be525bc12e0fcacfbdb7e3094"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -181,8 +204,10 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a055b8d48f863633614dee147bc607ed7"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a055b8d48f863633614dee147bc607ed7">selectChoice</a> (int selectedChoice)  throws JPFInspectorException</td></tr>
 <tr class="memdesc:a055b8d48f863633614dee147bc607ed7"><td class="mdescLeft">&#160;</td><td class="mdescRight">Specifies which choice should the current <a class="el" href="">ChoiceGenerator</a> use.  <a href="#a055b8d48f863633614dee147bc607ed7">More...</a><br /></td></tr>
 <tr class="separator:a055b8d48f863633614dee147bc607ed7"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aba03345fdef7f19fdebe45ff7f873297"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_choice_generator_wrapper.html">ChoiceGeneratorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#aba03345fdef7f19fdebe45ff7f873297">getUsedChoiceGenerators</a> (boolean wait)  throws JPFInspectorException</td></tr>
-<tr class="separator:aba03345fdef7f19fdebe45ff7f873297"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a5ed7245aee42ab55c7b840ab2f8b4a19"><td class="memItemLeft" align="right" valign="top">List&lt; <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_choice_generator_wrapper.html">ChoiceGeneratorWrapper</a> &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a5ed7245aee42ab55c7b840ab2f8b4a19">getUsedChoiceGenerators</a> ()  throws JPFInspectorException</td></tr>
+<tr class="separator:a5ed7245aee42ab55c7b840ab2f8b4a19"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adaf723dc6e17944517ec0e56a5ad0998"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_attribute_manager_interface.html#adaf723dc6e17944517ec0e56a5ad0998">setAttributeValue</a> (String expression)  throws JPFInspectorException</td></tr>
+<tr class="separator:adaf723dc6e17944517ec0e56a5ad0998"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
@@ -197,9 +222,9 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Interface provided by JPFInspector back-end ("server") part. </p>
 <p>Low level interface. </p>
 
-<p>Definition at line <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html#l00029">29</a> of file <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html">JPFInspectorBackEndInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_j_p_f_inspector_back_end_interface_8java_source.html">JPFInspectorBackEndInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6a6a733100d8162d5f18063519a88257"></a>
+<a class="anchor" id="ac8ce0a439b4997d35781cad40bcab2ad"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -207,7 +232,41 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backwardStep </td>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backFieldAccessStep </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>fieldNameExpression</em></td><td>)</td>
+          <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Starts a back_field_access backwards step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldNameExpression</td><td>Field name, see documentation for back_field_access. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a35f9977008992e35dc3eb357dc4dcc69">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#aff4d4ec4943b344daee487e52a8df50f">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3c84ce3ee9820d2f45d0ef31c84bb03"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backstep </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
@@ -221,7 +280,51 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#aaa5d09160e05723d8d692c5382e08973">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a21d3717ef52ff7e0c22c555e854329fb">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Starts a backwards step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>How far should we backtrack. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ac5958075a4972102bbbfd9f75bc3c036">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a1192598fd87d0f221fa94b2baa4873ef">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a776fdfc94730d3af9d0acda10db0895f"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backstepTransition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a>&#160;</td>
+          <td class="paramname"><em>transitionKind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a86ee42c8048358b3e492e0a39662ad08">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a0fd08327427b4bea5711b98a47a0b5d3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -303,6 +406,53 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="afbdf09b2b656b43ffd60a71151333810"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_enabling_result.html">ThreadEnablingResult</a> gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface.changeThreadSuppressionStatus </td>
+          <td>(</td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>threadId</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_suppression_status.html">ThreadSuppressionStatus</a>&#160;</td>
+          <td class="paramname"><em>newStatus</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Changes a thread's suppression status. </p>
+<p>Note: This is called from the command execution thread.</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">threadId</td><td>The ID to which the suppression status should be linked. </td></tr>
+    <tr><td class="paramname">newStatus</td><td>The new suppression status. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>Whether the status was changed or not. </dd></dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae560b5b67ba04f013564108b3d1424a3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ab2cc8475c02a0b677b2e274249de7738">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a6a72a13897af9c71756fb9081d6d75a2"></a>
 <div class="memitem">
 <div class="memproto">
@@ -338,7 +488,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="a62e0b337bb85dbe8e8a68e179fa8a73f"></a>
+<a class="anchor" id="aaaf6569e8e25e3297fe1acef8a15a8d6"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -346,7 +496,7 @@ Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.createBreakPoint </td>
+          <td class="memname"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html">BreakpointStatus</a> gov.nasa.jpf.inspector.interfaces.BreakPointManagerInterface.createBreakpoint </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a>&#160;</td>
           <td class="paramname"><em>newBP</em></td><td>)</td>
@@ -369,7 +519,7 @@ Public Attributes</h2></td></tr>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Get informations about state of the created/modified breakpoint or null if error takes place. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a2e4ca8d547e3bfbfe985e10172236c0c">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ac58cb1c2b654f808f0175924d2468721">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a0ae0f9754c5c8fa0077f57ac848219ca">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a44ee67675204d1a7c6d032b8f681b846">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -471,6 +621,14 @@ Public Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Starts a forward step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>How far should we step forward. </td></tr>
+  </table>
+  </dd>
+</dl>
+
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ae30912de1a536e5c39dd52fed2a8d42a">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a182ea15bc6fb1c943bbb5b0e6bed9723">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
@@ -497,7 +655,7 @@ Public Attributes</h2></td></tr>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>Gets list with currently existing Breakpoints. Never gets null, if no breakpoint exists, then empty list is returned. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae6c609d6d96be90b41090462c71f92a3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a6f0d254bd20ebbaf814696308b09d838">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_handler.html#a6f0d254bd20ebbaf814696308b09d838">gov.nasa.jpf.inspector.server.breakpoints.BreakpointHandler</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae6c609d6d96be90b41090462c71f92a3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -526,7 +684,7 @@ Public Attributes</h2></td></tr>
 <p>Returned array holds entry for any combination of <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_mode.html">CGMode</a> and <a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface_1_1_c_g_types.html">CGTypes</a>.</p>
 <dl class="section return"><dt>Returns</dt><dd>Get status of CG notifications. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#ac71dc9a4e54fd24d2391b0a44cec330a">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ae72933c9a7a67957f3575fea99f8a4ab">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -547,6 +705,33 @@ Public Attributes</h2></td></tr>
 <p>When this serializer's methods are called, new callbacks are sent to the client. </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a0084157560d6b1f1f997f5e5ebdc1aba">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a450e279e799006b233dc673099742e81"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">Integer [] gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface.getSuppressedThreads </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Gets the indices of threads which were suppressed using <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#afbdf09b2b656b43ffd60a71151333810">changeThreadSuppressionStatus(int, ThreadSuppressionStatus)</a> and remain suppressed still. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ac9b1e012df31d803d39155c0bbfc7be9">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#a71962e2616cf79e20427b1376b6bb1e6">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
 
 </div>
 </div>
@@ -630,7 +815,7 @@ Public Attributes</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="aba03345fdef7f19fdebe45ff7f873297"></a>
+<a class="anchor" id="a5ed7245aee42ab55c7b840ab2f8b4a19"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -640,8 +825,7 @@ Public Attributes</h2></td></tr>
         <tr>
           <td class="memname">List&lt;<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1_choice_generator_wrapper.html">ChoiceGeneratorWrapper</a>&gt; gov.nasa.jpf.inspector.interfaces.ChoiceGeneratorsInterface.getUsedChoiceGenerators </td>
           <td>(</td>
-          <td class="paramtype">boolean&#160;</td>
-          <td class="paramname"><em>wait</em></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_exception.html">JPFInspectorException</a></td>
         </tr>
       </table>
@@ -651,14 +835,28 @@ Public Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">wait</td><td>Specify behavior if the SuT is running when the command is invoked. If false error is reported, if try to stop the SuT is get result and resume the SuT </td></tr>
-  </table>
-  </dd>
-</dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#ac94b376a4fb74396e6f52a29ab659d84">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#afa0e6871b1d3d419ae257ddd3fc7c0df">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a79cd1cadf77f6c4bbe630afd61224ebd">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1choicegenerators_1_1_choice_generators_manager.html#a50411274be6c08c9d8f8a5bf94a76eb7">gov.nasa.jpf.inspector.server.choicegenerators.ChoiceGeneratorsManager</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="aa1d0fb5364bb0b5d155ca7f41d6de9dc"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">VM gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface.getVM </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>This may violate encapsulation, but, on the other hand, the Inspector's codebase is already too fragmented and adding more interfaces and yet another hierarchy of data objects isn't worth it, but perhaps we'll think of an alternative. </p>
+<p>It is the caller's responsibility to only use the VM when the VM is paused. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a6dc50c1b5a5f3a3f2da105bcc1329c63">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
 
 </div>
 </div>
@@ -726,6 +924,55 @@ Note: For any combination of type and mode parameter there is stored state that 
 
 </div>
 </div>
+<a class="anchor" id="aaf9260d31c500fd09122d31260a4f6bf"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface.permitJpfToResumeAgain </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If JPF is currently paused and prevented from resuming, it will be woken up and allowed to resume. </p>
+<p>If multiple <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#af65556f768fed3284aebf09bea346fb8">preventJpfFromResuming()</a> calls were made, all of them must be undone using this mehod before JPF resumes.</p>
+<p>Synchronized on the access lock. </p><dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname">IllegalStateException</td><td>When JPF was not being prevented from resuming. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a7b7e2eb574fff3f7173e83c58ae2a494">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="af65556f768fed3284aebf09bea346fb8"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">boolean gov.nasa.jpf.inspector.interfaces.JPFInspectorBackEndInterface.preventJpfFromResuming </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>If JPF is currently blocked, then it will be prevented from resuming until <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aaf9260d31c500fd09122d31260a4f6bf">permitJpfToResumeAgain()</a> is called. </p>
+<p>If JPF is currently running, this method will simply return false.</p>
+<p>If multiple calls to this method are made, then all of them must be undone using <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_j_p_f_inspector_back_end_interface.html#aaf9260d31c500fd09122d31260a4f6bf">permitJpfToResumeAgain()</a> before JPF can resume again.</p>
+<p>Synchronized on the access lock.</p>
+<dl class="section return"><dt>Returns</dt><dd>True if JPF is currently stopped and will be prevented from resuming; false otherwise. </dd></dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html#a12b520f1c7e198c4666189b9318a32e9">gov.nasa.jpf.inspector.server.jpf.JPFInspector</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a51b1e8416849af72a29520099345a68b"></a>
 <div class="memitem">
 <div class="memproto">
@@ -789,6 +1036,32 @@ Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyCho
 
 </div>
 </div>
+<a class="anchor" id="adaf723dc6e17944517ec0e56a5ad0998"></a>
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.AttributeManagerInterface.setAttributeValue </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>expression</em></td><td>)</td>
+          <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_exception.html">JPFInspectorException</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a48a9c114eba24ded4380b7923b734e46">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1_attributes_manager.html#aa96d3e0af88f17d43c5d73b0f28cabe0">gov.nasa.jpf.inspector.server.attributes.AttributesManager</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="aaf980401ba045fdd70af10cb1c956ee0"></a>
 <div class="memitem">
 <div class="memproto">
@@ -825,7 +1098,7 @@ Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyCho
   </dd>
 </dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#a75133d9acd32d5e0d94e63b25594866b">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a1c3264f06b28f41e6b0ded6c5f71863a">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a1c3264f06b28f41e6b0ded6c5f71863a">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_program_state_manager.html#a75133d9acd32d5e0d94e63b25594866b">gov.nasa.jpf.inspector.server.programstate.ProgramStateManager</a>.</p>
 
 </div>
 </div>
@@ -953,7 +1226,7 @@ Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyCho
 <p>Constant that marks that there is no forward default choice from previous backward steps. </p>
 <p>Can be used in <a class="el" href="">InspectorCallbacks#notifyChoiceGeneratorNewChoice(CGTypes, String, int, String[], int, int)</a> as value of defaultChoice parameter. </p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00086">86</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00120">120</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>
@@ -978,7 +1251,7 @@ Useful only immediately after <a class="el" href="">InspectorCallbacks#notifyCho
 <p>Constant that marks that for the current value for the ChoiceGenerator should by taken from the default forward choice. </p>
 <p>Can be used in <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#a055b8d48f863633614dee147bc607ed7">method call. </a></p>
 
-<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00093">93</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_choice_generators_interface_8java_source.html#l00127">127</a> of file <a class="el" href="_choice_generators_interface_8java_source.html">ChoiceGeneratorsInterface.java</a>.</p>
 
 </div>
 </div>

@@ -88,6 +88,7 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 </div><!-- top -->
 <div class="header">
   <div class="summary">
+<a href="#namespaces">Packages</a> &#124;
 <a href="#nested-classes">Classes</a>  </div>
   <div class="headertitle">
 <div class="title">Package gov.nasa.jpf.inspector.interfaces</div>  </div>
@@ -97,11 +98,20 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <p>Provides interfaces and enumerations used throughout JPF Inspector.  
 <a href="#details">More...</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="namespaces"></a>
+Packages</h2></td></tr>
+<tr class="memitem:namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes"><td class="memItemLeft" align="right" valign="top">package &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes.html">attributes</a></td></tr>
+<tr class="memdesc:namespacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfaces in this package are used by attribute adaptors to read and manipulate attributes using the Inspector. <br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="nested-classes"></a>
 Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html">AssertCreationInformation</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html">AssertStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All information about a specific assertion-type breakpoint.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_attribute_manager_interface.html">AttributeManagerInterface</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html">BreakpointCreationInformation</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">All information typed by the user who executed the "create breakpoint" command.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html#details">More...</a><br /></td></tr>
@@ -120,8 +130,6 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html">ChoiceGeneratorsInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interfaces related to choice generators and managing behavior of CG.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generators_interface.html#details">More...</a><br /></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_choice_generator_state.html">ChoiceGeneratorState</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html">CommandsInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The server must implement this interface and the client uses it to start or stop execution and to do stepping.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#details">More...</a><br /></td></tr>
@@ -150,8 +158,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">interface &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html">ProgramStateInterface</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">This interface is part of the server's contract to the client.  <a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_program_state_interface.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_scheduling_option.html">ThreadSchedulingOption</a></td></tr>
-<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a thread should be permitted to be scheduled when a choice generator chooses a thread to schedule.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_scheduling_option.html#details">More...</a><br /></td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_enabling_result.html">ThreadEnablingResult</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the result of an "enable thread" or "disable thread" operation.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_enabling_result.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_suppression_status.html">ThreadSuppressionStatus</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Indicates whether a thread should be permitted to be scheduled when a choice generator chooses a thread to schedule.  <a href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_thread_suppression_status.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>

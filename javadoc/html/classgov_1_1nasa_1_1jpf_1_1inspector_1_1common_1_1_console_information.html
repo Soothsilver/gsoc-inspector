@@ -103,19 +103,16 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-static-attribs"></a>
 Static Public Attributes</h2></td></tr>
-<tr class="memitem:a57d4710532b71af31cf8fedc417384fc"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_console_information.html#a57d4710532b71af31cf8fedc417384fc">MAX_LINE_LENGTH</a> = 80</td></tr>
-<tr class="memdesc:a57d4710532b71af31cf8fedc417384fc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the maximum length that a one-line message can have.  <a href="#a57d4710532b71af31cf8fedc417384fc">More...</a><br /></td></tr>
-<tr class="separator:a57d4710532b71af31cf8fedc417384fc"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ac16e68639ca5e13db2dab0aacbbf3ca8"><td class="memItemLeft" align="right" valign="top">static int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_console_information.html#ac16e68639ca5e13db2dab0aacbbf3ca8">MAX_ERROR_LINE_LENGTH</a> = 50</td></tr>
-<tr class="memdesc:ac16e68639ca5e13db2dab0aacbbf3ca8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the maximum length that a user-input text can have before it's broken on another line.  <a href="#ac16e68639ca5e13db2dab0aacbbf3ca8">More...</a><br /></td></tr>
-<tr class="separator:ac16e68639ca5e13db2dab0aacbbf3ca8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6a45f94d470f263bde8a181833c53ef9"><td class="memItemLeft" align="right" valign="top">static final int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_console_information.html#a6a45f94d470f263bde8a181833c53ef9">MAX_ERROR_LINE_LENGTH</a> = 50</td></tr>
+<tr class="memdesc:a6a45f94d470f263bde8a181833c53ef9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Represents the maximum length that a user-input text can have before it's broken on another line.  <a href="#a6a45f94d470f263bde8a181833c53ef9">More...</a><br /></td></tr>
+<tr class="separator:a6a45f94d470f263bde8a181833c53ef9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contains static information about the current Inspector client console. </p>
 
-<p>Definition at line <a class="el" href="_console_information_8java_source.html#l00006">6</a> of file <a class="el" href="_console_information_8java_source.html">ConsoleInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_console_information_8java_source.html#l00022">22</a> of file <a class="el" href="_console_information_8java_source.html">ConsoleInformation.java</a>.</p>
 </div><h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="ac16e68639ca5e13db2dab0aacbbf3ca8"></a>
+<a class="anchor" id="a6a45f94d470f263bde8a181833c53ef9"></a>
 <div class="memitem">
 <div class="memproto">
 <table class="mlabels">
@@ -123,7 +120,7 @@ Static Public Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.common.ConsoleInformation.MAX_ERROR_LINE_LENGTH = 50</td>
+          <td class="memname">final int gov.nasa.jpf.inspector.common.ConsoleInformation.MAX_ERROR_LINE_LENGTH = 50</td>
         </tr>
       </table>
   </td>
@@ -138,32 +135,7 @@ Static Public Attributes</h2></td></tr>
 <p>ERR: Unexpected 'invalidcontinuation' create breakpoint invalidcontinuation" ^</p>
 <p>Notice the little arrow pointing at the position of the error. If the line the arrow is pointing to is greater than MAX_ERROR_LINE_LENGTH, then it should be broken up into several lines. </p>
 
-<p>Definition at line <a class="el" href="_console_information_8java_source.html#l00030">30</a> of file <a class="el" href="_console_information_8java_source.html">ConsoleInformation.java</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a57d4710532b71af31cf8fedc417384fc"></a>
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int gov.nasa.jpf.inspector.common.ConsoleInformation.MAX_LINE_LENGTH = 80</td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">static</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Represents the maximum length that a one-line message can have. </p>
-<p>If a server components wants to display a one-line message or other one-line expression and wants to ensure that it will fit on a single line, it should only display the first MAX_LINE_LENGTH characters and then display an ellipsis (three dots). </p>
-
-<p>Definition at line <a class="el" href="_console_information_8java_source.html#l00014">14</a> of file <a class="el" href="_console_information_8java_source.html">ConsoleInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_console_information_8java_source.html#l00038">38</a> of file <a class="el" href="_console_information_8java_source.html">ConsoleInformation.java</a>.</p>
 
 </div>
 </div>

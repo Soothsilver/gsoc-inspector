@@ -107,17 +107,17 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.InstructionPosition:</
  <div class="center">
   <img src="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.png" usemap="#gov.nasa.jpf.inspector.interfaces.InstructionPosition_map" alt=""/>
   <map id="gov.nasa.jpf.inspector.interfaces.InstructionPosition_map" name="gov.nasa.jpf.inspector.interfaces.InstructionPosition_map">
-<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html" title="Represents position of the instruction. " alt="gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl" shape="rect" coords="0,56,376,80"/>
+<area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html" title="Represents the source code location of an instruction. " alt="gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl" shape="rect" coords="0,56,376,80"/>
 </map>
  </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:ac5cae68ff61d71dbf7b90e30b8291784"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac5cae68ff61d71dbf7b90e30b8291784">getLineNumber</a> ()</td></tr>
-<tr class="memdesc:ac5cae68ff61d71dbf7b90e30b8291784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Can be obtained by calling Instruction.getLineNumber()  <a href="#ac5cae68ff61d71dbf7b90e30b8291784">More...</a><br /></td></tr>
+<tr class="memdesc:ac5cae68ff61d71dbf7b90e30b8291784"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the line number of this location, or -1 if the line could not be found.  <a href="#ac5cae68ff61d71dbf7b90e30b8291784">More...</a><br /></td></tr>
 <tr class="separator:ac5cae68ff61d71dbf7b90e30b8291784"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac1fb787ee623734fb5be1266d14727ce"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#ac1fb787ee623734fb5be1266d14727ce">getFileName</a> ()</td></tr>
-<tr class="memdesc:ac1fb787ee623734fb5be1266d14727ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">File name where the class is defined.  <a href="#ac1fb787ee623734fb5be1266d14727ce">More...</a><br /></td></tr>
+<tr class="memdesc:ac1fb787ee623734fb5be1266d14727ce"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the name of the file where the instruction's class is defined.  <a href="#ac1fb787ee623734fb5be1266d14727ce">More...</a><br /></td></tr>
 <tr class="separator:ac1fb787ee623734fb5be1266d14727ce"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a74e0a143b5cc51a5b147f2f2a2709638"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_instruction_position.html#a74e0a143b5cc51a5b147f2f2a2709638">hitPosition</a> (Instruction instr)</td></tr>
 <tr class="memdesc:a74e0a143b5cc51a5b147f2f2a2709638"><td class="mdescLeft">&#160;</td><td class="mdescRight">Test whether given instruction take place at represented position.  <a href="#a74e0a143b5cc51a5b147f2f2a2709638">More...</a><br /></td></tr>
@@ -143,7 +143,7 @@ Public Attributes</h2></td></tr>
 <div class="textblock"><p>Represents the coordinates of an instruction, i.e. </p>
 <p>its location in the source code and in its method's bytecode. </p>
 
-<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00027">27</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
+<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00025">25</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a1a109a1b9cac93e4d189ef5498863fce"></a>
 <div class="memitem">
@@ -176,8 +176,9 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>File name where the class is defined. </p>
-<p>(If the class file is stored in the jar file, then jar file name is ignored) </p>
+<p>Gets the name of the file where the instruction's class is defined. </p>
+<p>(If the class file is stored in the jar file, then jar file name is ignored.)</p>
+<p>If the filename could not be found, this returs null. </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#ae7c8f0c324b83e4f7dcad553f9bd4bb9">gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl</a>.</p>
 
@@ -232,6 +233,7 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
+<p>Gets the line number of this location, or -1 if the line could not be found. </p>
 <p>Can be obtained by calling Instruction.getLineNumber() </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_instruction_position_impl.html#a0ebbca9205ea60a39c4ee0c99f9a4272">gov.nasa.jpf.inspector.server.breakpoints.InstructionPositionImpl</a>.</p>
@@ -315,7 +317,7 @@ Public Attributes</h2></td></tr>
 
 <p>The source code line is unspecified. </p>
 
-<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00032">32</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
+<p>Definition at line <a class="el" href="_instruction_position_8java_source.html#l00030">30</a> of file <a class="el" href="_instruction_position_8java_source.html">InstructionPosition.java</a>.</p>
 
 </div>
 </div>

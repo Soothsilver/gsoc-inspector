@@ -98,6 +98,9 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="title">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState Class Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
+
+<p>Auxiliary class - we are using our own parser to parse escape characters inside the literal.  
+ <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#details">More...</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
@@ -106,16 +109,20 @@ Public Member Functions</h2></td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-attribs"></a>
 Public Attributes</h2></td></tr>
-<tr class="memitem:ac2bd992b99178e0992ca84fc0c8b1551"><td class="memItemLeft" align="right" valign="top">char[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#ac2bd992b99178e0992ca84fc0c8b1551">strArr</a></td></tr>
-<tr class="separator:ac2bd992b99178e0992ca84fc0c8b1551"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a97e5d82ca404c17af2f196e389acf3c6"><td class="memItemLeft" align="right" valign="top">final char[]&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a97e5d82ca404c17af2f196e389acf3c6">strArr</a></td></tr>
+<tr class="memdesc:a97e5d82ca404c17af2f196e389acf3c6"><td class="mdescLeft">&#160;</td><td class="mdescRight">String to parse.  <a href="#a97e5d82ca404c17af2f196e389acf3c6">More...</a><br /></td></tr>
+<tr class="separator:a97e5d82ca404c17af2f196e389acf3c6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a757b709c5c3f612edbbbc1cbf57512cd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a757b709c5c3f612edbbbc1cbf57512cd">pos</a></td></tr>
+<tr class="memdesc:a757b709c5c3f612edbbbc1cbf57512cd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Position where starts unparsed input (note modified by parsers)  <a href="#a757b709c5c3f612edbbbc1cbf57512cd">More...</a><br /></td></tr>
 <tr class="separator:a757b709c5c3f612edbbbc1cbf57512cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adaf886b0545e724fbb9d1ec4ff11dbab"><td class="memItemLeft" align="right" valign="top">Set&lt; Character &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#adaf886b0545e724fbb9d1ec4ff11dbab">bannedUnescapedCharacters</a></td></tr>
-<tr class="separator:adaf886b0545e724fbb9d1ec4ff11dbab"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa55272b287a594f386966d5b35c18527"><td class="memItemLeft" align="right" valign="top">final Set&lt; Character &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#aa55272b287a594f386966d5b35c18527">bannedUnescapedCharacters</a></td></tr>
+<tr class="memdesc:aa55272b287a594f386966d5b35c18527"><td class="mdescLeft">&#160;</td><td class="mdescRight">List of chars which could not be used without escaping in plain text (for chars - ', for strings - ")  <a href="#aa55272b287a594f386966d5b35c18527">More...</a><br /></td></tr>
+<tr class="separator:aa55272b287a594f386966d5b35c18527"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock">
-<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00093">93</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
+<div class="textblock"><p>Auxiliary class - we are using our own parser to parse escape characters inside the literal. </p>
+
+<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00095">95</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a436de96c45eb8f9fa4707dcb6d81d587"></a>
 <div class="memitem">
@@ -141,25 +148,27 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00099">99</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;                                                                    {</div><div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#ac2bd992b99178e0992ca84fc0c8b1551">strArr</a> = str.toCharArray();</div><div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a757b709c5c3f612edbbbc1cbf57512cd">pos</a> = 0;</div><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#adaf886b0545e724fbb9d1ec4ff11dbab">bannedUnescapedCharacters</a> = <span class="keyword">new</span> HashSet&lt;&gt;();</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#adaf886b0545e724fbb9d1ec4ff11dbab">bannedUnescapedCharacters</a>.add(bannedUnsescapedChar);</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_adaf886b0545e724fbb9d1ec4ff11dbab"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#adaf886b0545e724fbb9d1ec4ff11dbab">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.bannedUnescapedCharacters</a></div><div class="ttdeci">Set&lt; Character &gt; bannedUnescapedCharacters</div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00097">ExpressionStateValueConstChar.java:97</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_ac2bd992b99178e0992ca84fc0c8b1551"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#ac2bd992b99178e0992ca84fc0c8b1551">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.strArr</a></div><div class="ttdeci">char[] strArr</div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00094">ExpressionStateValueConstChar.java:94</a></div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_a757b709c5c3f612edbbbc1cbf57512cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a757b709c5c3f612edbbbc1cbf57512cd">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.pos</a></div><div class="ttdeci">int pos</div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00095">ExpressionStateValueConstChar.java:95</a></div></div>
+<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00110">110</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;                                                                    {</div><div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a97e5d82ca404c17af2f196e389acf3c6">strArr</a> = str.toCharArray();</div><div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a757b709c5c3f612edbbbc1cbf57512cd">pos</a> = 0;</div><div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;      this.<a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#aa55272b287a594f386966d5b35c18527">bannedUnescapedCharacters</a> = <span class="keyword">new</span> HashSet&lt;&gt;();</div><div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#aa55272b287a594f386966d5b35c18527">bannedUnescapedCharacters</a>.add(bannedUnsescapedChar);</div><div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;    }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_a757b709c5c3f612edbbbc1cbf57512cd"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a757b709c5c3f612edbbbc1cbf57512cd">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.pos</a></div><div class="ttdeci">int pos</div><div class="ttdoc">Position where starts unparsed input (note modified by parsers) </div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00103">ExpressionStateValueConstChar.java:103</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_a97e5d82ca404c17af2f196e389acf3c6"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#a97e5d82ca404c17af2f196e389acf3c6">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.strArr</a></div><div class="ttdeci">final char[] strArr</div><div class="ttdoc">String to parse. </div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00099">ExpressionStateValueConstChar.java:99</a></div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37_html_aa55272b287a594f386966d5b35c18527"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1expressions_1_1_expression_state3e52eea711d5518799170688e70a0d37.html#aa55272b287a594f386966d5b35c18527">gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.bannedUnescapedCharacters</a></div><div class="ttdeci">final Set&lt; Character &gt; bannedUnescapedCharacters</div><div class="ttdoc">List of chars which could not be used without escaping in plain text (for chars - &amp;#39;...</div><div class="ttdef"><b>Definition:</b> <a href="_expression_state_value_const_char_8java_source.html#l00108">ExpressionStateValueConstChar.java:108</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a class="anchor" id="adaf886b0545e724fbb9d1ec4ff11dbab"></a>
+<a class="anchor" id="aa55272b287a594f386966d5b35c18527"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">Set&lt;Character&gt; gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.bannedUnescapedCharacters</td>
+          <td class="memname">final Set&lt;Character&gt; gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.bannedUnescapedCharacters</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00097">97</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
+<p>List of chars which could not be used without escaping in plain text (for chars - ', for strings - ") </p>
+
+<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00108">108</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
 
 </div>
 </div>
@@ -173,21 +182,25 @@ Public Attributes</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00095">95</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
+<p>Position where starts unparsed input (note modified by parsers) </p>
+
+<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00103">103</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
 
 </div>
 </div>
-<a class="anchor" id="ac2bd992b99178e0992ca84fc0c8b1551"></a>
+<a class="anchor" id="a97e5d82ca404c17af2f196e389acf3c6"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">char [] gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.strArr</td>
+          <td class="memname">final char [] gov.nasa.jpf.inspector.server.expression.expressions.ExpressionStateValueConstChar.CharParsingState.strArr</td>
         </tr>
       </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00094">94</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
+<p>String to parse. </p>
+
+<p>Definition at line <a class="el" href="_expression_state_value_const_char_8java_source.html#l00099">99</a> of file <a class="el" href="_expression_state_value_const_char_8java_source.html">ExpressionStateValueConstChar.java</a>.</p>
 
 </div>
 </div>

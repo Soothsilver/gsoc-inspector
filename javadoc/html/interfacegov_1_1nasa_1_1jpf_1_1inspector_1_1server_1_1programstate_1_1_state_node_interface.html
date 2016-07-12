@@ -128,14 +128,14 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ad6918e06b7d8b9a83b0b0e26540d94c8"><td class="memItemLeft" align="right" valign="top">String&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_node_interface.html#ad6918e06b7d8b9a83b0b0e26540d94c8">getStateExpr</a> ()</td></tr>
 <tr class="memdesc:ad6918e06b7d8b9a83b0b0e26540d94c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns an expression that, if evaluated at in the same program state, would result in an equal <a class="el" href="">ProgramStateEntry</a>.  <a href="#ad6918e06b7d8b9a83b0b0e26540d94c8">More...</a><br /></td></tr>
 <tr class="separator:ad6918e06b7d8b9a83b0b0e26540d94c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ade42b920ceb9c03d6bf003b186daba2b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html">ProgramStateEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_node_interface.html#ade42b920ceb9c03d6bf003b186daba2b">toHierarchy3</a> ()  throws JPFInspectorException</td></tr>
-<tr class="memdesc:ade42b920ceb9c03d6bf003b186daba2b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the evaluated expression again, this time resulting in a <a class="el" href="">ProgramStateEntry</a> which is mostly just a container of strings.  <a href="#ade42b920ceb9c03d6bf003b186daba2b">More...</a><br /></td></tr>
-<tr class="separator:ade42b920ceb9c03d6bf003b186daba2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a42dd02f50ca78a5ec51d337d3dad0059"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html">ProgramStateEntry</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_node_interface.html#a42dd02f50ca78a5ec51d337d3dad0059">toHierarchy3</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1_attributes_manager.html">AttributesManager</a> attributeManager)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:a42dd02f50ca78a5ec51d337d3dad0059"><td class="mdescLeft">&#160;</td><td class="mdescRight">Evaluates the evaluated expression again, this time resulting in a <a class="el" href="">ProgramStateEntry</a> which is mostly just a container of strings.  <a href="#a42dd02f50ca78a5ec51d337d3dad0059">More...</a><br /></td></tr>
+<tr class="separator:a42dd02f50ca78a5ec51d337d3dad0059"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Represents an evaluated program state expression. </p>
 
-<p>Definition at line <a class="el" href="_state_node_interface_8java_source.html#l00029">29</a> of file <a class="el" href="_state_node_interface_8java_source.html">StateNodeInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_state_node_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_state_node_interface_8java_source.html">StateNodeInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="af5208348883828a3aac1a37b7a94495f"></a>
 <div class="memitem">
@@ -175,23 +175,29 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
-<a class="anchor" id="ade42b920ceb9c03d6bf003b186daba2b"></a>
+<a class="anchor" id="a42dd02f50ca78a5ec51d337d3dad0059"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
           <td class="memname"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1pse_1_1_program_state_entry.html">ProgramStateEntry</a> gov.nasa.jpf.inspector.server.programstate.StateNodeInterface.toHierarchy3 </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1_attributes_manager.html">AttributesManager</a>&#160;</td>
+          <td class="paramname"><em>attributeManager</em></td><td>)</td>
           <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_exception.html">JPFInspectorException</a></td>
         </tr>
       </table>
 </div><div class="memdoc">
 
 <p>Evaluates the evaluated expression again, this time resulting in a <a class="el" href="">ProgramStateEntry</a> which is mostly just a container of strings. </p>
-<p>The name "toHierarchy3" is temporary (I promise). Previously, this method was called "getResultExpression" which was confusing because the method that transformed Expression classes (hierarchy 1) to state expressions (hierarchy 2) was also called "getResultExpression". </p>
+<p>The name "toHierarchy3" is temporary (I promise). Previously, this method was called "getResultExpression" which was confusing because the method that transformed Expression classes (hierarchy 1) to state expressions (hierarchy 2) was also called "getResultExpression". </p><dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">attributeManager</td><td>The server's attribute manager is used for transforming attribute values to strings. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_element_info_field.html#a4a5ab6dbd7e71ce0ac1ce00f526e451c">gov.nasa.jpf.inspector.server.programstate.StateValueElementInfoField</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_stack_slot.html#abeb0de4ba3dfeb389afb8711fe764e9d">gov.nasa.jpf.inspector.server.programstate.StateValueStackSlot</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_readable_const_value.html#a8e4820928a4a3dddda9686e34103de35">gov.nasa.jpf.inspector.server.programstate.StateReadableConstValue</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_array_element.html#a446f259d4a778166e2a8963fc6919ef5">gov.nasa.jpf.inspector.server.programstate.StateValueArrayElement</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_element_info.html#ab454d02f2103e81857548f33bd99a38c">gov.nasa.jpf.inspector.server.programstate.StateElementInfo</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_stack_frame.html#a79de95974a896fac48ab18138dcdef76">gov.nasa.jpf.inspector.server.programstate.StateStackFrame</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_thread_info.html#ab90c7f4dcc7b2fbaf2e7e279f697690b">gov.nasa.jpf.inspector.server.programstate.StateThreadInfo</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_heap_entry_list.html#a21eb94dff62b93e6354d4e324fbe94b5">gov.nasa.jpf.inspector.server.programstate.StateHeapEntryList</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_element_info_field.html#a5f26c4b12897abc9acde1b1e79b4e5ec">gov.nasa.jpf.inspector.server.programstate.StateValueElementInfoField</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_stack_slot.html#a87f218f9175400eb949e6f0ef945d275">gov.nasa.jpf.inspector.server.programstate.StateValueStackSlot</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_readable_const_value.html#a175426ed650779c1e944e5dd7e284e4f">gov.nasa.jpf.inspector.server.programstate.StateReadableConstValue</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_value_array_element.html#aa62606e92d83d88e14eb913f392a0af4">gov.nasa.jpf.inspector.server.programstate.StateValueArrayElement</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_element_info.html#a6f050f4d9e82028cf5d02e9f24665eee">gov.nasa.jpf.inspector.server.programstate.StateElementInfo</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_stack_frame.html#a5c2ad3ebbf7985f3f2392ff846644e19">gov.nasa.jpf.inspector.server.programstate.StateStackFrame</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_thread_info.html#a343e1e51aaa1d98262597489f67bc07c">gov.nasa.jpf.inspector.server.programstate.StateThreadInfo</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1programstate_1_1_state_heap_entry_list.html#a46ebe20337f0e5039d7cab12dd9a43c0">gov.nasa.jpf.inspector.server.programstate.StateHeapEntryList</a>.</p>
 
 </div>
 </div>

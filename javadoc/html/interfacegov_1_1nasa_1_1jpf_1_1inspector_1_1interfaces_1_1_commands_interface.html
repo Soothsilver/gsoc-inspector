@@ -138,21 +138,54 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a51b1e8416849af72a29520099345a68b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Causes the JPF to terminate at the earliest opportunity.  <a href="#a51b1e8416849af72a29520099345a68b">More...</a><br /></td></tr>
 <tr class="separator:a51b1e8416849af72a29520099345a68b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad5c3596280086831444dcb06079c9412"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ad5c3596280086831444dcb06079c9412">forwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:ad5c3596280086831444dcb06079c9412"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a forward step.  <a href="#ad5c3596280086831444dcb06079c9412">More...</a><br /></td></tr>
 <tr class="separator:ad5c3596280086831444dcb06079c9412"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a6a6a733100d8162d5f18063519a88257"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a6a6a733100d8162d5f18063519a88257">backwardStep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
-<tr class="separator:a6a6a733100d8162d5f18063519a88257"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a776fdfc94730d3af9d0acda10db0895f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#a776fdfc94730d3af9d0acda10db0895f">backstepTransition</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> transitionKind, int count)  throws JPFInspectorGenericErrorException</td></tr>
+<tr class="separator:a776fdfc94730d3af9d0acda10db0895f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ac3c84ce3ee9820d2f45d0ef31c84bb03">backstep</a> (<a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a> type)  throws JPFInspectorException</td></tr>
+<tr class="memdesc:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a backwards step.  <a href="#ac3c84ce3ee9820d2f45d0ef31c84bb03">More...</a><br /></td></tr>
+<tr class="separator:ac3c84ce3ee9820d2f45d0ef31c84bb03"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac8ce0a439b4997d35781cad40bcab2ad"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface.html#ac8ce0a439b4997d35781cad40bcab2ad">backFieldAccessStep</a> (String fieldNameExpression)  throws JPFInspectorGenericErrorException</td></tr>
+<tr class="memdesc:ac8ce0a439b4997d35781cad40bcab2ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Starts a back_field_access backwards step.  <a href="#ac8ce0a439b4997d35781cad40bcab2ad">More...</a><br /></td></tr>
+<tr class="separator:ac8ce0a439b4997d35781cad40bcab2ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The server must implement this interface and the client uses it to start or stop execution and to do stepping. </p>
 
-<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00033">33</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_commands_interface_8java_source.html#l00027">27</a> of file <a class="el" href="_commands_interface_8java_source.html">CommandsInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
-<a class="anchor" id="a6a6a733100d8162d5f18063519a88257"></a>
+<a class="anchor" id="ac8ce0a439b4997d35781cad40bcab2ad"></a>
 <div class="memitem">
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backwardStep </td>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backFieldAccessStep </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>fieldNameExpression</em></td><td>)</td>
+          <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Starts a back_field_access backwards step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">fieldNameExpression</td><td>Field name, see documentation for back_field_access. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a35f9977008992e35dc3eb357dc4dcc69">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#aff4d4ec4943b344daee487e52a8df50f">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="ac3c84ce3ee9820d2f45d0ef31c84bb03"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backstep </td>
           <td>(</td>
           <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a>&#160;</td>
           <td class="paramname"><em>type</em></td><td>)</td>
@@ -161,7 +194,43 @@ Public Member Functions</h2></td></tr>
       </table>
 </div><div class="memdoc">
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#aaa5d09160e05723d8d692c5382e08973">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a21d3717ef52ff7e0c22c555e854329fb">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+<p>Starts a backwards step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>How far should we backtrack. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ac5958075a4972102bbbfd9f75bc3c036">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a1192598fd87d0f221fa94b2baa4873ef">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a776fdfc94730d3af9d0acda10db0895f"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.interfaces.CommandsInterface.backstepTransition </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="enumgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_commands_interface_1_1_step_type.html">StepType</a>&#160;</td>
+          <td class="paramname"><em>transitionKind</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">int&#160;</td>
+          <td class="paramname"><em>count</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#a86ee42c8048358b3e492e0a39662ad08">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a0fd08327427b4bea5711b98a47a0b5d3">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 
 </div>
 </div>
@@ -178,6 +247,14 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Starts a forward step. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">type</td><td>How far should we step forward. </td></tr>
+  </table>
+  </dd>
+</dl>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_commands_manager.html#ae30912de1a536e5c39dd52fed2a8d42a">gov.nasa.jpf.inspector.server.breakpoints.CommandsManager</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector_parallel.html#a182ea15bc6fb1c943bbb5b0e6bed9723">gov.nasa.jpf.inspector.server.jpf.JPFInspectorParallel</a>.</p>
 

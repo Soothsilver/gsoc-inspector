@@ -106,7 +106,7 @@ Inheritance diagram for gov.nasa.jpf.inspector.interfaces.AssertCreationInformat
   <map id="gov.nasa.jpf.inspector.interfaces.AssertCreationInformation_map" name="gov.nasa.jpf.inspector.interfaces.AssertCreationInformation_map">
 <area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_creation_information.html" title="All information typed by the user who executed the &quot;create breakpoint&quot; command. " alt="gov.nasa.jpf.inspector.interfaces.BreakpointCreationInformation" shape="rect" coords="261,56,774,80"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1commands_1_1_cmd_assert_1_1_console_assertion_creation_expression.html" title="Represents the arguments for the command &quot;assert&quot;. " alt="gov.nasa.jpf.inspector.client.commands.CmdAssert.ConsoleAssertionCreationExpression" shape="rect" coords="0,168,513,192"/>
-<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html" alt="gov.nasa.jpf.inspector.interfaces.AssertStatus" shape="rect" coords="523,168,1036,192"/>
+<area href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html" title="All information about a specific assertion-type breakpoint. " alt="gov.nasa.jpf.inspector.interfaces.AssertStatus" shape="rect" coords="523,168,1036,192"/>
 <area href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_assert_status_impl.html" alt="gov.nasa.jpf.inspector.server.breakpoints.AssertStatusImpl" shape="rect" coords="523,224,1036,248"/>
 </map>
  </div></div>
@@ -150,7 +150,7 @@ Public Attributes</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><dl class="section author"><dt>Author</dt><dd>Alf </dd></dl>
 
-<p>Definition at line <a class="el" href="_assert_creation_information_8java_source.html#l00026">26</a> of file <a class="el" href="_assert_creation_information_8java_source.html">AssertCreationInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_assert_creation_information_8java_source.html#l00024">24</a> of file <a class="el" href="_assert_creation_information_8java_source.html">AssertCreationInformation.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="a5a54a69dffd8a3021e6b474694215feb"></a>
 <div class="memitem">
@@ -178,7 +178,7 @@ Public Attributes</h2></td></tr>
 Note: The Upper bound condition must hold too to hit the breakpoint</p>
 <dl class="section return"><dt>Returns</dt><dd>Lower bound of hitCounter to hit the breakpoint. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a50d8d5bd12ae0e575edd46ae3160e95d">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a6ebc8871a6f9f85623c5d7fe497ee340">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#abf22de43525979b7ecccc3d6c8e98e23">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a6ebc8871a6f9f85623c5d7fe497ee340">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
 
 </div>
 </div>
@@ -208,7 +208,7 @@ Note: The Upper bound condition must hold too to hit the breakpoint</p>
 Note: The lower bound condition must hold too to hit the breakpoint</p>
 <dl class="section return"><dt>Returns</dt><dd>Upper bound of hitCounter to hit the breakpoint. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#aee4da392b6d31c578fa9471d262026af">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a2dd516f1e7e073275e4595978dc70bb1">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#ad5d0302334c5f1db1ebcd8a5a09593bc">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a2dd516f1e7e073275e4595978dc70bb1">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
 
 </div>
 </div>
@@ -234,7 +234,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 </div><div class="memdoc">
 <dl class="section return"><dt>Returns</dt><dd>String representation of the expression used to create/update the breakpoint. Note: This expression is parsed by the server part. </dd></dl>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a2c106060493596a61ce4cf28cc3f4e8f">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a50bc15cc620f73630667fc8adf0f9da2">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#affb877d3d3213c2fc3f060881a7c139a">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a50bc15cc620f73630667fc8adf0f9da2">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
 
 </div>
 </div>
@@ -261,7 +261,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 
 <p>Get unique BP identifier. </p>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a6922803b0cb927c5665ee76a9ee085c9">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html#a41f26c14feb2c80ada73e1bbfa399cbd">gov.nasa.jpf.inspector.interfaces.BreakpointStatus</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a814d939206de3c57203de0d957c75805">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#a428f8cb12d053d7fe12af313d6bc486d">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a814d939206de3c57203de0d957c75805">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>, and <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_breakpoint_status.html#a41f26c14feb2c80ada73e1bbfa399cbd">gov.nasa.jpf.inspector.interfaces.BreakpointStatus</a>.</p>
 
 </div>
 </div>
@@ -308,7 +308,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 <p>Gets the name of the breakpoint, if any. </p>
 <p>If no name was specified, returns null. </p>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a7d69cad483a1ac9dc02e4f4459ec2a6d">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a550680a5350379e6654cc88d6c9f11b1">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#ab54255fe8bc726e8f81d59238eb0671e">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#a550680a5350379e6654cc88d6c9f11b1">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
 
 </div>
 </div>
@@ -355,7 +355,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 
 <p>Gets the action that should occur when the breakpoint is hit. </p>
 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_break_point_status_impl.html#a5de404d1357344c5e0b969d6850105c6">gov.nasa.jpf.inspector.server.breakpoints.BreakPointStatusImpl</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#adc1d17feaa0c9ec4d44802b0ba71900f">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_breakpoint_status_implementation.html#ad92ed14622a497fd236024de5e40832e">gov.nasa.jpf.inspector.server.breakpoints.BreakpointStatusImplementation</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_breakpoint_creation_expression.html#adc1d17feaa0c9ec4d44802b0ba71900f">gov.nasa.jpf.inspector.common.BreakpointCreationExpression</a>.</p>
 
 </div>
 </div>
@@ -381,7 +381,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 <p>Used as undefined value of the breakpoint ID. </p>
 <p>This value specify that you creates new breakpoint and Inspector assign ID alone. The JPF never returns breakpoint with this ID. </p>
 
-<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00037">37</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00035">35</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
 
 </div>
 </div>
@@ -403,7 +403,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00029">29</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00027">27</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
 
 </div>
 </div>
@@ -425,7 +425,7 @@ Note: The lower bound condition must hold too to hit the breakpoint</p>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00030">30</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
+<p>Definition at line <a class="el" href="_breakpoint_creation_information_8java_source.html#l00028">28</a> of file <a class="el" href="_breakpoint_creation_information_8java_source.html">BreakpointCreationInformation.java</a>.</p>
 
 </div>
 </div>

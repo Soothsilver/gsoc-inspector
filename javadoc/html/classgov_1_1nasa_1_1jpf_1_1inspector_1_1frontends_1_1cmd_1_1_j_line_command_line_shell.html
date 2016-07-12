@@ -92,8 +92,8 @@ var searchBox = new SearchBox("searchBox", "search",false,'Search');
 <div class="header">
   <div class="summary">
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pro-attribs">Protected Attributes</a> &#124;
-<a href="#pac-methods">Package Functions</a> &#124;
 <a href="#pri-static-attribs">Static Private Attributes</a> &#124;
 <a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_j_line_command_line_shell-members.html">List of all members</a>  </div>
   <div class="headertitle">
@@ -141,15 +141,15 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac4e67ba35da00a28f03c6ec20c6aa4de"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#ac4e67ba35da00a28f03c6ec20c6aa4de">postCommand</a> (VerifyCommand command)</td></tr>
 <tr class="separator:ac4e67ba35da00a28f03c6ec20c6aa4de"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a59c89a9f5dd7464d13f459d024459176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_j_line_command_line_shell.html#a59c89a9f5dd7464d13f459d024459176">mainLoop</a> ()</td></tr>
+<tr class="separator:a59c89a9f5dd7464d13f459d024459176"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-attribs"></a>
 Protected Attributes</h2></td></tr>
 <tr class="memitem:abaafb3b56c8d0b3772dea5ec1faf3179"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html">JPFInspectorClientInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">inspector</a></td></tr>
 <tr class="separator:abaafb3b56c8d0b3772dea5ec1faf3179"><td class="memSeparator" colspan="2">&#160;</td></tr>
-</table><table class="memberdecls">
-<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pac-methods"></a>
-Package Functions</h2></td></tr>
-<tr class="memitem:a59c89a9f5dd7464d13f459d024459176"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_j_line_command_line_shell.html#a59c89a9f5dd7464d13f459d024459176">mainLoop</a> ()</td></tr>
-<tr class="separator:a59c89a9f5dd7464d13f459d024459176"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-static-attribs"></a>
 Static Private Attributes</h2></td></tr>
@@ -162,7 +162,7 @@ Static Private Attributes</h2></td></tr>
 <p>Implementing JLine is probably more trouble than it's worth and I recommend you use <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_command_line_shell.html">CommandLineShell</a> instead which uses standard input and output streams.</p>
 <p>I'll leave this class in here for now if at some point somebody wishes to finish this. </p>
 
-<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00022">22</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
+<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00038">38</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a class="anchor" id="a5b535f535754f9c9ec331f23ac00093e"></a>
 <div class="memitem">
@@ -180,8 +180,8 @@ Static Private Attributes</h2></td></tr>
 
 <p>This is called by the JPF when executing via RunJPF. </p>
 
-<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00029">29</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                              {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ShellManager.createShellManager(config);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <span class="keywordflow">if</span> (!ShellManager.getManager().hasShell(<span class="keyword">this</span>)) {</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;      ShellManager.getManager().addShell(<span class="keyword">this</span>);</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;      <span class="comment">// We will handle when to exit the VM in ShellManager</span></div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    }</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00045">45</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                              {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ShellManager.createShellManager(config);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordflow">if</span> (!ShellManager.getManager().hasShell(<span class="keyword">this</span>)) {</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      ShellManager.getManager().addShell(<span class="keyword">this</span>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;      <span class="comment">// We will handle when to exit the VM in ShellManager</span></div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    }</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
@@ -207,8 +207,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00066">66</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;                                                  {</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    JPF jpf = command.getJPF();</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">inspector</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a687ef63d8a21d78f5d0e7b265e9863ea">connect2JPF</a>(jpf);</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    } <span class="keywordflow">catch</span> (JPFInspectorGenericErrorException ignored) {</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">// Silently ignore - error is reported in connect2JPF method</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    }</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abaafb3b56c8d0b3772dea5ec1faf3179"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.inspector</a></div><div class="ttdeci">JPFInspectorClientInterface inspector</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_command_line_based_shell_8java_source.html#l00023">AbstractCommandLineBasedShell.java:23</a></div></div>
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00082">82</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;                                                  {</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;    JPF jpf = command.getJPF();</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;      <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">inspector</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a687ef63d8a21d78f5d0e7b265e9863ea">connect2JPF</a>(jpf);</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    } <span class="keywordflow">catch</span> (JPFInspectorGenericErrorException ignored) {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;      <span class="comment">// Silently ignore - error is reported in connect2JPF method</span></div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;    }</div><div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abaafb3b56c8d0b3772dea5ec1faf3179"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.inspector</a></div><div class="ttdeci">JPFInspectorClientInterface inspector</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_command_line_based_shell_8java_source.html#l00039">AbstractCommandLineBasedShell.java:39</a></div></div>
 <div class="ttc" id="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface_html_a687ef63d8a21d78f5d0e7b265e9863ea"><div class="ttname"><a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a687ef63d8a21d78f5d0e7b265e9863ea">gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.connect2JPF</a></div><div class="ttdeci">void connect2JPF(JPF jpf)</div><div class="ttdoc">Connects the client to a specific instance of Java PathFinder. </div></div>
 </div><!-- fragment -->
 </div>
@@ -234,8 +234,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00061">61</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                  {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00077">77</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;                                  {</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <span class="keywordflow">return</span> null;</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="ae1cec8a8cba669eef17d8c5fc4165c9f"></a>
@@ -260,8 +260,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00076">76</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;                                                  {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    ex.printStackTrace();</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00092">92</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00092"></a><span class="lineno">   92</span>&#160;                                                  {</div><div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    ex.printStackTrace();</div><div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a80ad20da90d05a22788fbd5ea362d934"></a>
@@ -286,8 +286,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00041">41</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;                                                         {</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00057">57</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                                         {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a59c89a9f5dd7464d13f459d024459176"></a>
@@ -306,14 +306,14 @@ Static Private Attributes</h2></td></tr>
       </table>
   </td>
   <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">package</span></span>  </td>
+<span class="mlabels"><span class="mlabel">protected</span></span>  </td>
   </tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00038">38</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;                  {</div><div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160;</div><div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;      Config config = ShellManager.getManager().getConfig();</div><div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;      String target = config.getTarget();</div><div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;      ConsoleReader consoleReader;</div><div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;      PrintStream outStream = System.out;</div><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;      consoleReader = <span class="keyword">new</span> ConsoleReader();</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;      consoleReader.setBellEnabled(<span class="keyword">false</span>);</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;      consoleReader.setUseHistory(<span class="keyword">true</span>);</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;      consoleReader.printString(<span class="stringliteral">&quot;This is the JPF Inspector console for debugging the target \&quot;&quot;</span> + target + <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="comment">/*</span></div><div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;<span class="comment">    outStream.println(&quot;Type \&quot;hello\&quot; to test if the Inspector is working or \&quot;help\&quot; to get a list of commands.&quot;);</span></div><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;<span class="comment">    outStream.println();*/</span></div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;      <span class="comment">//noinspection InfiniteLoopStatement</span></div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;      <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;        String input;</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;          input = consoleReader.readLine(Constants.PROMPT);</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;          <span class="keywordflow">if</span> (input.trim().isEmpty()) {</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;            outStream.println(<span class="stringliteral">&quot;EMPTY&quot;</span>);</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;          } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;            <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">inspector</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a89886c27b008026d67e6b743d36df377">executeCommand</a>(input.trim(), ExecutionContext.FROM_COMMAND_LINE_TERMINAL);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;          }</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;          outStream.println(<span class="stringliteral">&quot;ERR: Error while reading a command.&quot;</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;        }</div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;      }</div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;There was an unknown JLine error.&quot;</span>);</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    }</div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;  }</div><div class="ttc" id="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface_html_a89886c27b008026d67e6b743d36df377"><div class="ttname"><a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a89886c27b008026d67e6b743d36df377">gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.executeCommand</a></div><div class="ttdeci">void executeCommand(String cmd, ExecutionContext context)</div><div class="ttdoc">Parses and executes a command given by the user. </div></div>
-<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abaafb3b56c8d0b3772dea5ec1faf3179"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.inspector</a></div><div class="ttdeci">JPFInspectorClientInterface inspector</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_command_line_based_shell_8java_source.html#l00023">AbstractCommandLineBasedShell.java:23</a></div></div>
+<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00054">54</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;                            {</div><div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordflow">try</span> {</div><div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;</div><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;      Config config = ShellManager.getManager().getConfig();</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;      String target = config.getTarget();</div><div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;      ConsoleReader consoleReader;</div><div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160;      PrintStream outStream = System.out;</div><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;      consoleReader = <span class="keyword">new</span> ConsoleReader();</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;</div><div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;      consoleReader.setBellEnabled(<span class="keyword">false</span>);</div><div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;      consoleReader.setUseHistory(<span class="keyword">true</span>);</div><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;      consoleReader.printString(<span class="stringliteral">&quot;This is the JPF Inspector console for debugging the target \&quot;&quot;</span> + target + <span class="stringliteral">&quot;\&quot;.&quot;</span>);</div><div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="comment">/*</span></div><div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="comment">    outStream.println(&quot;Type \&quot;hello\&quot; to test if the Inspector is working or \&quot;help\&quot; to get a list of commands.&quot;);</span></div><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="comment">    outStream.println();*/</span></div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;</div><div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;      <span class="comment">//noinspection InfiniteLoopStatement</span></div><div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;      <span class="keywordflow">while</span> (<span class="keyword">true</span>) {</div><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;        String input;</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;        <span class="keywordflow">try</span> {</div><div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;          input = consoleReader.readLine(Constants.PROMPT);</div><div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;          <span class="keywordflow">if</span> (input.trim().isEmpty()) {</div><div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;            outStream.println(<span class="stringliteral">&quot;EMPTY&quot;</span>);</div><div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;          } <span class="keywordflow">else</span> {</div><div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;            <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">inspector</a>.<a class="code" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a89886c27b008026d67e6b743d36df377">executeCommand</a>(input.trim(), ExecutionContext.FROM_COMMAND_LINE_TERMINAL);</div><div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;          }</div><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;        } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;          outStream.println(<span class="stringliteral">&quot;ERR: Error while reading a command.&quot;</span>);</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;        }</div><div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;      }</div><div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    } <span class="keywordflow">catch</span> (IOException e) {</div><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;      <span class="keywordflow">throw</span> <span class="keyword">new</span> RuntimeException(<span class="stringliteral">&quot;There was an unknown JLine error.&quot;</span>);</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;    }</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div><div class="ttc" id="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface_html_a89886c27b008026d67e6b743d36df377"><div class="ttname"><a href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a89886c27b008026d67e6b743d36df377">gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.executeCommand</a></div><div class="ttdeci">void executeCommand(String cmd, ExecutionContext context)</div><div class="ttdoc">Parses and executes a command given by the user. </div></div>
+<div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abaafb3b56c8d0b3772dea5ec1faf3179"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abaafb3b56c8d0b3772dea5ec1faf3179">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.inspector</a></div><div class="ttdeci">JPFInspectorClientInterface inspector</div><div class="ttdef"><b>Definition:</b> <a href="_abstract_command_line_based_shell_8java_source.html#l00039">AbstractCommandLineBasedShell.java:39</a></div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -339,8 +339,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00086">86</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;                                                 {</div><div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160;</div><div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00102">102</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;                                                 {</div><div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;</div><div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a297252e93f0b7de73bec7cc00e62c685"></a>
@@ -365,8 +365,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00081">81</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;                                                {</div><div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;</div><div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00097">97</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;                                                {</div><div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;</div><div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="af84a242bb1e88840d50e03f08cbf51e5"></a>
@@ -391,8 +391,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00057">57</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;                                             {</div><div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00073">73</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;                                             {</div><div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a5145da92cb370e360be41ad1ced2cf9c"></a>
@@ -417,8 +417,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00029">29</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;                                         {</div><div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    ShellManager.getManager().setStartingArgs(args);</div><div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;</div><div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abd8e0d4ba772c28ed8215ca548aa045d">mainLoop</a>();</div><div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;</div><div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;</div><div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abd8e0d4ba772c28ed8215ca548aa045d"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abd8e0d4ba772c28ed8215ca548aa045d">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.mainLoop</a></div><div class="ttdeci">abstract void mainLoop()</div></div>
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00045">45</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                         {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    ShellManager.getManager().setStartingArgs(args);</div><div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;</div><div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;    <a class="code" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abd8e0d4ba772c28ed8215ca548aa045d">mainLoop</a>();</div><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;</div><div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  }</div><div class="ttc" id="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell_html_abd8e0d4ba772c28ed8215ca548aa045d"><div class="ttname"><a href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html#abd8e0d4ba772c28ed8215ca548aa045d">gov.nasa.jpf.inspector.frontends.cmd.AbstractCommandLineBasedShell.mainLoop</a></div><div class="ttdeci">abstract void mainLoop()</div></div>
 </div><!-- fragment -->
 </div>
 </div>
@@ -444,8 +444,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00045">45</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                                            {</div><div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00061">61</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;                                                            {</div><div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="aee3d9aa59504a125773a586ec08bf07c"></a>
@@ -470,8 +470,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00049">49</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;                                                       {</div><div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00065">65</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;                                                       {</div><div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <a class="anchor" id="a80c6a7c8702b42f907f5aa5a5be6c1c6"></a>
@@ -496,8 +496,8 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00053">53</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
-<div class="fragment"><div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;                                                 {</div><div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;  }</div></div><!-- fragment -->
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00069">69</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<div class="fragment"><div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;                                                 {</div><div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;  }</div></div><!-- fragment -->
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
@@ -519,7 +519,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00023">23</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
+<p>Definition at line <a class="el" href="_abstract_command_line_based_shell_8java_source.html#l00039">39</a> of file <a class="el" href="_abstract_command_line_based_shell_8java_source.html">AbstractCommandLineBasedShell.java</a>.</p>
 
 </div>
 </div>
@@ -541,7 +541,7 @@ Static Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
-<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00023">23</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
+<p>Definition at line <a class="el" href="_j_line_command_line_shell_8java_source.html#l00039">39</a> of file <a class="el" href="_j_line_command_line_shell_8java_source.html">JLineCommandLineShell.java</a>.</p>
 
 </div>
 </div>

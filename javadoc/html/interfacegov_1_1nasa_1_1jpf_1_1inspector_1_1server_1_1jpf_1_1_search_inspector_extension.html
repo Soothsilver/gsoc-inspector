@@ -116,16 +116,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ac3766f057f695b446441f048415d07a6"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#ac3766f057f695b446441f048415d07a6">setInspector</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html">JPFInspector</a> inspector)</td></tr>
 <tr class="memdesc:ac3766f057f695b446441f048415d07a6"><td class="mdescLeft">&#160;</td><td class="mdescRight">Implementor should use this method to remember the reference to JPF Inspector.  <a href="#ac3766f057f695b446441f048415d07a6">More...</a><br /></td></tr>
 <tr class="separator:ac3766f057f695b446441f048415d07a6"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a681234426cc73a32683716de6aa68490"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#a681234426cc73a32683716de6aa68490">terminate</a> ()</td></tr>
-<tr class="memdesc:a681234426cc73a32683716de6aa68490"><td class="mdescLeft">&#160;</td><td class="mdescRight">The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code:  <a href="#a681234426cc73a32683716de6aa68490">More...</a><br /></td></tr>
-<tr class="separator:a681234426cc73a32683716de6aa68490"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>When using JPF Inspector, your search class MUST implement this interface. </p>
 <p>Only search classes should implement this interface.</p>
-<p>See <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html">DFSearchInspector</a> for a reference implementation, or use <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html">SearchWrapper</a> if you don't want to create your own Search subclass. </p>
+<p>See <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html">DFSearchInspector</a> for a reference implementation, or use <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html">SearchWrapper</a> if you don't want to create your own Search subclass.</p>
+<p>The implementor MUST override the terminate method (from the class <a class="el" href="">Search</a>) and that method SHOULD contain the following code: </p><pre>
+<div class="fragment"><div class="line"><span class="keywordflow">if</span> (inspector != null) {</div><div class="line">  inspector.getStopHolder().terminating();</div><div class="line">}</div></div><!-- fragment --> 
+</pre><p>Use the provided <a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_inspector_extension.html#ac3766f057f695b446441f048415d07a6">setInspector(JPFInspector)</a> method to gain access to the Inspector server object. </p>
 
-<p>Definition at line <a class="el" href="_search_inspector_extension_8java_source.html#l00032">32</a> of file <a class="el" href="_search_inspector_extension_8java_source.html">SearchInspectorExtension.java</a>.</p>
+<p>Definition at line <a class="el" href="_search_inspector_extension_8java_source.html#l00042">42</a> of file <a class="el" href="_search_inspector_extension_8java_source.html">SearchInspectorExtension.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="ac3766f057f695b446441f048415d07a6"></a>
 <div class="memitem">
@@ -150,27 +150,6 @@ Public Member Functions</h2></td></tr>
 </dl>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#ab93e60e4c198bbe63806995580d3ea67">gov.nasa.jpf.inspector.server.jpf.SearchWrapper</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#adc5b589303dc4727f535e01562c6e041">gov.nasa.jpf.inspector.server.jpf.DFSearchInspector</a>.</p>
-
-</div>
-</div>
-<a class="anchor" id="a681234426cc73a32683716de6aa68490"></a>
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void gov.nasa.jpf.inspector.server.jpf.SearchInspectorExtension.terminate </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>The implementor's terminate method (overriden from the class <a class="el" href="">Search</a>) must contain the code: </p>
-<pre>
-<div class="fragment"><div class="line"><span class="keywordflow">if</span> (inspector != null) {</div><div class="line">  inspector.getStopHolder().terminating();</div><div class="line">}</div></div><!-- fragment --> 
-</pre> 
-<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_search_wrapper.html#a2368d7c9f74aa0574e64e0fd3e7a4bf1">gov.nasa.jpf.inspector.server.jpf.SearchWrapper</a>, and <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_d_f_search_inspector.html#a38333f3c6158ad2b2b6dbc8688b2d6bb">gov.nasa.jpf.inspector.server.jpf.DFSearchInspector</a>.</p>
 
 </div>
 </div>

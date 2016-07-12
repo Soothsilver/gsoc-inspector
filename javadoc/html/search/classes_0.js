@@ -1,6 +1,9 @@
 var searchData=
 [
+  ['abstractattributetostringconverter',['AbstractAttributeToStringConverter',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_abstract_attribute_to_string_converter.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
   ['abstractcommandlinebasedshell',['AbstractCommandLineBasedShell',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1cmd_1_1_abstract_command_line_based_shell.html',1,'gov::nasa::jpf::inspector::frontends::cmd']]],
+  ['abstractstringtoattributeconverter',['AbstractStringToAttributeConverter',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_abstract_string_to_attribute_converter.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['accessmode',['AccessMode',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_access_mode.html',1,'gov::nasa::jpf::inspector::server::expression']]],
   ['allkeywordscontext',['AllKeyWordsContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1generated_1_1_expression_grammar1706469b20bd554bd68bf53e9053e01a.html',1,'gov::nasa::jpf::inspector::server::expression::generated::ExpressionGrammarParser']]],
   ['allkeywordscontext',['AllKeyWordsContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1generated_1_1_console_grammar_parser_1_1_all_key_words_context.html',1,'gov::nasa::jpf::inspector::client::parser::generated::ConsoleGrammarParser']]],
   ['allkeywordsidflikecontext',['AllKeyWordsIDFLikeContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1generated_1_1_expression_grammar10968d064c7fc167ae5e62c20adcff04.html',1,'gov::nasa::jpf::inspector::server::expression::generated::ExpressionGrammarParser']]],
@@ -14,7 +17,19 @@ var searchData=
   ['alltextwscontext',['AllTextWSContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1generated_1_1_console_grammar_parser_1_1_all_text_w_s_context.html',1,'gov::nasa::jpf::inspector::client::parser::generated::ConsoleGrammarParser']]],
   ['antlrparseexception',['AntlrParseException',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1common_1_1_antlr_parse_exception.html',1,'gov::nasa::jpf::inspector::common']]],
   ['anywordcontext',['AnyWordContext',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1parser_1_1generated_1_1_console_grammar_parser_1_1_any_word_context.html',1,'gov::nasa::jpf::inspector::client::parser::generated::ConsoleGrammarParser']]],
+  ['arrayelementattachment',['ArrayElementAttachment',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1attachments_1_1_array_element_attachment.html',1,'gov::nasa::jpf::inspector::server::attributes::attachments']]],
   ['assertcreationinformation',['AssertCreationInformation',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_creation_information.html',1,'gov::nasa::jpf::inspector::interfaces']]],
   ['assertstatus',['AssertStatus',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_assert_status.html',1,'gov::nasa::jpf::inspector::interfaces']]],
-  ['assertstatusimpl',['AssertStatusImpl',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_assert_status_impl.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]]
+  ['assertstatusimpl',['AssertStatusImpl',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1breakpoints_1_1_assert_status_impl.html',1,'gov::nasa::jpf::inspector::server::breakpoints']]],
+  ['attachment',['Attachment',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1swing_1_1explorer_1_1_attachment.html',1,'gov::nasa::jpf::inspector::frontends::swing::explorer']]],
+  ['attachmentkind',['AttachmentKind',['../enumgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1swing_1_1explorer_1_1_attachment_1_1_attachment_kind.html',1,'gov::nasa::jpf::inspector::frontends::swing::explorer::Attachment']]],
+  ['attributeaccessdetector',['AttributeAccessDetector',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_attribute_access_detector.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['attributeadaptor',['AttributeAdaptor',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_attribute_adaptor.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['attributeadaptorbase',['AttributeAdaptorBase',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_attribute_adaptor_base.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['attributeattachment',['AttributeAttachment',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1attachments_1_1_attribute_attachment.html',1,'gov::nasa::jpf::inspector::server::attributes::attachments']]],
+  ['attributeconversionresult',['AttributeConversionResult',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_attribute_conversion_result.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['attributemanagerinterface',['AttributeManagerInterface',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1_attribute_manager_interface.html',1,'gov::nasa::jpf::inspector::interfaces']]],
+  ['attributesmanager',['AttributesManager',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1attributes_1_1_attributes_manager.html',1,'gov::nasa::jpf::inspector::server::attributes']]],
+  ['attributetostringconverter',['AttributeToStringConverter',['../interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1interfaces_1_1attributes_1_1_attribute_to_string_converter.html',1,'gov::nasa::jpf::inspector::interfaces::attributes']]],
+  ['auxiliaryinspectorpanel',['AuxiliaryInspectorPanel',['../classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1swing_1_1_auxiliary_inspector_panel.html',1,'gov::nasa::jpf::inspector::frontends::swing']]]
 ];

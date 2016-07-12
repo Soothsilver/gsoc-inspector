@@ -115,6 +115,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a5ff3dec0dea296c03dbb0ba48c5541b3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_state_root_node.html">ExpressionStateRootNode</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_parser_interface.html#a5ff3dec0dea296c03dbb0ba48c5541b3">getExpressionStateInterface</a> (String expr)  throws JPFInspectorParsingErrorException,           JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:a5ff3dec0dea296c03dbb0ba48c5541b3"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given expression as a program state expression.  <a href="#a5ff3dec0dea296c03dbb0ba48c5541b3">More...</a><br /></td></tr>
 <tr class="separator:a5ff3dec0dea296c03dbb0ba48c5541b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a38b6eec10dce017b6a6601cd91bb30bd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1expressions_1_1_field_name.html">FieldName</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_parser_interface.html#a38b6eec10dce017b6a6601cd91bb30bd">getFieldName</a> (String expr)  throws JPFInspectorParsingErrorException, JPFInspectorGenericErrorException</td></tr>
+<tr class="separator:a38b6eec10dce017b6a6601cd91bb30bd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:acf4ebfde0a03c8eb9c52b84cd7757abd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_boolean_interface.html">ExpressionBooleanInterface</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_parser_interface.html#acf4ebfde0a03c8eb9c52b84cd7757abd">getBreakpointExpression</a> (String expr)  throws JPFInspectorParsingErrorException,           JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:acf4ebfde0a03c8eb9c52b84cd7757abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses the given expression as a breakpoint hit condition.  <a href="#acf4ebfde0a03c8eb9c52b84cd7757abd">More...</a><br /></td></tr>
 <tr class="separator:acf4ebfde0a03c8eb9c52b84cd7757abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -128,7 +130,7 @@ Public Member Functions</h2></td></tr>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>A class implementing this interface encapsulates the ANTLR parser for expressions. </p>
 
-<p>Definition at line <a class="el" href="_expression_parser_interface_8java_source.html#l00029">29</a> of file <a class="el" href="_expression_parser_interface_8java_source.html">ExpressionParserInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_expression_parser_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_expression_parser_interface_8java_source.html">ExpressionParserInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
 <a class="anchor" id="acf4ebfde0a03c8eb9c52b84cd7757abd"></a>
 <div class="memitem">
@@ -227,6 +229,24 @@ Public Member Functions</h2></td></tr>
 <dl class="section return"><dt>Returns</dt><dd>Tree representation of the given expression. </dd></dl>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_parser.html#a9dccfba0e24f285a580e691700c00f50">gov.nasa.jpf.inspector.server.expression.ExpressionParser</a>.</p>
+
+</div>
+</div>
+<a class="anchor" id="a38b6eec10dce017b6a6601cd91bb30bd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1utils_1_1expressions_1_1_field_name.html">FieldName</a> gov.nasa.jpf.inspector.server.expression.ExpressionParserInterface.getFieldName </td>
+          <td>(</td>
+          <td class="paramtype">String&#160;</td>
+          <td class="paramname"><em>expr</em></td><td>)</td>
+          <td> throws <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_parsing_error_exception.html">JPFInspectorParsingErrorException</a>, <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1exceptions_1_1_j_p_f_inspector_generic_error_exception.html">JPFInspectorGenericErrorException</a></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1expression_1_1_expression_parser.html#a90b4085479968e5e15c00a4991a6df4f">gov.nasa.jpf.inspector.server.expression.ExpressionParser</a>.</p>
 
 </div>
 </div>

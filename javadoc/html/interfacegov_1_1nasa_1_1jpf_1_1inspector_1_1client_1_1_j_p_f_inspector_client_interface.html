@@ -116,17 +116,55 @@ Public Member Functions</h2></td></tr>
 <tr class="memdesc:a89886c27b008026d67e6b743d36df377"><td class="mdescLeft">&#160;</td><td class="mdescRight">Parses and executes a command given by the user.  <a href="#a89886c27b008026d67e6b743d36df377">More...</a><br /></td></tr>
 <tr class="separator:a89886c27b008026d67e6b743d36df377"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a37a58b7c80cb31c04d28a8cfa9dceeea"><td class="memItemLeft" align="right" valign="top">boolean&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a37a58b7c80cb31c04d28a8cfa9dceeea">isPaused</a> ()</td></tr>
+<tr class="memdesc:a37a58b7c80cb31c04d28a8cfa9dceeea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns true if the JPF thread has started but is currently paused.  <a href="#a37a58b7c80cb31c04d28a8cfa9dceeea">More...</a><br /></td></tr>
 <tr class="separator:a37a58b7c80cb31c04d28a8cfa9dceeea"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#a687ef63d8a21d78f5d0e7b265e9863ea">connect2JPF</a> (JPF jpf)  throws JPFInspectorGenericErrorException</td></tr>
 <tr class="memdesc:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="mdescLeft">&#160;</td><td class="mdescRight">Connects the client to a specific instance of Java PathFinder.  <a href="#a687ef63d8a21d78f5d0e7b265e9863ea">More...</a><br /></td></tr>
 <tr class="separator:a687ef63d8a21d78f5d0e7b265e9863ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa344a3dd3723c478ca4ae5cada7417ed"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#aa344a3dd3723c478ca4ae5cada7417ed">addInspectorListener</a> (<a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1swing_1_1_auxiliary_inspector_panel.html">AuxiliaryInspectorPanel</a> auxiliaryInspectorPanel)</td></tr>
+<tr class="memdesc:aa344a3dd3723c478ca4ae5cada7417ed"><td class="mdescLeft">&#160;</td><td class="mdescRight">Adds a new panel as a listener to events of the client.  <a href="#aa344a3dd3723c478ca4ae5cada7417ed">More...</a><br /></td></tr>
+<tr class="separator:aa344a3dd3723c478ca4ae5cada7417ed"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:acee355e391f512024a62bcfe48834abd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html">JPFInspector</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="interfacegov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client_interface.html#acee355e391f512024a62bcfe48834abd">getServer</a> ()</td></tr>
+<tr class="memdesc:acee355e391f512024a62bcfe48834abd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Gets the Inspector server.  <a href="#acee355e391f512024a62bcfe48834abd">More...</a><br /></td></tr>
+<tr class="separator:acee355e391f512024a62bcfe48834abd"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>The client part of the JPF Inspector. </p>
 <p>This part takes input from the user and passes it, after parsing, to the server. </p>
 
-<p>Definition at line <a class="el" href="_j_p_f_inspector_client_interface_8java_source.html#l00010">10</a> of file <a class="el" href="_j_p_f_inspector_client_interface_8java_source.html">JPFInspectorClientInterface.java</a>.</p>
+<p>Definition at line <a class="el" href="_j_p_f_inspector_client_interface_8java_source.html#l00028">28</a> of file <a class="el" href="_j_p_f_inspector_client_interface_8java_source.html">JPFInspectorClientInterface.java</a>.</p>
 </div><h2 class="groupheader">Member Function Documentation</h2>
+<a class="anchor" id="aa344a3dd3723c478ca4ae5cada7417ed"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.addInspectorListener </td>
+          <td>(</td>
+          <td class="paramtype"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1frontends_1_1swing_1_1_auxiliary_inspector_panel.html">AuxiliaryInspectorPanel</a>&#160;</td>
+          <td class="paramname"><em>auxiliaryInspectorPanel</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Adds a new panel as a listener to events of the client. </p>
+<p>These events are:</p>
+<ul>
+<li>A command is executed.</li>
+<li>A callback his received.</li>
+</ul>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">auxiliaryInspectorPanel</td><td>A new listener. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client.html#a73da499a605d5875e44734f4424d6a83">gov.nasa.jpf.inspector.client.JPFInspectorClient</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a687ef63d8a21d78f5d0e7b265e9863ea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -196,6 +234,25 @@ Public Member Functions</h2></td></tr>
 
 </div>
 </div>
+<a class="anchor" id="acee355e391f512024a62bcfe48834abd"></a>
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1server_1_1jpf_1_1_j_p_f_inspector.html">JPFInspector</a> gov.nasa.jpf.inspector.client.JPFInspectorClientInterface.getServer </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Gets the Inspector server. </p>
+
+<p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client.html#ac6d10239fffc82f29795dfcae7e3ed5e">gov.nasa.jpf.inspector.client.JPFInspectorClient</a>.</p>
+
+</div>
+</div>
 <a class="anchor" id="a37a58b7c80cb31c04d28a8cfa9dceeea"></a>
 <div class="memitem">
 <div class="memproto">
@@ -208,6 +265,8 @@ Public Member Functions</h2></td></tr>
         </tr>
       </table>
 </div><div class="memdoc">
+
+<p>Returns true if the JPF thread has started but is currently paused. </p>
 
 <p>Implemented in <a class="el" href="classgov_1_1nasa_1_1jpf_1_1inspector_1_1client_1_1_j_p_f_inspector_client.html#a3598e4bbde0f447c1fae20cd305d6a2e">gov.nasa.jpf.inspector.client.JPFInspectorClient</a>.</p>
 
